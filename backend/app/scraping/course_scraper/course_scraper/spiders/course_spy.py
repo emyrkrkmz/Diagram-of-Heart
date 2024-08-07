@@ -3,14 +3,6 @@ from course_scraper.items import Course
 from scrapy_splash import SplashRequest
 
 
-def clean_descrip(text):
-    text = text.replace("<br>", " ")
-    text = text.replace(" MIN DD ", " ")
-    text = text.replace("<td>", "")
-    text = text.split("veya")
-    return text.join("ve").split("ve")
-
-
 class CourseSpySpider(scrapy.Spider):
     name = "course_spy"
     start_urls = ["https://www.sis.itu.edu.tr/TR/ogrenci/lisans/ders-planlari/plan/EHBE/202210.html"]
@@ -41,19 +33,65 @@ class CourseSpySpider(scrapy.Spider):
                 course["credit"] = period.xpath(f'./table/tbody/tr[{k}]/td[3]/text()').get()
                 course["type"] = period.xpath(f'./table/tbody/tr[{k}]/td[8]/text()').get()
                 course["comp_or_elect"] = period.xpath(f'./table/tbody/tr[{k}]/td[9]/text()').get()
-                course["semester"] = period.xpath(f'./table/tbody/tr[{k}]/td[10]/text()').get()
+                course["semester"] = int(period.xpath(f'./table/tbody/tr[{k}]/td[10]/text()').get())
                 
-                #url = period.xpath(f'./table/tbody/tr[{k}]/td/a/@href').get()
-                #
-                #course["prerequisite"] = SplashRequest(url=url, callback=self.parse_preq)
+                if course["name"] == "ELECTIVE":
+                    course["prerequisite"] = []
+                    
+                    yield course
                 
+                else:
+                    url = period.xpath(f'./table/tbody/tr[{k}]/td/a/@href').get()
+                    full_url = response.urljoin(url)
+                    
+                    yield SplashRequest(url=full_url, callback=self.parse_preq, meta={'course': course})
+                
+           
+    def parse_preq(self, response):
+        
+        course = response.meta['course']
+        course["prerequisite"] = []
 
-                yield course
+        
+        all_preq = response.xpath('//table/tbody/tr/td/table[3]/tbody/tr[2]/td[2]')
+        
+        for k in range(1,len(all_preq.xpath('./text()')) + 1):
+            preq = all_preq.xpath(f'./text()[{k}]').get()
             
-    #def parse_preq(self, response):
-    #    
-    #    descrip = response.xpath('//table/tbody/tr/td/table[3]/tbody/tr[2]/td[2]').get()
-    #    
-    #    words = descrip.split()
+            preq = preq.replace('ve ', '')
+            preq = preq.replace('veya ', '')
+            preq = preq.replace('Yok', '')
+            
+            if preq == '':
+                continue
+            preq = preq.replace(' MIN DD', '')
+            preq = preq.replace(' MIN BB', '')
+            course["prerequisite"].append(preq)
+        
+        
+        
+        if len(all_preq.xpath('./font')) != 0:
+            for k in range(1, len(all_preq.xpath('./font')) + 1):
+                c_of_lec = len(all_preq.xpath(f'./font[{k}]/text()'))
+                for lec in range(1, c_of_lec + 1):
+                    preq = all_preq.xpath(f'./font[{k}]/text()[{lec}]').get()
+
+                    if lec == 1:
+                        preq = preq.replace('(', '')
+                    elif lec == c_of_lec:
+                        preq = preq.replace('veya ', '')
+                        preq = preq.replace(')', '')
+                    else:
+                        preq = preq.replace('veya ', '')
+                
+                preq = preq.replace(' MIN DD', '')
+                preq = preq.replace(' MIN BB', '')
+                
+                preq = preq.replace('Yok', '')
+                
+                course["prerequisite"].append(preq)
+            
+        yield course
+        
         
         
