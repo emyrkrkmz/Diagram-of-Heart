@@ -9,7 +9,7 @@ class CourseSpySpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.start_urls:
-            yield SplashRequest(url=url, callback=self.parse_main)
+            yield SplashRequest(url=url, callback=self.parse_main, args={'wait': 2})
         
     def parse_main(self, response):
         all_ = response.xpath('//div[@class = "table-responsive"]')
@@ -44,7 +44,7 @@ class CourseSpySpider(scrapy.Spider):
                     url = period.xpath(f'./table/tbody/tr[{k}]/td/a/@href').get()
                     full_url = response.urljoin(url)
                     
-                    yield SplashRequest(url=full_url, callback=self.parse_preq, meta={'course': course})
+                    yield SplashRequest(url=full_url, callback=self.parse_preq, meta={'course': course}, args={'wait': 5})
                 
            
     def parse_preq(self, response):

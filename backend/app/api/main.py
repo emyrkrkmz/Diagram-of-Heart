@@ -17,6 +17,11 @@ class Item(BaseModel):
     type : str
     comp_or_elect : str
     semester : int
+    
+class Elective(BaseModel):
+    name: str
+    course_list : list
+    semester : int
 
 
 @app.get('/')
@@ -24,7 +29,12 @@ def index():
     return {"message": "Hello World"}   
 
 
-@app.get("/items/", response_model=List[Item])
+@app.get("/courses/", response_model=List[Item])
 async def get_items():
     items = list(db['course_spy'].find({}, {"_id": 0}))
+    return items
+
+@app.get("/electives/", response_model=List[Elective])
+async def get_electives():
+    items = list(db['elective_spy'].find({}, {"_id": 0}))
     return items

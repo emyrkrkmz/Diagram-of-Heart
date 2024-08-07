@@ -14,3 +14,8 @@ class Course(scrapy.Item):
     type = scrapy.Field()
     comp_or_elect = scrapy.Field()
     semester = scrapy.Field()
+    
+class Elective(scrapy.Item):
+    name = scrapy.Field()
+    course_list = scrapy.Field()
+    semester = scrapy.Field()

@@ -16,6 +16,8 @@ NEWSPIDER_MODULE = "course_scraper.spiders"
 MONGO_URI = 'mongodb://localhost:27017'
 MONGO_DATABASE = 'ehb_lectures'
 
+SPLASH_URL = 'http://localhost:8050'
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "course_scraper (+http://www.yourdomain.com)"
 
@@ -93,6 +95,10 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Set settings whose default value is deprecated to a future-proof value
+
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
