@@ -18,6 +18,10 @@ MONGO_DATABASE = 'ehb_lectures'
 
 SPLASH_URL = 'http://localhost:8050'
 
+RETRY_ENABLED = True
+RETRY_TIMES = 3  # Number of retries before giving up
+RETRY_HTTP_CODES = [500, 502, 503, 504, 408]  # Retry on these HTTP codes
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "course_scraper (+http://www.yourdomain.com)"
 
@@ -96,8 +100,8 @@ ITEM_PIPELINES = {
 
 # Set settings whose default value is deprecated to a future-proof value
 
-DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
-HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+DUPEFILTER_CLASS = 'scrapy.dupefilters.BaseDupeFilter'
+
 
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"

@@ -1,0 +1,692 @@
+[{
+  "_id": {
+    "$oid": "66b39c78b8aecb65dc8bcc7a"
+  },
+  "code": "EHB 101E",
+  "name": "Int.toElctr.&Comm.Eng.&Eng.Eth",
+  "credit": "2",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+  {
+  "_id": {
+    "$oid": "66b39c79b8aecb65dc8bcc7e"
+  },
+  "code": "FIZ 101E",
+  "name": "Physics I",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c79b8aecb65dc8bcc7b"
+  },
+  "code": "FIZ 101EL",
+  "name": "Physics I Laboratory",
+  "credit": "1",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c78b8aecb65dc8bcc79"
+  },
+  "code": "KIM 101E",
+  "name": "General Chemistry I",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c7bb8aecb65dc8bcc80"
+  },
+  "code": "MAT 103E",
+  "name": "Mathematics I",
+  "credit": "4",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c79b8aecb65dc8bcc7d"
+  },
+  "code": "TUR 121",
+  "name": "Türk Dili I",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c79b8aecb65dc8bcc7c"
+  },
+  "code": "ING 100",
+  "name": "EAP Through Global Goals",
+  "credit": "3",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c7eb8aecb65dc8bcc85"
+  },
+  "code": "FIZ 102E",
+  "name": "Physics II",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c7db8aecb65dc8bcc81"
+  },
+  "code": "FIZ 102EL",
+  "name": "Physics II Laboratory",
+  "credit": "1",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c7db8aecb65dc8bcc82"
+  },
+  "code": "MAT 104E",
+  "name": "Mathematics II",
+  "credit": "4",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": [
+    "MAT 103",
+    "MAT 103E",
+    "MAT 101",
+    "MAT 101E",
+    "MAT 112",
+    "MAT 112E",
+    "MAT 187",
+    "MAT 187E",
+    "MAT 185",
+    "MAT 185E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c7bb8aecb65dc8bcc7f"
+  },
+  "code": "EEF 281E",
+  "name": "Linear Algebra & Applications",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c80b8aecb65dc8bcc88"
+  },
+  "code": "TUR 122",
+  "name": "Türk Dili II",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c80b8aecb65dc8bcc87"
+  },
+  "code": "ING 112A",
+  "name": "Basics of Academic Writing",
+  "credit": "2",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c7eb8aecb65dc8bcc83"
+  },
+  "code": "EEF 110E",
+  "name": "Intr. to Prog. Language (C)",
+  "credit": "2",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c7eb8aecb65dc8bcc86"
+  },
+  "code": "DAN 102",
+  "name": "Girişimcilik & Kariyer Danış.",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c82b8aecb65dc8bcc89"
+  },
+  "code": "ELECTIVE",
+  "name": "8th Sem.Elect.Course I (MT)",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 8,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c83b8aecb65dc8bcc8a"
+  },
+  "code": "ELECTIVE",
+  "name": "8thSem.Elect.CrsII (MT)Faculty",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 8,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c84b8aecb65dc8bcc8b"
+  },
+  "code": "ELECTIVE",
+  "name": "8th Sem.Elect.Course (ITB)",
+  "credit": "3",
+  "type": "ITB",
+  "comp_or_elect": "S",
+  "semester": 8,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c84b8aecb65dc8bcc8c"
+  },
+  "code": "EHB 4902E",
+  "name": "Elect.&Comm. Eng. Design II",
+  "credit": "4",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 8,
+  "prerequisite": [
+    "EHB 4901",
+    "EHB 4901E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c85b8aecb65dc8bcc8d"
+  },
+  "code": "ATA 122",
+  "name": "Atatürk İlk & İnkılap Trh II",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 8,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c85b8aecb65dc8bcc8e"
+  },
+  "code": "ELECTIVE",
+  "name": "7th Sem.Elect.Course I (MT)",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 7,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c86b8aecb65dc8bcc8f"
+  },
+  "code": "ELECTIVE",
+  "name": "7thSm.Elct.Crs.III(MT)-Faculty",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 7,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c86b8aecb65dc8bcc90"
+  },
+  "code": "ELECTIVE",
+  "name": "7th Sem.Elect.Course II (MT)",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 7,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c88b8aecb65dc8bcc91"
+  },
+  "code": "EHB 4901E",
+  "name": "Elect.&Comm. Eng. Design I",
+  "credit": "4",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 7,
+  "prerequisite": [
+    "FIZ 101EL",
+    "FIZ 102EL",
+    "FIZ 101E",
+    "KIM 101E",
+    "MAT 103E",
+    "FIZ 102E",
+    "MAT 104E",
+    "MAT 210E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c88b8aecb65dc8bcc92"
+  },
+  "code": "ATA 121",
+  "name": "Atatürk İlk & İnkılap Trh I",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 7,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c89b8aecb65dc8bcc93"
+  },
+  "code": "ELECTIVE",
+  "name": "6thSm.Comp.Elect.IV(MT)-Design",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 6,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c8ab8aecb65dc8bcc94"
+  },
+  "code": "ELECTIVE",
+  "name": "6th Sem.Elect.Course (SNT)",
+  "credit": "3",
+  "type": "ITB",
+  "comp_or_elect": "S",
+  "semester": 6,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c8ab8aecb65dc8bcc95"
+  },
+  "code": "ELECTIVE",
+  "name": "6th Sem. Comp. Elect.II (MT)",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 6,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c8bb8aecb65dc8bcc96"
+  },
+  "code": "ELECTIVE",
+  "name": "6thSm.Comp.Elct.III(MT)-Design",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 6,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c8bb8aecb65dc8bcc97"
+  },
+  "code": "ELECTIVE",
+  "name": "6th Sem.Comp. Elect.I(MT)",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 6,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c8cb8aecb65dc8bcc98"
+  },
+  "code": "EHB 311E",
+  "name": "Intr.to Electronics Laboratory",
+  "credit": "1",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 6,
+  "prerequisite": [
+    "EHB 262",
+    "EHB 262E",
+    "EHB 222",
+    "EHB 222E",
+    "EEF 262",
+    "EEF 262E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c8db8aecb65dc8bcc99"
+  },
+  "code": "ELECTIVE",
+  "name": "5th Sem. Comp. Elect. II (MT)",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 5,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c8eb8aecb65dc8bcc9a"
+  },
+  "code": "ELECTIVE",
+  "name": "5th Sem. Comp. Elect. I (MT)",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 5,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c8fb8aecb65dc8bcc9b"
+  },
+  "code": "EHB 324E",
+  "name": "Logic Design Lab.",
+  "credit": "1",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 5,
+  "prerequisite": [
+    "BLG 231",
+    "BLG 231E",
+    "EHB 205",
+    "EHB 205E",
+    "EEF 205",
+    "EEF 205E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c8fb8aecb65dc8bcc9c"
+  },
+  "code": "KON 313E",
+  "name": "Feedback Control Systems",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 5,
+  "prerequisite": [
+    "KON 214",
+    "KON 214E",
+    "EHB 232",
+    "EHB 232E",
+    "EEF 232",
+    "EEF 232E",
+    "KON 201",
+    "KON 201E",
+    "EEF 210",
+    "EEF 210E",
+    "MAT 210",
+    "MAT 210E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c8fb8aecb65dc8bcc9d"
+  },
+  "code": "EHB 307E",
+  "name": "Communication I",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 5,
+  "prerequisite": [
+    "EHB 252",
+    "EHB 252E",
+    "EHB 206",
+    "EHB 206E",
+    "EEF 206",
+    "EEF 206E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c90b8aecb65dc8bcc9e"
+  },
+  "code": "EEF 311E",
+  "name": "Numerical Analysis with Python",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 5,
+  "prerequisite": [
+    "MAT 102",
+    "MAT 102E",
+    "MAT 104",
+    "MAT 104E",
+    "MAT 287",
+    "MAT 287E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c91b8aecb65dc8bcc9f"
+  },
+  "code": "ELECTIVE",
+  "name": "4th Sem. Elective Course(TM)",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "S",
+  "semester": 4,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c95b8aecb65dc8bcca5"
+  },
+  "code": "EEF 232E",
+  "name": "Circuit and System Analysis",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": [
+    "EEF 210E",
+    "EEF 211E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c94b8aecb65dc8bcca3"
+  },
+  "code": "EEF 212E",
+  "name": "Electromagnetic Theory I",
+  "credit": "4",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": [
+    "MAT 102",
+    "MAT 102E",
+    "MAT 104",
+    "MAT 104E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c93b8aecb65dc8bcca2"
+  },
+  "code": "EEF 262E",
+  "name": "Fundamentals of Electronics",
+  "credit": "4",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": [
+    "EHB 211",
+    "EHB 211E",
+    "EEF 211",
+    "EEF 211E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c93b8aecb65dc8bcca1"
+  },
+  "code": "EEF 206E",
+  "name": "Signal Processing&Linear Syst.",
+  "credit": "4",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c92b8aecb65dc8bcca0"
+  },
+  "code": "EEF 221E",
+  "name": "Basics of Elec. Circuits Lab.",
+  "credit": "1",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": [
+    "EHB 211",
+    "EHB 211E",
+    "EEF 211",
+    "EEF 211E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c7eb8aecb65dc8bcc84"
+  },
+  "code": "ING 201A",
+  "name": "Essentials of Res.Paper Writ.",
+  "credit": "2",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c99b8aecb65dc8bccaa"
+  },
+  "code": "EEF 211E",
+  "name": "Basics of Electrical Circuits",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": [
+    "MAT 281",
+    "MAT 281E",
+    "EEF 281",
+    "EEF 281E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c98b8aecb65dc8bcca9"
+  },
+  "code": "EEF 210E",
+  "name": "Differential Equations",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": [
+    "MAT 102",
+    "MAT 102E",
+    "MAT 104",
+    "MAT 104E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66b39c97b8aecb65dc8bcca8"
+  },
+  "code": "EEF 205E",
+  "name": "Introduction to Logic Design",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c96b8aecb65dc8bcca7"
+  },
+  "code": "EEF 271E",
+  "name": "Probability and Statistics",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c95b8aecb65dc8bcca4"
+  },
+  "code": "ELECTIVE",
+  "name": "3rd Sem. Elective Course(TM)",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "S",
+  "semester": 3,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66b39c96b8aecb65dc8bcca6"
+  },
+  "code": "ELECTIVE",
+  "name": "3rd Sem. Elective Course(TB)",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "S",
+  "semester": 3,
+  "prerequisite": []
+}]
