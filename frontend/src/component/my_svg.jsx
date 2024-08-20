@@ -5,6 +5,7 @@ function MySvg(props) {
 
    const [coords, setCoords] = useState([]);
    const [desCoords, setDesCoords] = useState([]);
+   
 
    const calculateCoords = () => {
       const boxes = Array.from(document.getElementsByClassName('box'));
@@ -21,6 +22,7 @@ function MySvg(props) {
 
    const calculateDesCoords = () => {
       const boxes = Array.from(document.getElementsByClassName('box'));
+      console.log(boxes)
       const newCoords = boxes.map(box => {
          const rect = box.getBoundingClientRect();
          return {
@@ -39,14 +41,12 @@ function MySvg(props) {
          calculateCoords();
          calculateDesCoords();
       };
-
       window.addEventListener('resize', handleResize);
-
       return () => {
          window.removeEventListener('resize', handleResize);
       };
 
-   }, []);
+   }, [props.data]);
 
    const getCoordById = (id) => {
       return coords.find(coord => coord.id === id);
@@ -59,7 +59,6 @@ function MySvg(props) {
 
 
    return (
-
       <svg height="100%" width="100%" style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none' }}>
          {props.data.map((lesson) => (
             lesson.prerequisite.map((prereq) => {

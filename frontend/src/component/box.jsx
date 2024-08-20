@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React ,{useState} from 'react';
 import myData from '../ehb_lectures.course_spy.json';
 import preData from "../ehb_lectures.elective_spy.json"
 
@@ -9,15 +9,11 @@ function Box(props) {
    return (
       props.lesson.code !== "ELECTIVE" ?
          <div className='box' id={`box${props.lesson.code}`} key={`box${props.lesson.code}`}>
-            {props.lesson.name}
+            <p>{props.lesson.name}</p>
          </div> :
-         <><div className='box' id={`box${props.lesson.code}`} key={`box${props.lesson.code}`} name={`box${props.lesson.name}`}>
-            {props.lesson.name}
-            <ElecBox name={props.lesson.name}/>
-         </div>
-            </>
-
-
+         
+            <ElecBox lesson={props.lesson} data={props.data}/>
+         
    )
 }
 
@@ -26,7 +22,7 @@ function Semester(props) {
       <div className='semesters' key={`semester${props.index}`}>
          {myData.map((lesson, index) =>
             (lesson.semester === props.index + 1) ? (
-               <Box lesson={lesson} />
+               <Box lesson={lesson} data={props.data}/>
             ) : null
          )}
       </div>
@@ -35,28 +31,32 @@ function Semester(props) {
 
 
 function ElecBox(prompt) {
-   const [show, setShow] = useState(false);
-
-   const dropdown = () => {
-      setShow(!show);
+   const [less,setLesson] = useState(prompt.lesson);
+   const changeLesson =(value)=>{
+      setLesson(value);
+      prompt.data.map((lesson,index)=>{
+         if(less.name===lesson.name){
+            prompt.data[index]=value;
+         }
+         
+      })
    }
-
+   
    return (
-      <div className="elecBox" onClick={dropdown} style={{ cursor: 'pointer' }}>
-         tıkla
-         {show && (
-            <ul className='selecticive_lesson'>
+      <>
+         <div className="box elecBox dropdown" id={`box${less.code}`} name={`${less.code}`}>
+            <p id={`${less.name}`}>{less.name}</p>
+            <ul className='selecticive_lesson' key={prompt.lesson.name}>
                {preData.map((lesson) => (
-                  lesson.name === prompt.name ? lesson.course_list.map((preq) => (
-                     <li key={preq.code} name={preq.name} id={`drop${preq.code}`}>
+                  lesson.name === prompt.lesson.name ? lesson.course_list.map((preq) => (
+                     <li key={preq.code} name={preq.name} id={`drop${preq.code}`} onClick={()=>changeLesson(preq)}>
                         {preq.name}
                      </li>
                   )) : null
                ))}
             </ul>
-         )}
-      </div>
+         </div>
+      </>
    );
 }
-
 export default Semester;

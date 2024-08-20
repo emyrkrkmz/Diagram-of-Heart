@@ -1,1950 +1,3137 @@
 [{
   "_id": {
-    "$oid": "66b39c2e7457bf6ad5c0573e"
+    "$oid": "66c08797172402b8b596b531"
   },
-  "name": "5th Sem. Comp. Elect. II (MT)",
+  "semester": "5",
   "course_list": [
     {
-      "code": "EHB 315E",
-      "name": "Digital Signal Processing",
+      "code": "EHB 337E",
+      "name": "Theory of Electromagnetics II",
       "credit": "3",
-      "semester": "5"
+      "semester": "5",
+      "prerequisite": [
+        "EHB 212",
+        "EHB 212E",
+        "EEF 212",
+        "EEF 212E"
+      ]
     },
     {
       "code": "EHB 335E",
       "name": "Analog Electronic Circuits",
       "credit": "3",
-      "semester": "5"
+      "semester": "5",
+      "prerequisite": [
+        "EEF 262E",
+        "EEF 232E"
+      ]
     },
-    {
-      "code": "EHB 337E",
-      "name": "Theory of Electromagnetics II",
-      "credit": "3",
-      "semester": "5"
-    }
-  ],
-  "semester": "5"
-},
-{
-  "_id": {
-    "$oid": "66b39c2e7457bf6ad5c0573f"
-  },
-  "name": "5th Sem. Comp. Elect. I (MT)",
-  "course_list": [
     {
       "code": "EHB 315E",
       "name": "Digital Signal Processing",
       "credit": "3",
-      "semester": "5"
-    },
-    {
-      "code": "EHB 335E",
-      "name": "Analog Electronic Circuits",
-      "credit": "3",
-      "semester": "5"
-    },
-    {
-      "code": "EHB 337E",
-      "name": "Theory of Electromagnetics II",
-      "credit": "3",
-      "semester": "5"
+      "semester": "5",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
     }
   ],
-  "semester": "5"
+  "name": "5th Sem. Comp. Elect. II (MT)"
 },
 {
   "_id": {
-    "$oid": "66b39c2e7457bf6ad5c05740"
+    "$oid": "66c08798172402b8b596b532"
   },
-  "name": "3rd Sem. Elective Course(TM)",
+  "semester": "6",
   "course_list": [
     {
-      "code": "DNK 201E",
-      "name": "Dynamics",
+      "code": "EHB 362E",
+      "name": "Microwave Engineering",
       "credit": "3",
-      "semester": "3"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
     },
     {
-      "code": "EHB 208E",
-      "name": "Data Structures & Programming",
+      "code": "EHB 308E",
+      "name": "Communication II",
       "credit": "3",
-      "semester": "3"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 351",
+        "EHB 351E",
+        "EHB 307",
+        "EHB 307E"
+      ]
     },
     {
-      "code": "ELK 336E",
-      "name": "Quantum Computation",
+      "code": "EHB 322E",
+      "name": "Digital Electronic Circuits",
       "credit": "3",
-      "semester": "3"
-    },
-    {
-      "code": "STA 201E",
-      "name": "Statics",
-      "credit": "3",
-      "semester": "3"
-    },
-    {
-      "code": "TER 201E",
-      "name": "Thermodynamics",
-      "credit": "3",
-      "semester": "3"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "ELE 262",
+        "ELE 262E",
+        "ELE 222",
+        "ELE 222E",
+        "EHB 222",
+        "EHB 222E",
+        "EEF 262",
+        "EEF 262E"
+      ]
     }
   ],
-  "semester": "3"
+  "name": "6th Sem.Comp. Elect.I(MT)"
 },
 {
   "_id": {
-    "$oid": "66b39c2e7457bf6ad5c05741"
+    "$oid": "66c08799172402b8b596b536"
   },
-  "name": "8thSem.Elect.CrsII (MT)Faculty",
+  "semester": "6",
   "course_list": [
-    {
-      "code": "ELK 308E",
-      "name": "Comp. Networks for Power Syst.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ELK 356E",
-      "name": "Electrical Machines",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ELK 428E",
-      "name": "Electric and Hybrid Vehicles",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ELK 453E",
-      "name": "Ind. Appl. of Power Electron.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ELK 488E",
-      "name": "Electric Drive Systems",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "KON 424E",
-      "name": "Mod.&Cntrl of Biological Sys.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "KON 426E",
-      "name": "Intelligent Control Systems",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "KON 429E",
-      "name": "Autonom ous Vehicles",
-      "credit": "3",
-      "semester": "8"
-    }
-  ],
-  "semester": "8"
-},
-{
-  "_id": {
-    "$oid": "66b39c2e7457bf6ad5c05742"
-  },
-  "name": "4th Sem. Elective Course(TM)",
-  "course_list": [
-    {
-      "code": "DNK 201E",
-      "name": "Dynamics",
-      "credit": "3",
-      "semester": "4"
-    },
-    {
-      "code": "EHB 208E",
-      "name": "Data Structures & Programming",
-      "credit": "3",
-      "semester": "4"
-    },
-    {
-      "code": "ELK 336E",
-      "name": "Quantum Computation",
-      "credit": "3",
-      "semester": "4"
-    },
-    {
-      "code": "KON 218E",
-      "name": "Measurement and Sensors",
-      "credit": "3",
-      "semester": "4"
-    },
-    {
-      "code": "TER 201E",
-      "name": "Thermodynamics",
-      "credit": "3",
-      "semester": "4"
-    }
-  ],
-  "semester": "4"
-},
-{
-  "_id": {
-    "$oid": "66b39c2e7457bf6ad5c05743"
-  },
-  "name": "8th Sem.Elect.Course I (MT)",
-  "course_list": [
-    {
-      "code": "EHB 326E",
-      "name": "Intr.to Embedded Systems",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 328E",
-      "name": "Machine Learning for Sig.Proc.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 334E",
-      "name": "Random Signals and Noise",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 354E",
-      "name": "Object Oriented Programming",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 405E",
-      "name": "Analog Integrated Circuits",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 408E",
-      "name": "Wireless Com.Networks",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 413E",
-      "name": "VLSI Circuit Design I",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 415E",
-      "name": "Data Communications",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 417E",
-      "name": "RF Microelectronics",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 418E",
-      "name": "RF Electronics Applications",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 419E",
-      "name": "Digital System Design",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 420E",
-      "name": "Artificial Neural Networks",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 421E",
-      "name": "Intr. to Medical Electronics",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 422E",
-      "name": "The Orgn &Snsing M.of Bio.Sig.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 424E",
-      "name": "Ultrasaund and App.in Medicine",
-      "credit": "3",
-      "semester": "8"
-    },
     {
       "code": "EHB 425E",
       "name": "VLSI Circuit Design II",
       "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 426E",
-      "name": "Microelectr.Analog Syst.Design",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 427E",
-      "name": "Microelectronics Technology",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 428E",
-      "name": "Industrial Electronics",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 429E",
-      "name": "Communic.Elect.Circuits",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 431E",
-      "name": "Design & Appl.Digital Com.Sys.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 433E",
-      "name": "Digital Filters and Systems",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 436E",
-      "name": "Digital System Design Applic.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 437E",
-      "name": "Biomedical Devices",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 442E",
-      "name": "Semiconductor Devices",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 445E",
-      "name": "Medical Instr.,Design and App.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 451E",
-      "name": "Active Microwave Circuits",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 453E",
-      "name": "Intr.to Mobile Communications",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 455E",
-      "name": "Microcontroller Based Sys.Des.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 456E",
-      "name": "Antennas",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 458E",
-      "name": "Micrwv Measurement Meth.& App.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 461E",
-      "name": "Communication Tech. and Syst.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "EHB 464E",
-      "name": "Satellite Communications",
-      "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 322",
+        "EHB 322E"
+      ]
     },
     {
       "code": "EHB 465E",
       "name": "Fiberoptic Com. Systems",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
     },
     {
-      "code": "EHB 466E",
-      "name": "Remote Sensing",
+      "code": "EHB 456E",
+      "name": "Antennas",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
     },
     {
-      "code": "EHB 467E",
-      "name": "Radar Systems",
+      "code": "EHB 455E",
+      "name": "Microcontroller Based Sys.Des.",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
     },
     {
-      "code": "EHB 468E",
-      "name": "Princ of Elec.Compt.Measurmnts",
+      "code": "EHB 440E",
+      "name": "Comp.Aided Devices in Medicine",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
     },
     {
-      "code": "EHB 472E",
-      "name": "Image Processing Fundamentals",
+      "code": "EHB 428E",
+      "name": "Industrial Electronics",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
     },
     {
-      "code": "EHB 473E",
-      "name": "Microwave and RF Communication",
+      "code": "EHB 419E",
+      "name": "Digital System Design",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
     },
     {
-      "code": "EHB 474E",
-      "name": "Introduction to Optimization",
+      "code": "EHB 437E",
+      "name": "Biomedical Devices",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
     },
     {
-      "code": "EHB 475E",
-      "name": "Digital Speech Processing",
+      "code": "EHB 405E",
+      "name": "Analog Integrated Circuits",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
     },
     {
-      "code": "EHB 477E",
-      "name": "Fundm.of Electrmgn.Compt.",
+      "code": "EHB 328E",
+      "name": "Machine Learning for Sig.Proc.",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "EEF 271E",
+        "EEF 206E"
+      ]
     },
     {
-      "code": "EHB 481E",
-      "name": "Des.&Applic.of Basic Comm.Sys.",
+      "code": "EHB 326E",
+      "name": "Intr.to Embedded Systems",
       "credit": "3",
-      "semester": "8"
+      "semester": "6",
+      "prerequisite": [
+        "EEF 205E",
+        "EEF 110E"
+      ]
     }
   ],
-  "semester": "8"
+  "name": "6thSm.Comp.Elct.III(MT)-Design"
 },
 {
   "_id": {
-    "$oid": "66b39c2e7457bf6ad5c05744"
+    "$oid": "66c0879a172402b8b596b538"
   },
-  "name": "3rd Sem. Elective Course(TB)",
+  "semester": "5",
   "course_list": [
     {
-      "code": "BIO 301E",
-      "name": "Fundamentals of Biology",
+      "code": "EHB 337E",
+      "name": "Theory of Electromagnetics II",
       "credit": "3",
-      "semester": "3"
+      "semester": "5",
+      "prerequisite": [
+        "EHB 212",
+        "EHB 212E",
+        "EEF 212",
+        "EEF 212E"
+      ]
     },
     {
-      "code": "BIO 302E",
-      "name": "Fundamentals of Biotechnology",
+      "code": "EHB 315E",
+      "name": "Digital Signal Processing",
       "credit": "3",
-      "semester": "3"
+      "semester": "5",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
     },
     {
-      "code": "BLG 112E",
-      "name": "Discrete Mathematics",
+      "code": "EHB 335E",
+      "name": "Analog Electronic Circuits",
       "credit": "3",
-      "semester": "3"
-    },
+      "semester": "5",
+      "prerequisite": [
+        "EEF 262E",
+        "EEF 232E"
+      ]
+    }
+  ],
+  "name": "5th Sem. Comp. Elect. I (MT)"
+},
+{
+  "_id": {
+    "$oid": "66c0879e172402b8b596b539"
+  },
+  "semester": "3",
+  "course_list": [
     {
-      "code": "EHB 227E",
-      "name": "Introduction to Optics",
+      "code": "MAL 201E",
+      "name": "Materials Science",
       "credit": "3",
-      "semester": "3"
-    },
-    {
-      "code": "EHB 235E",
-      "name": "Theory of Complex Functions",
-      "credit": "3",
-      "semester": "3"
+      "semester": "3",
+      "prerequisite": []
     },
     {
       "code": "FIZ 201E",
       "name": "Modern Physics",
       "credit": "3",
-      "semester": "3"
+      "semester": "3",
+      "prerequisite": [
+        "FIZ 102",
+        "FIZ 102E",
+        "FIZ 106",
+        "FIZ 106E"
+      ]
     },
     {
       "code": "KIM 202E",
       "name": "Physical Chemistry",
       "credit": "3",
-      "semester": "3"
+      "semester": "3",
+      "prerequisite": [
+        "KIM 101",
+        "KIM 101E"
+      ]
     },
     {
-      "code": "MAL 201E",
-      "name": "Materials Science",
+      "code": "EHB 235E",
+      "name": "Theory of Complex Functions",
       "credit": "3",
-      "semester": "3"
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "EHB 227E",
+      "name": "Introduction to Optics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "BLG 112E",
+      "name": "Discrete Mathematics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "BIO 302E",
+      "name": "Fundamentals of Biotechnology",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "BIO 301E",
+      "name": "Fundamentals of Biology",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
     }
   ],
-  "semester": "3"
+  "name": "3rd Sem. Elective Course(TB)"
 },
 {
   "_id": {
-    "$oid": "66b39c2e7457bf6ad5c05745"
+    "$oid": "66c0879f172402b8b596b53e"
   },
-  "name": "6th Sem.Comp. Elect.I(MT)",
+  "semester": "7",
   "course_list": [
     {
-      "code": "EHB 308E",
-      "name": "Communication II",
+      "code": "EHB 481E",
+      "name": "Des.&Applic.of Basic Comm.Sys.",
       "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 322E",
-      "name": "Digital Electronic Circuits",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 362E",
-      "name": "Microwave Engineering",
-      "credit": "3",
-      "semester": "6"
-    }
-  ],
-  "semester": "6"
-},
-{
-  "_id": {
-    "$oid": "66b39c337457bf6ad5c05746"
-  },
-  "name": "7thSm.Elct.Crs.III(MT)-Faculty",
-  "course_list": [
-    {
-      "code": "ELK 313E",
-      "name": "Power Transmission Lines",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "ELK 331E",
-      "name": "Power Electronic Circuits",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "ELK 343E",
-      "name": "Electromech. Energy Conversion",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "KON 414E",
-      "name": "Principles of Robot Autonomy",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "KON 425E",
-      "name": "Process Control",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "KON 435E",
-      "name": "Industrial Data Communications",
-      "credit": "3",
-      "semester": "7"
-    }
-  ],
-  "semester": "7"
-},
-{
-  "_id": {
-    "$oid": "66b39c337457bf6ad5c05747"
-  },
-  "name": "7th Sem.Elect.Course II (MT)",
-  "course_list": [
-    {
-      "code": "EHB 326E",
-      "name": "Intr.to Embedded Systems",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 328E",
-      "name": "Machine Learning for Sig.Proc.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 334E",
-      "name": "Random Signals and Noise",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 354E",
-      "name": "Object Oriented Programming",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 405E",
-      "name": "Analog Integrated Circuits",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 408E",
-      "name": "Wireless Com.Networks",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 413E",
-      "name": "VLSI Circuit Design I",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 415E",
-      "name": "Data Communications",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 417E",
-      "name": "RF Microelectronics",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 418E",
-      "name": "RF Electronics Applications",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 419E",
-      "name": "Digital System Design",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 420E",
-      "name": "Artificial Neural Networks",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 421E",
-      "name": "Intr. to Medical Electronics",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 422E",
-      "name": "The Orgn &Snsing M.of Bio.Sig.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 424E",
-      "name": "Ultrasaund and App.in Medicine",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 425E",
-      "name": "VLSI Circuit Design II",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 426E",
-      "name": "Microelectr.Analog Syst.Design",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 427E",
-      "name": "Microelectronics Technology",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 428E",
-      "name": "Industrial Electronics",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 429E",
-      "name": "Communic.Elect.Circuits",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 431E",
-      "name": "Design & Appl.Digital Com.Sys.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 433E",
-      "name": "Digital Filters and Systems",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 436E",
-      "name": "Digital System Design Applic.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 437E",
-      "name": "Biomedical Devices",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 442E",
-      "name": "Semiconductor Devices",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 445E",
-      "name": "Medical Instr.,Design and App.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 451E",
-      "name": "Active Microwave Circuits",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 453E",
-      "name": "Intr.to Mobile Communications",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 455E",
-      "name": "Microcontroller Based Sys.Des.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 456E",
-      "name": "Antennas",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 458E",
-      "name": "Micrwv Measurement Meth.& App.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 461E",
-      "name": "Communication Tech. and Syst.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 464E",
-      "name": "Satellite Communications",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 465E",
-      "name": "Fiberoptic Com. Systems",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 466E",
-      "name": "Remote Sensing",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 467E",
-      "name": "Radar Systems",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 468E",
-      "name": "Princ of Elec.Compt.Measurmnts",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 472E",
-      "name": "Image Processing Fundamentals",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 473E",
-      "name": "Microwave and RF Communication",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 474E",
-      "name": "Introduction to Optimization",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 475E",
-      "name": "Digital Speech Processing",
-      "credit": "3",
-      "semester": "7"
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EEF 308",
+        "EHB 308E"
+      ]
     },
     {
       "code": "EHB 477E",
       "name": "Fundm.of Electrmgn.Compt.",
       "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 481E",
-      "name": "Des.&Applic.of Basic Comm.Sys.",
-      "credit": "3",
-      "semester": "7"
-    }
-  ],
-  "semester": "7"
-},
-{
-  "_id": {
-    "$oid": "66b39c337457bf6ad5c05748"
-  },
-  "name": "6th Sem.Elect.Course (SNT)",
-  "course_list": [
-    {
-      "code": "SNT 103E",
-      "name": "Drawing",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 104E",
-      "name": "Mythology and Art",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 105E",
-      "name": "Film Art",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 106E",
-      "name": "Traditional Turkish Art&Crafts",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 107E",
-      "name": "Ancient Civilizat.in Anatolia",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 112E",
-      "name": "Theater",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 113E",
-      "name": "Art and Interpretation",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 114E",
-      "name": "Contemporary Art",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 116E",
-      "name": "The Art of Communication",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 117E",
-      "name": "Jazz Appreciation",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 121E",
-      "name": "World Music Cultures",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 123E",
-      "name": "Film Production",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 211E",
-      "name": "Istanbul:Hist.,Art and Society",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 212E",
-      "name": "Art,Culture and Society",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 215E",
-      "name": "Balkan Musics",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 226E",
-      "name": "Philosophy of Art",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "SNT 227E",
-      "name": "Sound and Society",
-      "credit": "3",
-      "semester": "6"
-    }
-  ],
-  "semester": "6"
-},
-{
-  "_id": {
-    "$oid": "66b39c337457bf6ad5c05749"
-  },
-  "name": "6thSm.Comp.Elct.III(MT)-Design",
-  "course_list": [
-    {
-      "code": "EHB 326E",
-      "name": "Intr.to Embedded Systems",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 328E",
-      "name": "Machine Learning for Sig.Proc.",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 405E",
-      "name": "Analog Integrated Circuits",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 419E",
-      "name": "Digital System Design",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 425E",
-      "name": "VLSI Circuit Design II",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 428E",
-      "name": "Industrial Electronics",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 437E",
-      "name": "Biomedical Devices",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 440E",
-      "name": "Comp.Aided Devices in Medicine",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 455E",
-      "name": "Microcontroller Based Sys.Des.",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 456E",
-      "name": "Antennas",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 465E",
-      "name": "Fiberoptic Com. Systems",
-      "credit": "3",
-      "semester": "6"
-    }
-  ],
-  "semester": "6"
-},
-{
-  "_id": {
-    "$oid": "66b39c337457bf6ad5c0574a"
-  },
-  "name": "7th Sem.Elect.Course I (MT)",
-  "course_list": [
-    {
-      "code": "EHB 326E",
-      "name": "Intr.to Embedded Systems",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 328E",
-      "name": "Machine Learning for Sig.Proc.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 334E",
-      "name": "Random Signals and Noise",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 354E",
-      "name": "Object Oriented Programming",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 405E",
-      "name": "Analog Integrated Circuits",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 408E",
-      "name": "Wireless Com.Networks",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 413E",
-      "name": "VLSI Circuit Design I",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 415E",
-      "name": "Data Communications",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 417E",
-      "name": "RF Microelectronics",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 418E",
-      "name": "RF Electronics Applications",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 419E",
-      "name": "Digital System Design",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 420E",
-      "name": "Artificial Neural Networks",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 421E",
-      "name": "Intr. to Medical Electronics",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 422E",
-      "name": "The Orgn &Snsing M.of Bio.Sig.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 424E",
-      "name": "Ultrasaund and App.in Medicine",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 425E",
-      "name": "VLSI Circuit Design II",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 426E",
-      "name": "Microelectr.Analog Syst.Design",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 427E",
-      "name": "Microelectronics Technology",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 428E",
-      "name": "Industrial Electronics",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 429E",
-      "name": "Communic.Elect.Circuits",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 431E",
-      "name": "Design & Appl.Digital Com.Sys.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 433E",
-      "name": "Digital Filters and Systems",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 436E",
-      "name": "Digital System Design Applic.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 437E",
-      "name": "Biomedical Devices",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 442E",
-      "name": "Semiconductor Devices",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 445E",
-      "name": "Medical Instr.,Design and App.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 451E",
-      "name": "Active Microwave Circuits",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 453E",
-      "name": "Intr.to Mobile Communications",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 455E",
-      "name": "Microcontroller Based Sys.Des.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 456E",
-      "name": "Antennas",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 458E",
-      "name": "Micrwv Measurement Meth.& App.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 461E",
-      "name": "Communication Tech. and Syst.",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 464E",
-      "name": "Satellite Communications",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 465E",
-      "name": "Fiberoptic Com. Systems",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 466E",
-      "name": "Remote Sensing",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 467E",
-      "name": "Radar Systems",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 468E",
-      "name": "Princ of Elec.Compt.Measurmnts",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 472E",
-      "name": "Image Processing Fundamentals",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 473E",
-      "name": "Microwave and RF Communication",
-      "credit": "3",
-      "semester": "7"
-    },
-    {
-      "code": "EHB 474E",
-      "name": "Introduction to Optimization",
-      "credit": "3",
-      "semester": "7"
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
     },
     {
       "code": "EHB 475E",
       "name": "Digital Speech Processing",
       "credit": "3",
-      "semester": "7"
+      "semester": "7",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
     },
     {
-      "code": "EHB 477E",
-      "name": "Fundm.of Electrmgn.Compt.",
+      "code": "EHB 473E",
+      "name": "Microwave and RF Communication",
       "credit": "3",
-      "semester": "7"
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
     },
     {
-      "code": "EHB 481E",
-      "name": "Des.&Applic.of Basic Comm.Sys.",
+      "code": "EHB 472E",
+      "name": "Image Processing Fundamentals",
       "credit": "3",
-      "semester": "7"
-    }
-  ],
-  "semester": "7"
-},
-{
-  "_id": {
-    "$oid": "66b39c337457bf6ad5c0574b"
-  },
-  "name": "6thSm.Comp.Elect.IV(MT)-Design",
-  "course_list": [
-    {
-      "code": "EHB 326E",
-      "name": "Intr.to Embedded Systems",
-      "credit": "3",
-      "semester": "6"
+      "semester": "7",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
     },
     {
-      "code": "EHB 328E",
-      "name": "Machine Learning for Sig.Proc.",
+      "code": "EHB 474E",
+      "name": "Introduction to Optimization",
       "credit": "3",
-      "semester": "6"
+      "semester": "7",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E"
+      ]
     },
     {
-      "code": "EHB 405E",
-      "name": "Analog Integrated Circuits",
+      "code": "EHB 468E",
+      "name": "Princ of Elec.Compt.Measurmnts",
       "credit": "3",
-      "semester": "6"
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
     },
     {
-      "code": "EHB 419E",
-      "name": "Digital System Design",
+      "code": "EHB 467E",
+      "name": "Radar Systems",
       "credit": "3",
-      "semester": "6"
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
     },
     {
-      "code": "EHB 425E",
-      "name": "VLSI Circuit Design II",
+      "code": "EHB 466E",
+      "name": "Remote Sensing",
       "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 428E",
-      "name": "Industrial Electronics",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 437E",
-      "name": "Biomedical Devices",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 440E",
-      "name": "Comp.Aided Devices in Medicine",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 455E",
-      "name": "Microcontroller Based Sys.Des.",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 456E",
-      "name": "Antennas",
-      "credit": "3",
-      "semester": "6"
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
     },
     {
       "code": "EHB 465E",
       "name": "Fiberoptic Com. Systems",
       "credit": "3",
-      "semester": "6"
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 464E",
+      "name": "Satellite Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 461E",
+      "name": "Communication Tech. and Syst.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 458E",
+      "name": "Micrwv Measurement Meth.& App.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 456E",
+      "name": "Antennas",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 453E",
+      "name": "Intr.to Mobile Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 455E",
+      "name": "Microcontroller Based Sys.Des.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 451E",
+      "name": "Active Microwave Circuits",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 437E",
+      "name": "Biomedical Devices",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 442E",
+      "name": "Semiconductor Devices",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 231",
+        "EHB 231E",
+        "EHB 222",
+        "EHB 222E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 445E",
+      "name": "Medical Instr.,Design and App.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 436E",
+      "name": "Digital System Design Applic.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "BLG 231E",
+        "BLG 231",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 429E",
+      "name": "Communic.Elect.Circuits",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 431E",
+      "name": "Design & Appl.Digital Com.Sys.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 433E",
+      "name": "Digital Filters and Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 428E",
+      "name": "Industrial Electronics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 426E",
+      "name": "Microelectr.Analog Syst.Design",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 425E",
+      "name": "VLSI Circuit Design II",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 322",
+        "EHB 322E"
+      ]
+    },
+    {
+      "code": "EHB 427E",
+      "name": "Microelectronics Technology",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 231",
+        "EHB 231E",
+        "EHB 222",
+        "EHB 222E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 424E",
+      "name": "Ultrasaund and App.in Medicine",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 421E",
+      "name": "Intr. to Medical Electronics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 422E",
+      "name": "The Orgn &Snsing M.of Bio.Sig.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 206E",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 419E",
+      "name": "Digital System Design",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 420E",
+      "name": "Artificial Neural Networks",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E",
+        "END 210",
+        "END 210E"
+      ]
+    },
+    {
+      "code": "EHB 418E",
+      "name": "RF Electronics Applications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 417E",
+      "name": "RF Microelectronics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 415E",
+      "name": "Data Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 413E",
+      "name": "VLSI Circuit Design I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 322E",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 408E",
+      "name": "Wireless Com.Networks",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "TEL 352",
+        "TEL 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 354E",
+      "name": "Object Oriented Programming",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "BIL 104",
+        "BIL 104E",
+        "BIL 105",
+        "BIL 105E",
+        "BLG 102",
+        "BLG 102E",
+        "EHB 110",
+        "EHB 110E",
+        "KON 110",
+        "KON 110E",
+        "YZV 102E",
+        "EEF 110",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "EHB 405E",
+      "name": "Analog Integrated Circuits",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 334E",
+      "name": "Random Signals and Noise",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "MAT 271",
+        "MAT 271E",
+        "EEF 271",
+        "EEF 271E"
+      ]
+    },
+    {
+      "code": "EHB 328E",
+      "name": "Machine Learning for Sig.Proc.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 271E",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 326E",
+      "name": "Intr.to Embedded Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 205E",
+        "EEF 110E"
+      ]
     }
   ],
-  "semester": "6"
+  "name": "7th Sem.Elect.Course I (MT)"
 },
 {
   "_id": {
-    "$oid": "66b39c337457bf6ad5c0574c"
+    "$oid": "66c087a0172402b8b596b540"
   },
-  "name": "6th Sem. Comp. Elect.II (MT)",
+  "semester": "8",
   "course_list": [
     {
-      "code": "EHB 308E",
-      "name": "Communication II",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 322E",
-      "name": "Digital Electronic Circuits",
-      "credit": "3",
-      "semester": "6"
-    },
-    {
-      "code": "EHB 362E",
-      "name": "Microwave Engineering",
-      "credit": "3",
-      "semester": "6"
-    }
-  ],
-  "semester": "6"
-},
-{
-  "_id": {
-    "$oid": "66b39c347457bf6ad5c0574d"
-  },
-  "name": "8th Sem.Elect.Course (ITB)",
-  "course_list": [
-    {
-      "code": "ALM 101",
-      "name": "Almanca I",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ALM 102",
-      "name": "Almanca II",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ALM 201",
-      "name": "Almanca III",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ALM 202",
-      "name": "Almanca IV",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ALM 301",
-      "name": "Almanca V",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ALM 302",
-      "name": "Almanca VI",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ALM 401",
-      "name": "Almanca VII",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "CIN 101",
-      "name": "Çince I",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "CIN 102",
-      "name": "Çince II",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "CIN 201",
-      "name": "Çince III",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "FRA 101",
-      "name": "Fransızca I",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "FRA 102",
-      "name": "Fransızca II",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "FRA 201",
-      "name": "Fransızca III",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "FRA 202",
-      "name": "Fransızca IV",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "FRA 301",
-      "name": "Fransızca V",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "FRA 302",
-      "name": "Fransızca VI",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "HUK 213",
-      "name": "İş Sağlığı ve Güvenliği Hukuku",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "HUK 214",
-      "name": "Teknolojik Yeniliklerin Korun.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "HUK 215",
-      "name": "Sözleşmeler Hukuku",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "HUK 216",
-      "name": "Telekomünikasyon Hukuku",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "HUK 217",
-      "name": "AR-GE Hukuku",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "HUK 218",
-      "name": "Ticaret Hukuku",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103A",
-      "name": "Creative Writing",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103AC",
-      "name": "Urban Ecology",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103AD",
-      "name": "Advanced English for Engineers",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103B",
-      "name": "Business English",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103C",
-      "name": "Great Moments in Science",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103CO",
-      "name": "Profess.Communic.for Engineers",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103ES",
-      "name": "Intercultural Citizenship",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103G",
-      "name": "Business Communications",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103H",
-      "name": "Public Presentations",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103I",
-      "name": "Short Stories",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103L",
-      "name": "Mythology",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103N",
-      "name": "Film Studies",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103O",
-      "name": "Psychology",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103P",
-      "name": "Poetry",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ING 103SC",
-      "name": "Science Communication",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ISL 465E",
-      "name": "Int.to Entrepreneurship&Innov.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ISP 101",
-      "name": "İspanyolca I",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ISP 102",
-      "name": "İspanyolca II",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ISP 201",
-      "name": "İspanyolca III",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ISP 202",
-      "name": "İspanyolca IV",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ISP 301",
-      "name": "İspanyolca V",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ISP 302",
-      "name": "İspanyolca VI",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITA 101",
-      "name": "İtalyanca I",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITA 102",
-      "name": "İtalyanca II",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITA 201",
-      "name": "İtalyanca III",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITA 202",
-      "name": "İtalyanca IV",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITA 301",
-      "name": "İtalyanca V",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 020E",
-      "name": "Formations of Modernity",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 037E",
-      "name": "Knowledge, Language & Logic",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 087E",
-      "name": "Media and Society",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 094E",
-      "name": "International.Rel.and Globali.",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 095E",
-      "name": "Technology, Policy and Law",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 143E",
-      "name": "Durell&Said: Orient Pra&Theory",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 151E",
-      "name": "Human Resources and Management",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 171E",
-      "name": "Science, Techn&Society",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 179E",
-      "name": "Lit.of Int.Sep.:Viz.,Seyfettin",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 201E",
-      "name": "Intr. to Human.& Soc. Sciences",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 202E",
-      "name": "World History",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 203E",
-      "name": "Sociology",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 204E",
-      "name": "Political Science",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 205E",
-      "name": "Philosophy",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 206E",
-      "name": "Issues in World Politics",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 207E",
-      "name": "Ottoman History",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 208E",
-      "name": "Formations of Modern Turkey",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 209E",
-      "name": "Turkey in World Affairs",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 213E",
-      "name": "Topics in Literature&Society",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 214E",
-      "name": "The Modern Middle East",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 215E",
-      "name": "Topics in Hist.and Society",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 216E",
-      "name": "Economy and Society",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 217E",
-      "name": "Engineering Ethics",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 218E",
-      "name": "History of Science&Technology",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 219E",
-      "name": "Ethics",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 220E",
-      "name": "Psychology",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 221E",
-      "name": "Anatolian Archaeology",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 222E",
-      "name": "City and Society",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 224E",
-      "name": "Environment and Society",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 227E",
-      "name": "Political Theory",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 228E",
-      "name": "Gender Studies",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 230E",
-      "name": "Disaster Awareness",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "ITB 231E",
-      "name": "Volunteering Studies",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "JPN 101",
-      "name": "Japonca I",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "JPN 102",
-      "name": "Japonca II",
-      "credit": "3",
-      "semester": "8"
-    },
-    {
-      "code": "JPN 201",
-      "name": "Japonca III",
-      "credit": "3",
-      "semester": "8"
+      "code": "RUS 201",
+      "name": "Rusça III",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
     },
     {
       "code": "JPN 202",
       "name": "Japonca IV",
       "credit": "3",
-      "semester": "8"
+      "semester": "8",
+      "prerequisite": []
     },
     {
       "code": "RUS 101",
       "name": "Rusça I",
       "credit": "3",
-      "semester": "8"
+      "semester": "8",
+      "prerequisite": []
     },
     {
       "code": "RUS 102",
       "name": "Rusça II",
       "credit": "3",
-      "semester": "8"
+      "semester": "8",
+      "prerequisite": []
     },
     {
-      "code": "RUS 201",
-      "name": "Rusça III",
+      "code": "JPN 201",
+      "name": "Japonca III",
       "credit": "3",
-      "semester": "8"
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 102",
+      "name": "Japonca II",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 101",
+      "name": "Japonca I",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 230E",
+      "name": "Disaster Awareness",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 231E",
+      "name": "Volunteering Studies",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 228E",
+      "name": "Gender Studies",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 224E",
+      "name": "Environment and Society",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 227E",
+      "name": "Political Theory",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 222E",
+      "name": "City and Society",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 221E",
+      "name": "Anatolian Archaeology",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 220E",
+      "name": "Psychology",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 218E",
+      "name": "History of Science&Technology",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 219E",
+      "name": "Ethics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 217E",
+      "name": "Engineering Ethics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 216E",
+      "name": "Economy and Society",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 215E",
+      "name": "Topics in Hist.and Society",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 214E",
+      "name": "The Modern Middle East",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 213E",
+      "name": "Topics in Literature&Society",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 209E",
+      "name": "Turkey in World Affairs",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 207E",
+      "name": "Ottoman History",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 208E",
+      "name": "Formations of Modern Turkey",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 206E",
+      "name": "Issues in World Politics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 205E",
+      "name": "Philosophy",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 204E",
+      "name": "Political Science",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 203E",
+      "name": "Sociology",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 202E",
+      "name": "World History",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 201E",
+      "name": "Intr. to Human.& Soc. Sciences",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 179E",
+      "name": "Lit.of Int.Sep.:Viz.,Seyfettin",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 151E",
+      "name": "Human Resources and Management",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 171E",
+      "name": "Science, Techn&Society",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 143E",
+      "name": "Durell&Said: Orient Pra&Theory",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 095E",
+      "name": "Technology, Policy and Law",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 094E",
+      "name": "International.Rel.and Globali.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 087E",
+      "name": "Media and Society",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 301",
+      "name": "İtalyanca V",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 020E",
+      "name": "Formations of Modernity",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 037E",
+      "name": "Knowledge, Language & Logic",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 202",
+      "name": "İtalyanca IV",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 201",
+      "name": "İtalyanca III",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 102",
+      "name": "İtalyanca II",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 302",
+      "name": "İspanyolca VI",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 101",
+      "name": "İtalyanca I",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 202",
+      "name": "İspanyolca IV",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 201",
+      "name": "İspanyolca III",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 301",
+      "name": "İspanyolca V",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 102",
+      "name": "İspanyolca II",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ISL 465E",
+      "name": "Int.to Entrepreneurship&Innov.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 101",
+      "name": "İspanyolca I",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103SC",
+      "name": "Science Communication",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103P",
+      "name": "Poetry",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103N",
+      "name": "Film Studies",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103O",
+      "name": "Psychology",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103L",
+      "name": "Mythology",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103I",
+      "name": "Short Stories",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103G",
+      "name": "Business Communications",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103H",
+      "name": "Public Presentations",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103CO",
+      "name": "Profess.Communic.for Engineers",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103ES",
+      "name": "Intercultural Citizenship",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103C",
+      "name": "Great Moments in Science",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103AD",
+      "name": "Advanced English for Engineers",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103B",
+      "name": "Business English",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103AC",
+      "name": "Urban Ecology",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 218",
+      "name": "Ticaret Hukuku",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103A",
+      "name": "Creative Writing",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 216",
+      "name": "Telekomünikasyon Hukuku",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 217",
+      "name": "AR-GE Hukuku",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 215",
+      "name": "Sözleşmeler Hukuku",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 214",
+      "name": "Teknolojik Yeniliklerin Korun.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 213",
+      "name": "İş Sağlığı ve Güvenliği Hukuku",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 302",
+      "name": "Fransızca VI",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 301",
+      "name": "Fransızca V",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 202",
+      "name": "Fransızca IV",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 201",
+      "name": "Fransızca III",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 102",
+      "name": "Fransızca II",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 101",
+      "name": "Fransızca I",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "CIN 102",
+      "name": "Çince II",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "CIN 101",
+      "name": "Çince I",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "CIN 201",
+      "name": "Çince III",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 302",
+      "name": "Almanca VI",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 401",
+      "name": "Almanca VII",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 301",
+      "name": "Almanca V",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 202",
+      "name": "Almanca IV",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 201",
+      "name": "Almanca III",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 102",
+      "name": "Almanca II",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 101",
+      "name": "Almanca I",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
     }
   ],
-  "semester": "8"
+  "name": "8th Sem.Elect.Course (ITB)"
+},
+{
+  "_id": {
+    "$oid": "66c087a3172402b8b596b541"
+  },
+  "semester": "8",
+  "course_list": [
+    {
+      "code": "EHB 477E",
+      "name": "Fundm.of Electrmgn.Compt.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 481E",
+      "name": "Des.&Applic.of Basic Comm.Sys.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EEF 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 474E",
+      "name": "Introduction to Optimization",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E"
+      ]
+    },
+    {
+      "code": "EHB 475E",
+      "name": "Digital Speech Processing",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
+    },
+    {
+      "code": "EHB 473E",
+      "name": "Microwave and RF Communication",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 468E",
+      "name": "Princ of Elec.Compt.Measurmnts",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 472E",
+      "name": "Image Processing Fundamentals",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
+    },
+    {
+      "code": "EHB 467E",
+      "name": "Radar Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 466E",
+      "name": "Remote Sensing",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 464E",
+      "name": "Satellite Communications",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 461E",
+      "name": "Communication Tech. and Syst.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 465E",
+      "name": "Fiberoptic Com. Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 458E",
+      "name": "Micrwv Measurement Meth.& App.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 455E",
+      "name": "Microcontroller Based Sys.Des.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 456E",
+      "name": "Antennas",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 453E",
+      "name": "Intr.to Mobile Communications",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 451E",
+      "name": "Active Microwave Circuits",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 445E",
+      "name": "Medical Instr.,Design and App.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 442E",
+      "name": "Semiconductor Devices",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 231",
+        "EHB 231E",
+        "EHB 222",
+        "EHB 222E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 437E",
+      "name": "Biomedical Devices",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 433E",
+      "name": "Digital Filters and Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 431E",
+      "name": "Design & Appl.Digital Com.Sys.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 436E",
+      "name": "Digital System Design Applic.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "BLG 231E",
+        "BLG 231",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 429E",
+      "name": "Communic.Elect.Circuits",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 427E",
+      "name": "Microelectronics Technology",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 231",
+        "EHB 231E",
+        "EHB 222",
+        "EHB 222E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 426E",
+      "name": "Microelectr.Analog Syst.Design",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 428E",
+      "name": "Industrial Electronics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 424E",
+      "name": "Ultrasaund and App.in Medicine",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 422E",
+      "name": "The Orgn &Snsing M.of Bio.Sig.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EEF 206E",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 425E",
+      "name": "VLSI Circuit Design II",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 322",
+        "EHB 322E"
+      ]
+    },
+    {
+      "code": "EHB 421E",
+      "name": "Intr. to Medical Electronics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 420E",
+      "name": "Artificial Neural Networks",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E",
+        "END 210",
+        "END 210E"
+      ]
+    },
+    {
+      "code": "EHB 417E",
+      "name": "RF Microelectronics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 418E",
+      "name": "RF Electronics Applications",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 419E",
+      "name": "Digital System Design",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 413E",
+      "name": "VLSI Circuit Design I",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 322E",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 408E",
+      "name": "Wireless Com.Networks",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "TEL 352",
+        "TEL 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 415E",
+      "name": "Data Communications",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 405E",
+      "name": "Analog Integrated Circuits",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 354E",
+      "name": "Object Oriented Programming",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "BIL 104",
+        "BIL 104E",
+        "BIL 105",
+        "BIL 105E",
+        "BLG 102",
+        "BLG 102E",
+        "EHB 110",
+        "EHB 110E",
+        "KON 110",
+        "KON 110E",
+        "YZV 102E",
+        "EEF 110",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "EHB 334E",
+      "name": "Random Signals and Noise",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "MAT 271",
+        "MAT 271E",
+        "EEF 271",
+        "EEF 271E"
+      ]
+    },
+    {
+      "code": "EHB 328E",
+      "name": "Machine Learning for Sig.Proc.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EEF 271E",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 326E",
+      "name": "Intr.to Embedded Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EEF 205E",
+        "EEF 110E"
+      ]
+    }
+  ],
+  "name": "8th Sem.Elect.Course I (MT)"
+},
+{
+  "_id": {
+    "$oid": "66c08808172402b8b596b5c9"
+  },
+  "semester": "7",
+  "course_list": [
+    {
+      "code": "EHB 481E",
+      "name": "Des.&Applic.of Basic Comm.Sys.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EEF 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 475E",
+      "name": "Digital Speech Processing",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
+    },
+    {
+      "code": "EHB 477E",
+      "name": "Fundm.of Electrmgn.Compt.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 474E",
+      "name": "Introduction to Optimization",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E"
+      ]
+    },
+    {
+      "code": "EHB 473E",
+      "name": "Microwave and RF Communication",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 472E",
+      "name": "Image Processing Fundamentals",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
+    },
+    {
+      "code": "EHB 468E",
+      "name": "Princ of Elec.Compt.Measurmnts",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 466E",
+      "name": "Remote Sensing",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 465E",
+      "name": "Fiberoptic Com. Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 467E",
+      "name": "Radar Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 464E",
+      "name": "Satellite Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 458E",
+      "name": "Micrwv Measurement Meth.& App.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 461E",
+      "name": "Communication Tech. and Syst.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 455E",
+      "name": "Microcontroller Based Sys.Des.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 456E",
+      "name": "Antennas",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 451E",
+      "name": "Active Microwave Circuits",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 362",
+        "EHB 362E"
+      ]
+    },
+    {
+      "code": "EHB 453E",
+      "name": "Intr.to Mobile Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 445E",
+      "name": "Medical Instr.,Design and App.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 442E",
+      "name": "Semiconductor Devices",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 231",
+        "EHB 231E",
+        "EHB 222",
+        "EHB 222E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 437E",
+      "name": "Biomedical Devices",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 436E",
+      "name": "Digital System Design Applic.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "BLG 231E",
+        "BLG 231",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 433E",
+      "name": "Digital Filters and Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 431E",
+      "name": "Design & Appl.Digital Com.Sys.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 428E",
+      "name": "Industrial Electronics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 429E",
+      "name": "Communic.Elect.Circuits",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 426E",
+      "name": "Microelectr.Analog Syst.Design",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 427E",
+      "name": "Microelectronics Technology",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 231",
+        "EHB 231E",
+        "EHB 222",
+        "EHB 222E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 425E",
+      "name": "VLSI Circuit Design II",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 322",
+        "EHB 322E"
+      ]
+    },
+    {
+      "code": "EHB 424E",
+      "name": "Ultrasaund and App.in Medicine",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 422E",
+      "name": "The Orgn &Snsing M.of Bio.Sig.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 206E",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 421E",
+      "name": "Intr. to Medical Electronics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 418E",
+      "name": "RF Electronics Applications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 420E",
+      "name": "Artificial Neural Networks",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E",
+        "END 210",
+        "END 210E"
+      ]
+    },
+    {
+      "code": "EHB 419E",
+      "name": "Digital System Design",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 417E",
+      "name": "RF Microelectronics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 415E",
+      "name": "Data Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 413E",
+      "name": "VLSI Circuit Design I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 322E",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 408E",
+      "name": "Wireless Com.Networks",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "TEL 352",
+        "TEL 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 405E",
+      "name": "Analog Integrated Circuits",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 354E",
+      "name": "Object Oriented Programming",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "BIL 104",
+        "BIL 104E",
+        "BIL 105",
+        "BIL 105E",
+        "BLG 102",
+        "BLG 102E",
+        "EHB 110",
+        "EHB 110E",
+        "KON 110",
+        "KON 110E",
+        "YZV 102E",
+        "EEF 110",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "EHB 328E",
+      "name": "Machine Learning for Sig.Proc.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 271E",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 326E",
+      "name": "Intr.to Embedded Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 205E",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "EHB 334E",
+      "name": "Random Signals and Noise",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "MAT 271",
+        "MAT 271E",
+        "EEF 271",
+        "EEF 271E"
+      ]
+    }
+  ],
+  "name": "7th Sem.Elect.Course II (MT)"
+},
+{
+  "_id": {
+    "$oid": "66c08820172402b8b596b5e9"
+  },
+  "semester": "6",
+  "course_list": [
+    {
+      "code": "SNT 227E",
+      "name": "Sound and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 226E",
+      "name": "Philosophy of Art",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 215E",
+      "name": "Balkan Musics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 212E",
+      "name": "Art,Culture and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 211E",
+      "name": "Istanbul:Hist.,Art and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 121E",
+      "name": "World Music Cultures",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 123E",
+      "name": "Film Production",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 117E",
+      "name": "Jazz Appreciation",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 116E",
+      "name": "The Art of Communication",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 113E",
+      "name": "Art and Interpretation",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 114E",
+      "name": "Contemporary Art",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 112E",
+      "name": "Theater",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 107E",
+      "name": "Ancient Civilizat.in Anatolia",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 105E",
+      "name": "Film Art",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 104E",
+      "name": "Mythology and Art",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 106E",
+      "name": "Traditional Turkish Art&Crafts",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 103E",
+      "name": "Drawing",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    }
+  ],
+  "name": "6th Sem.Elect.Course (SNT)"
+},
+{
+  "_id": {
+    "$oid": "66c08830172402b8b596b5fd"
+  },
+  "semester": "6",
+  "course_list": [
+    {
+      "code": "EHB 465E",
+      "name": "Fiberoptic Com. Systems",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 456E",
+      "name": "Antennas",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 455E",
+      "name": "Microcontroller Based Sys.Des.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 440E",
+      "name": "Comp.Aided Devices in Medicine",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 428E",
+      "name": "Industrial Electronics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 437E",
+      "name": "Biomedical Devices",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 425E",
+      "name": "VLSI Circuit Design II",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 322",
+        "EHB 322E"
+      ]
+    },
+    {
+      "code": "EHB 419E",
+      "name": "Digital System Design",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 328E",
+      "name": "Machine Learning for Sig.Proc.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EEF 271E",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 405E",
+      "name": "Analog Integrated Circuits",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 335",
+        "EHB 335E"
+      ]
+    },
+    {
+      "code": "EHB 326E",
+      "name": "Intr.to Embedded Systems",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EEF 205E",
+        "EEF 110E"
+      ]
+    }
+  ],
+  "name": "6thSm.Comp.Elect.IV(MT)-Design"
+},
+{
+  "_id": {
+    "$oid": "66c08852172402b8b596b62d"
+  },
+  "semester": "8",
+  "course_list": [
+    {
+      "code": "KON 429E",
+      "name": "Autonom ous Vehicles",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 424E",
+      "name": "Mod.&Cntrl of Biological Sys.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "KON 426E",
+      "name": "Intelligent Control Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "ELK 453E",
+      "name": "Ind. Appl. of Power Electron.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "ELK 331",
+        "ELK 331E"
+      ]
+    },
+    {
+      "code": "ELK 488E",
+      "name": "Electric Drive Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "ve ELK 331",
+        "ve ELK 331E",
+        "ve ELK 331",
+        "ve ELK 331E",
+        "ve ELK 331",
+        "ve ELK 331",
+        "ve ELK 331E",
+        "ve ELK 331E",
+        "ve ELK 331",
+        "ve ELK 331E",
+        "ve ELK 331E",
+        "ve ELK 331",
+        "ve KON 417",
+        "ve KON 417",
+        "ve KON 417E",
+        "ve KON 417E"
+      ]
+    },
+    {
+      "code": "ELK 356E",
+      "name": "Electrical Machines",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "ELK 343",
+        "ELK 343E",
+        "ELK 214",
+        "ELK 214E"
+      ]
+    },
+    {
+      "code": "ELK 428E",
+      "name": "Electric and Hybrid Vehicles",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ELK 308E",
+      "name": "Comp. Networks for Power Syst.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    }
+  ],
+  "name": "8thSem.Elect.CrsII (MT)Faculty"
+},
+{
+  "_id": {
+    "$oid": "66c08859172402b8b596b635"
+  },
+  "semester": "7",
+  "course_list": [
+    {
+      "code": "KON 435E",
+      "name": "Industrial Data Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "KON 322",
+        "KON 322E",
+        "KON 325",
+        "KON 325E"
+      ]
+    },
+    {
+      "code": "KON 425E",
+      "name": "Process Control",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 414E",
+      "name": "Principles of Robot Autonomy",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ELK 343E",
+      "name": "Electromech. Energy Conversion",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 211E",
+        "EEF 212E"
+      ]
+    },
+    {
+      "code": "ELK 313E",
+      "name": "Power Transmission Lines",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ELK 331E",
+      "name": "Power Electronic Circuits",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 211",
+        "EHB 211E",
+        "ELE 211",
+        "ELE 211E",
+        "EEF 211",
+        "EEF 211E"
+      ]
+    }
+  ],
+  "name": "7thSm.Elct.Crs.III(MT)-Faculty"
+},
+{
+  "_id": {
+    "$oid": "66c08865172402b8b596b647"
+  },
+  "semester": "3",
+  "course_list": [
+    {
+      "code": "TER 201E",
+      "name": "Thermodynamics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": [
+        "KIM 101",
+        "FIZ 111E"
+      ]
+    },
+    {
+      "code": "ELK 336E",
+      "name": "Quantum Computation",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "STA 201E",
+      "name": "Statics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "EHB 208E",
+      "name": "Data Structures & Programming",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": [
+        "BIL 105E",
+        "EHB 110E",
+        "EHB 110",
+        "EEF 110",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "DNK 201E",
+      "name": "Dynamics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": [
+        "GUV 103",
+        "MAT 111E"
+      ]
+    }
+  ],
+  "name": "3rd Sem. Elective Course(TM)"
+},
+{
+  "_id": {
+    "$oid": "66c08869172402b8b596b64c"
+  },
+  "semester": "6",
+  "course_list": [
+    {
+      "code": "EHB 362E",
+      "name": "Microwave Engineering",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 313",
+        "EHB 313E",
+        "EHB 337",
+        "EHB 337E"
+      ]
+    },
+    {
+      "code": "EHB 308E",
+      "name": "Communication II",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 351",
+        "EHB 351E",
+        "EHB 307",
+        "EHB 307E"
+      ]
+    },
+    {
+      "code": "EHB 322E",
+      "name": "Digital Electronic Circuits",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "ELE 262",
+        "ELE 262E",
+        "ELE 222",
+        "ELE 222E",
+        "EHB 222",
+        "EHB 222E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    }
+  ],
+  "name": "6th Sem. Comp. Elect.II (MT)"
+},
+{
+  "_id": {
+    "$oid": "66c0886b172402b8b596b64f"
+  },
+  "semester": "4",
+  "course_list": [
+    {
+      "code": "TER 201E",
+      "name": "Thermodynamics",
+      "credit": "3",
+      "semester": "4",
+      "prerequisite": [
+        "KIM 101",
+        "FIZ 111E"
+      ]
+    },
+    {
+      "code": "ELK 336E",
+      "name": "Quantum Computation",
+      "credit": "3",
+      "semester": "4",
+      "prerequisite": []
+    },
+    {
+      "code": "EHB 208E",
+      "name": "Data Structures & Programming",
+      "credit": "3",
+      "semester": "4",
+      "prerequisite": [
+        "BIL 105E",
+        "EHB 110E",
+        "EHB 110",
+        "EEF 110",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "KON 218E",
+      "name": "Measurement and Sensors",
+      "credit": "3",
+      "semester": "4",
+      "prerequisite": []
+    },
+    {
+      "code": "DNK 201E",
+      "name": "Dynamics",
+      "credit": "3",
+      "semester": "4",
+      "prerequisite": [
+        "GUV 103",
+        "MAT 111E"
+      ]
+    }
+  ],
+  "name": "4th Sem. Elective Course(TM)"
 }]
