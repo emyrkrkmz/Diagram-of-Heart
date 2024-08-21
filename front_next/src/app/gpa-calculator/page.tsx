@@ -2,30 +2,36 @@
 import { useState } from "react";
 import Link from "next/link";
 
+
+interface Lecture {
+  name: string;
+  credit: string;
+  grade: string;
+}
 export default function GPACalculator() {
   const [currentGPA, setCurrentGPA] = useState("0");
   const [creditsCompleted, setCreditsCompleted] = useState("0");
   const [lectures, setLectures] = useState([{ name: "", credit: "", grade: "" }]);
 
   // Grade to GPA mapping with + grades
-  const gradeToGPA = {
-    AA: 4.0,
+  const gradeToGPA: Record<string, number> = {
+    "AA": 4.0,
     "BA+": 3.75,
-    BA: 3.5,
+    "BA": 3.5,
     "BB+": 3.25,
-    BB: 3.0,
+    "BB": 3.0,
     "CB+": 2.75,
-    CB: 2.5,
+    "CB": 2.5,
     "CC+": 2.25,
-    CC: 2.0,
+    "CC": 2.0,
     "DC+": 1.75,
-    DC: 1.5,
+    "DC": 1.5,
     "DD+": 1.25,
-    DD: 1.0,
-    FF: 0.0,
+    "DD": 1.0,
+    "FF": 0.0,
   };
 
-  const handleLectureChange = (index, field, value) => {
+  const handleLectureChange = (index : number, field: keyof Lecture, value: string) => {
     const newLectures = [...lectures];
     newLectures[index][field] = value;
     setLectures(newLectures);
@@ -53,7 +59,7 @@ export default function GPACalculator() {
   };
 
   // Validate current GPA (should not be greater than 4)
-  const handleCurrentGPAChange = (value) => {
+  const handleCurrentGPAChange = (value: string) => {
     const gpa = parseFloat(value);
     setCurrentGPA(value);
     if (gpa > 4) {
@@ -111,7 +117,7 @@ export default function GPACalculator() {
       </div>
 
       {/* This Semester's Lectures */}
-      <h3 className="text-lg font-bold mb-2">This Semester's Lectures</h3>
+      <h3 className="text-lg font-bold mb-2">This Semesters Lectures</h3>
       {lectures.map((lecture, index) => (
         <div key={index} className="mb-4 border-b pb-4">
           <div className="mb-2">

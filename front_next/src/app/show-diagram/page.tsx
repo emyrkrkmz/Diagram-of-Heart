@@ -65,11 +65,25 @@ export default function CourseSchema() {
 function CourseRow({ semester, highlighted, onCourseClick }: { semester: number, highlighted: string[], onCourseClick: (courseCode: string) => void }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedElectiveCourses, setSelectedElectiveCourses] = useState<typeof electives[0]["course_list"]>([]);
-  const [currentCourses, setCurrentCourses] = useState(
-    courses
-      .filter((course) => course.semester === semester)
-      .sort((a, b) => (a.code === "ELECTIVE" ? 1 : b.code === "ELECTIVE" ? -1 : 0))
-  );
+  interface Course {
+    _id?: { $oid: string }; // Optional _id
+    code: string;
+    name: string;
+    credit: string;
+    type?: string; // Optional type
+    comp_or_elect?: string; // Optional comp_or_elect
+    semester: number;
+    prerequisite: string[];
+    is_oldElective?: boolean; // Optional is_oldElective property
+    oldElective_name?: string; // Optional oldElective_name property
+  }
+  
+ 
+const [currentCourses, setCurrentCourses] = useState<Course[]>(
+  courses
+    .filter((course) => course.semester === semester)
+    .sort((a, b) => (a.code === "ELECTIVE" ? 1 : b.code === "ELECTIVE" ? -1 : 0))
+);
   const [currentElectiveName, setCurrentElectiveName] = useState("");
 
   const handleElectiveClick = (electiveName: string) => {
@@ -81,10 +95,11 @@ function CourseRow({ semester, highlighted, onCourseClick }: { semester: number,
     }
   };
 
+
+
   const handleCourseSelect = (courseCode: string) => {
     const selectedCourse = selectedElectiveCourses.find((course) => course.code === courseCode);
     if (selectedCourse) {
-      // Update the currentCourses state to reflect the selected course
       setCurrentCourses((prevCourses) =>
         prevCourses.map((course) =>
           course.name === currentElectiveName || course.oldElective_name === currentElectiveName
@@ -97,11 +112,10 @@ function CourseRow({ semester, highlighted, onCourseClick }: { semester: number,
             : course
         )
       );
-	  onCourseClick(selectedCourse.code);
-      setIsModalOpen(false); // Close the modal after selecting the course
+      onCourseClick(selectedCourse.code);
+      setIsModalOpen(false);
     }
   };
-
   // Handle right-click to open the modal
   const handleRightClick = (event: React.MouseEvent, course: any) => {
     event.preventDefault(); // Prevent the default right-click context menu
