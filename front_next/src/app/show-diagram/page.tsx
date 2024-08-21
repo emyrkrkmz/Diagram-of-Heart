@@ -38,20 +38,25 @@ export default function CourseSchema() {
     	<div className="space-y-12">
       
     		<ArcherContainer strokeColor="white">
-	  			<div className="flex justify-center py-4">
-      		  		<pre className="text-2xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-md max-w-max">Elektronik ve Haberleşme Diyagramı</pre>
-      			</div>
-				<div>
-        		{semesters.map((semester) => (
-        	  	<CourseRow
-        	    	key={semester}
-        	    	semester={semester}
-        	    	highlighted={highlighted}
-        	    	onCourseClick={handleCourseClick}
-        	  	/>
-        		))}
-				</div>
-      		</ArcherContainer>
+          <div className="text-center py-4">
+            <pre className="text-2xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-md max-w-max mx-auto">
+              Elektronik ve Haberleşme Diyagramı
+            </pre>
+            <p className="text-gray-300 text-lg italic mt-5">Right click for electives</p>
+          </div>
+
+				  <div>
+            {semesters.map((semester) => (
+              <div key={semester} className="relative w-3/4 bg-black bg-opacity-20 p-4 rounded-xl mb-8 mx-auto">
+                <CourseRow
+                  semester={semester}
+                  highlighted={highlighted}
+                  onCourseClick={handleCourseClick}
+                />
+              </div>
+            ))}
+          </div>
+      	</ArcherContainer>
 			  
     	</div>
   	);
@@ -110,7 +115,7 @@ function CourseRow({ semester, highlighted, onCourseClick }: { semester: number,
   return (
     <>
       <div className="relative w-full flex items-center justify-center border-gray-500 bg-opacity-60 rounded-lg p-4 mb-8">
-          <div className="flex space-x-6 mt-20">
+          <div className="flex space-x-6 mt-10">
             {currentCourses.map((course, index) => (
               <div
                 key={index}

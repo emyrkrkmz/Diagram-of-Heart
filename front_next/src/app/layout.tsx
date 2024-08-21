@@ -23,8 +23,16 @@ export default function RootLayout({
 		  	WebkitFilter: 'blur(8px)',
 		    }}
 		    ></div>
-        {children}
+          <div className="relative z-10">{children}</div>
+          <footer className="absolute w-full text-center z-10 bg-opacity-20 bg-black py-4">
+            <p className="text-gray-300 text-sm italic">
+              - Designed for Eijo with passion -
+            </p>
+          </footer>
+
         </div>
+              
+      
 
       </body>
     </html>

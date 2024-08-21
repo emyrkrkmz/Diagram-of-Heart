@@ -39,12 +39,7 @@ export default function Home() {
         </div>
       </div>
       
-      
-      <footer className="absolute bottom-4 w-full text-center">
-        <p className="text-gray-300 text-sm">
-          Designed for Eijo with passion
-        </p>
-      </footer>
+
     </div>
   );
 }
