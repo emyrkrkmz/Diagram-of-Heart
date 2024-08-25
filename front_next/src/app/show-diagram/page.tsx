@@ -42,7 +42,8 @@ export default function CourseSchema() {
             <pre className="text-2xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-md max-w-max mx-auto">
               Elektronik ve Haberleşme Diyagramı
             </pre>
-            <p className="text-gray-300 text-lg italic mt-5">Right click for electives</p>
+            <p className="text-gray-300 text-lg italic mt-5">Right click for electives | Press and hold for electives</p>
+
           </div>
 
 				  <div>

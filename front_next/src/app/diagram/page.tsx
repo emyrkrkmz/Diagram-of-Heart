@@ -29,10 +29,10 @@ export default function DiagramPage() {
 			<h1 className="text-white text-center text-4xl pt-8">Prerequisite Chain</h1>
 			<div className="w-full max-w-xs md:max-w-md lg:max-w-lg mt-12">
           		<div className="border-t border-white mb-2"></div>
-          		<img src="./images/katanalogo.png" alt="Logo" className="h-32 mx-auto shadow-xl transform transition duration-500 hover:scale-110"
+          		<img src="./images/new_katana.png" alt="Logo" className="h-32 mx-auto shadow-xl transform transition duration-500 hover:scale-110"
             	style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.6)',}}/>
           		<div className="border-b border-white mt-2"></div>
-        </div>
+        	</div>
 		  </nav>
 		  
 		  <div className="flex justify-center">

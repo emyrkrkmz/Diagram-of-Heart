@@ -3,7 +3,7 @@ import "@/styles/global.css";
 
 
 export const metadata: Metadata = {
-  title: "ITU Asist",
+  title: "ITU Chain",
   description: "Created for ITU student and my <3",
 };
 
