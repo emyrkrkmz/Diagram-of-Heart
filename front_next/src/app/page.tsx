@@ -27,6 +27,14 @@ export default function Home() {
               GPA Calculator
             </button>
           </Link>
+          <Link href="/courses-new">
+            <button
+              className="py-3 px-8 bg-orange-500 text-white rounded-lg shadow-lg hover:bg-orange-600 transition duration-300 ease-in-out"
+            >
+              Show 2025 Course Program
+            </button>
+          </Link>
+
         </div>
         
         
