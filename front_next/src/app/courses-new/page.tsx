@@ -59,8 +59,7 @@ export default function CourseTable () {
 		  <Link href="/schedule">
 		    <button
 		      type="button"
-		      className="py-2.5 px-5 text-sm font-medium text-white focus:outline-none bg-blue-600 rounded-full hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 dark:bg-blue-800 dark:hover:bg-blue-900"
-			  disabled
+		      className="py-2.5 px-5 text-m font-medium text-white focus:outline-none bg-blue-600 rounded-full hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 dark:bg-blue-800 dark:hover:bg-blue-900"
 			>
 		      Create Schedule
 		    </button>
