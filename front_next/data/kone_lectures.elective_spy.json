@@ -1,0 +1,1920 @@
+[{
+  "_id": {
+    "$oid": "66d4641a577b0634f09a011a"
+  },
+  "semester": "5",
+  "course_list": [
+    {
+      "code": "SNT 103E",
+      "name": "Drawing",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 101E",
+      "name": "Looking at the Art ofSculpture",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 102E",
+      "name": "Photography",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 114E",
+      "name": "Contemporary Art",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 116E",
+      "name": "The Art of Communication",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 113E",
+      "name": "Art and Interpretation",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 112E",
+      "name": "Theater",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 227E",
+      "name": "Sound and Society",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 226E",
+      "name": "Philosophy of Art",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 215E",
+      "name": "Balkan Musics",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 211E",
+      "name": "Istanbul:Hist.,Art and Society",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 212E",
+      "name": "Art,Culture and Society",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 123E",
+      "name": "Film Production",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 121E",
+      "name": "World Music Cultures",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 117E",
+      "name": "Jazz Appreciation",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 106E",
+      "name": "Traditional Turkish Art&Crafts",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 105E",
+      "name": "Film Art",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 104E",
+      "name": "Mythology and Art",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    }
+  ],
+  "name": "5th Sems.Elect. Course (SNT)"
+},
+{
+  "_id": {
+    "$oid": "66d46420577b0634f09a0121"
+  },
+  "semester": "5",
+  "course_list": [
+    {
+      "code": "EHB 354E",
+      "name": "Object Oriented Programming",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "BIL 104",
+        "BIL 104E",
+        "BIL 105",
+        "BIL 105E",
+        "BLG 102",
+        "BLG 102E",
+        "EHB 110",
+        "EHB 110E",
+        "KON 110",
+        "KON 110E",
+        "YZV 102E",
+        "EEF 110",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "KON 315E",
+      "name": "Electronic Instrumentation",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "KON 216",
+        "KON 216E",
+        "KON 218",
+        "KON 218E"
+      ]
+    },
+    {
+      "code": "KON 309E",
+      "name": "Microcontroller Systems",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EEF 205",
+        "EEF 205E",
+        "EEF 110",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "ELK 331E",
+      "name": "Power Electronic Circuits",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "EHB 211",
+        "EHB 211E",
+        "ELE 211",
+        "ELE 211E",
+        "EEF 211",
+        "EEF 211E"
+      ]
+    }
+  ],
+  "name": "5th Sems.Elect. Course (MT)"
+},
+{
+  "_id": {
+    "$oid": "66d46421577b0634f09a0124"
+  },
+  "semester": "6",
+  "course_list": [
+    {
+      "code": "KON 325E",
+      "name": "Industrial Automation Systems",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "KON 318E",
+      "name": "Introduction to Robotics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    }
+  ],
+  "name": "6th Sems. Compulsory-Elct.Crs."
+},
+{
+  "_id": {
+    "$oid": "66d46425577b0634f09a0125"
+  },
+  "semester": "3",
+  "course_list": [
+    {
+      "code": "KIM 202E",
+      "name": "Physical Chemistry",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": [
+        "KIM 101",
+        "KIM 101E"
+      ]
+    },
+    {
+      "code": "MAL 201E",
+      "name": "Materials Science",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "FIZ 201E",
+      "name": "Modern Physics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": [
+        "FIZ 102",
+        "FIZ 102E",
+        "FIZ 106",
+        "FIZ 106E"
+      ]
+    },
+    {
+      "code": "EHB 235E",
+      "name": "Theory of Complex Functions",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "EHB 227E",
+      "name": "Introduction to Optics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "BLG 112E",
+      "name": "Discrete Mathematics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "BIO 302E",
+      "name": "Fundamentals of Biotechnology",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "BIO 301E",
+      "name": "Fundamentals of Biology",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    }
+  ],
+  "name": "3rd Sems.Elect. Course (TB)"
+},
+{
+  "_id": {
+    "$oid": "66d46425577b0634f09a0126"
+  },
+  "semester": "8",
+  "course_list": [
+    {
+      "code": "KON 429E",
+      "name": "Autonom ous Vehicles",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 426E",
+      "name": "Intelligent Control Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "KON 424E",
+      "name": "Mod.&Cntrl of Biological Sys.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "KON 421E",
+      "name": "Robot Control",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "KON 318E",
+        "MAK 487E"
+      ]
+    },
+    {
+      "code": "ELK 472E",
+      "name": "Renewable Energy Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "ELK 331E",
+        "ELK 341E"
+      ]
+    },
+    {
+      "code": "ELK 428E",
+      "name": "Electric and Hybrid Vehicles",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "EHB 475E",
+      "name": "Digital Speech Processing",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
+    },
+    {
+      "code": "EHB 474E",
+      "name": "Introduction to Optimization",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E"
+      ]
+    },
+    {
+      "code": "EHB 472E",
+      "name": "Image Processing Fundamentals",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
+    },
+    {
+      "code": "EHB 437E",
+      "name": "Biomedical Devices",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 428E",
+      "name": "Industrial Electronics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 433E",
+      "name": "Digital Filters and Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 419E",
+      "name": "Digital System Design",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    }
+  ],
+  "name": "8th Sems.Elect. Course I (MT)"
+},
+{
+  "_id": {
+    "$oid": "66d46425577b0634f09a0128"
+  },
+  "semester": "7",
+  "course_list": [
+    {
+      "code": "UZB 421E",
+      "name": "Attitude Determination & Ctrl.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "DNK 201E"
+      ]
+    },
+    {
+      "code": "UCK 448E",
+      "name": "Avionic Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "UCK 203",
+        "UCK 203E",
+        "EHB 211",
+        "EHB 211E",
+        "ELK 221",
+        "ELK 221E"
+      ]
+    },
+    {
+      "code": "KON 435E",
+      "name": "Industrial Data Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "KON 322",
+        "KON 322E",
+        "KON 325",
+        "KON 325E"
+      ]
+    },
+    {
+      "code": "KON 437E",
+      "name": "Motion Control Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "KON 313E",
+        "KON 417E"
+      ]
+    },
+    {
+      "code": "KON 425E",
+      "name": "Process Control",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 422E",
+      "name": "Electrical Transportation Sys.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 414E",
+      "name": "Principles of Robot Autonomy",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 453E",
+      "name": "Indus.4.0 & Digital Transform.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 445E",
+      "name": "Lean Production Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 421E",
+      "name": "Production Planning&Control",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 331",
+        "END 331E"
+      ]
+    },
+    {
+      "code": "END 411E",
+      "name": "Integrated Manufacturing Syst",
+      "credit": "2",
+      "semester": "7",
+      "prerequisite": [
+        "END 112",
+        "END 112E"
+      ]
+    },
+    {
+      "code": "EHB 453",
+      "name": "Mobil İletişime Giriş",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 334E",
+      "name": "Random Signals and Noise",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "MAT 271",
+        "MAT 271E",
+        "EEF 271",
+        "EEF 271E"
+      ]
+    },
+    {
+      "code": "EHB 328E",
+      "name": "Machine Learning for Sig.Proc.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 271E",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 326E",
+      "name": "Intr.to Embedded Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 205E",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "UZB 421E",
+      "name": "Attitude Determination & Ctrl.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "DNK 201E"
+      ]
+    },
+    {
+      "code": "UCK 448E",
+      "name": "Avionic Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "UCK 203",
+        "UCK 203E",
+        "EHB 211",
+        "EHB 211E",
+        "ELK 221",
+        "ELK 221E"
+      ]
+    },
+    {
+      "code": "KON 437E",
+      "name": "Motion Control Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "KON 313E",
+        "KON 417E"
+      ]
+    },
+    {
+      "code": "KON 435E",
+      "name": "Industrial Data Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "KON 322",
+        "KON 322E",
+        "KON 325",
+        "KON 325E"
+      ]
+    },
+    {
+      "code": "KON 425E",
+      "name": "Process Control",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 422E",
+      "name": "Electrical Transportation Sys.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 414E",
+      "name": "Principles of Robot Autonomy",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 453E",
+      "name": "Indus.4.0 & Digital Transform.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 445E",
+      "name": "Lean Production Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 421E",
+      "name": "Production Planning&Control",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 331",
+        "END 331E"
+      ]
+    },
+    {
+      "code": "END 411E",
+      "name": "Integrated Manufacturing Syst",
+      "credit": "2",
+      "semester": "7",
+      "prerequisite": [
+        "END 112",
+        "END 112E"
+      ]
+    },
+    {
+      "code": "EHB 453E",
+      "name": "Intr.to Mobile Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EHB 352",
+        "EHB 352E",
+        "EHB 308",
+        "EHB 308E"
+      ]
+    },
+    {
+      "code": "EHB 328E",
+      "name": "Machine Learning for Sig.Proc.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 271E",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "ELK 334E",
+      "name": "Dsgn of Power Electr Circuits",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "ELK 331",
+        "ELK 331E"
+      ]
+    },
+    {
+      "code": "EHB 326E",
+      "name": "Intr.to Embedded Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "EEF 205E",
+        "EEF 110E"
+      ]
+    }
+  ],
+  "name": "7th Sems.Elect. Course  (MT)"
+},
+{
+  "_id": {
+    "$oid": "66d46426577b0634f09a0129"
+  },
+  "semester": "7",
+  "course_list": [
+    {
+      "code": "SNT 227E",
+      "name": "Sound and Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 102E",
+      "name": "Photography",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 226E",
+      "name": "Philosophy of Art",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 212E",
+      "name": "Art,Culture and Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 215E",
+      "name": "Balkan Musics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 211E",
+      "name": "Istanbul:Hist.,Art and Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 123E",
+      "name": "Film Production",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 121E",
+      "name": "World Music Cultures",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 117E",
+      "name": "Jazz Appreciation",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 116E",
+      "name": "The Art of Communication",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 114E",
+      "name": "Contemporary Art",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 113E",
+      "name": "Art and Interpretation",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 112E",
+      "name": "Theater",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 107E",
+      "name": "Ancient Civilizat.in Anatolia",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 106E",
+      "name": "Traditional Turkish Art&Crafts",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 104E",
+      "name": "Mythology and Art",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 105E",
+      "name": "Film Art",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 103E",
+      "name": "Drawing",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 101E",
+      "name": "Looking at the Art ofSculpture",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "RUS 201",
+      "name": "Rusça III",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "RUS 102",
+      "name": "Rusça II",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "RUS 101",
+      "name": "Rusça I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 202",
+      "name": "Japonca IV",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 201",
+      "name": "Japonca III",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 101",
+      "name": "Japonca I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 102",
+      "name": "Japonca II",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 231E",
+      "name": "Volunteering Studies",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 230E",
+      "name": "Disaster Awareness",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 228E",
+      "name": "Gender Studies",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 227E",
+      "name": "Political Theory",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 224E",
+      "name": "Environment and Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 222E",
+      "name": "City and Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 221E",
+      "name": "Anatolian Archaeology",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 220E",
+      "name": "Psychology",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 219E",
+      "name": "Ethics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 218E",
+      "name": "History of Science&Technology",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 217E",
+      "name": "Engineering Ethics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 216E",
+      "name": "Economy and Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 215E",
+      "name": "Topics in Hist.and Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 213E",
+      "name": "Topics in Literature&Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 209E",
+      "name": "Turkey in World Affairs",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 208E",
+      "name": "Formations of Modern Turkey",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 207E",
+      "name": "Ottoman History",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 206E",
+      "name": "Issues in World Politics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 205E",
+      "name": "Philosophy",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 204E",
+      "name": "Political Science",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 203E",
+      "name": "Sociology",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 202E",
+      "name": "World History",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 201E",
+      "name": "Intr. to Human.& Soc. Sciences",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 179E",
+      "name": "Lit.of Int.Sep.:Viz.,Seyfettin",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 171E",
+      "name": "Science, Techn&Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 151E",
+      "name": "Human Resources and Management",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 094E",
+      "name": "International.Rel.and Globali.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 087E",
+      "name": "Media and Society",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 143E",
+      "name": "Durell&Said: Orient Pra&Theory",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 095E",
+      "name": "Technology, Policy and Law",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 037E",
+      "name": "Knowledge, Language & Logic",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 301",
+      "name": "İtalyanca V",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 020E",
+      "name": "Formations of Modernity",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 202",
+      "name": "İtalyanca IV",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 201",
+      "name": "İtalyanca III",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 101",
+      "name": "İtalyanca I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 102",
+      "name": "İtalyanca II",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 302",
+      "name": "İspanyolca VI",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 201",
+      "name": "İspanyolca III",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 301",
+      "name": "İspanyolca V",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 202",
+      "name": "İspanyolca IV",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 102",
+      "name": "İspanyolca II",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 101",
+      "name": "İspanyolca I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ISL 478E",
+      "name": "Entrepreneurship",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103SC",
+      "name": "Science Communication",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ISL 465E",
+      "name": "Int.to Entrepreneurship&Innov.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103P",
+      "name": "Poetry",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103O",
+      "name": "Psychology",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103N",
+      "name": "Film Studies",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103L",
+      "name": "Mythology",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103I",
+      "name": "Short Stories",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103H",
+      "name": "Public Presentations",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103C",
+      "name": "Great Moments in Science",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103G",
+      "name": "Business Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103CO",
+      "name": "Profess.Communic.for Engineers",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103ES",
+      "name": "Intercultural Citizenship",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103B",
+      "name": "Business English",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103AD",
+      "name": "Advanced English for Engineers",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103AC",
+      "name": "Urban Ecology",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103A",
+      "name": "Creative Writing",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 218",
+      "name": "Ticaret Hukuku",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 214",
+      "name": "Teknolojik Yeniliklerin Korun.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 213",
+      "name": "İş Sağlığı ve Güvenliği Hukuku",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 217",
+      "name": "AR-GE Hukuku",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 212",
+      "name": "Sendika.&Toplu İş Sözl.Hukuku",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 216",
+      "name": "Telekomünikasyon Hukuku",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 215",
+      "name": "Sözleşmeler Hukuku",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 211",
+      "name": "Sosyal Güvenlik Hukuku",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 302",
+      "name": "Fransızca VI",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 301",
+      "name": "Fransızca V",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 202",
+      "name": "Fransızca IV",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 201",
+      "name": "Fransızca III",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 102",
+      "name": "Fransızca II",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 101",
+      "name": "Fransızca I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "CIN 201",
+      "name": "Çince III",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "CIN 102",
+      "name": "Çince II",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "CIN 101",
+      "name": "Çince I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ARB 101",
+      "name": "Arapça I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 401",
+      "name": "Almanca VII",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 302",
+      "name": "Almanca VI",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 301",
+      "name": "Almanca V",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 202",
+      "name": "Almanca IV",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 102",
+      "name": "Almanca II",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 201",
+      "name": "Almanca III",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 101",
+      "name": "Almanca I",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    }
+  ],
+  "name": "7th Sems.Elect. Course (ITB)"
+},
+{
+  "_id": {
+    "$oid": "66d46427577b0634f09a012b"
+  },
+  "semester": "8",
+  "course_list": [
+    {
+      "code": "KON 429E",
+      "name": "Autonom ous Vehicles",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 426E",
+      "name": "Intelligent Control Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "KON 424E",
+      "name": "Mod.&Cntrl of Biological Sys.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "KON 421E",
+      "name": "Robot Control",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "KON 318E",
+        "MAK 487E"
+      ]
+    },
+    {
+      "code": "ELK 428E",
+      "name": "Electric and Hybrid Vehicles",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ELK 472E",
+      "name": "Renewable Energy Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "ELK 331E",
+        "ELK 341E"
+      ]
+    },
+    {
+      "code": "EHB 474E",
+      "name": "Introduction to Optimization",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E"
+      ]
+    },
+    {
+      "code": "EHB 437E",
+      "name": "Biomedical Devices",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 475E",
+      "name": "Digital Speech Processing",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
+    },
+    {
+      "code": "EHB 472E",
+      "name": "Image Processing Fundamentals",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 315",
+        "EHB 315E"
+      ]
+    },
+    {
+      "code": "EHB 433E",
+      "name": "Digital Filters and Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 252",
+        "EHB 252E",
+        "EHB 206",
+        "EHB 206E",
+        "EEF 206",
+        "EEF 206E"
+      ]
+    },
+    {
+      "code": "EHB 428E",
+      "name": "Industrial Electronics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "EHB 262",
+        "EHB 262E",
+        "EEF 262",
+        "EEF 262E"
+      ]
+    },
+    {
+      "code": "EHB 419E",
+      "name": "Digital System Design",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    }
+  ],
+  "name": "8th Sems.Elect. Course II (MT)"
+},
+{
+  "_id": {
+    "$oid": "66d46495577b0634f09a01be"
+  },
+  "semester": "8",
+  "course_list": [
+    {
+      "code": "HUK 201",
+      "name": "İş Hukuku",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "BLG 448E",
+      "name": "Project Management in Eng.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "EKO 201E",
+      "name": "Economics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    }
+  ],
+  "name": "8th S.Restricted Elective(ITB)"
+},
+{
+  "_id": {
+    "$oid": "66d4649b577b0634f09a01c9"
+  },
+  "semester": "3",
+  "course_list": [
+    {
+      "code": "TER 201E",
+      "name": "Thermodynamics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": [
+        "KIM 101",
+        "FIZ 111E"
+      ]
+    },
+    {
+      "code": "STA 201E",
+      "name": "Statics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "ELK 336E",
+      "name": "Quantum Computation",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": []
+    },
+    {
+      "code": "EHB 208E",
+      "name": "Data Structures & Programming",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": [
+        "BIL 105E",
+        "EHB 110E",
+        "EHB 110",
+        "EEF 110",
+        "EEF 110E"
+      ]
+    },
+    {
+      "code": "DNK 201E",
+      "name": "Dynamics",
+      "credit": "3",
+      "semester": "3",
+      "prerequisite": [
+        "GUV 103",
+        "MAT 111E"
+      ]
+    }
+  ],
+  "name": "3rd Sems.Elect. Course (TM)"
+},
+{
+  "_id": {
+    "$oid": "66d4649e577b0634f09a01cc"
+  },
+  "semester": "6",
+  "course_list": [
+    {
+      "code": "KON 436E",
+      "name": "Int.to Nonlinear Control Syst.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "KON 428E",
+      "name": "Intr. to Optimal Control",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "KON 323E",
+      "name": "Sys.Eng.&Saf.-Critic. Sys.Des.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 417E",
+      "name": "Servo Motors",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "ELK 214",
+        "ELK 214E",
+        "ELK 341",
+        "ELK 341E",
+        "ELK 331",
+        "ELK 331E"
+      ]
+    },
+    {
+      "code": "KON 324E",
+      "name": "Sensors&Transducers in Contr.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ELK 453E",
+      "name": "Ind. Appl. of Power Electron.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "ELK 331",
+        "ELK 331E"
+      ]
+    },
+    {
+      "code": "EHB 474E",
+      "name": "Introduction to Optimization",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E"
+      ]
+    },
+    {
+      "code": "EHB 419E",
+      "name": "Digital System Design",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E",
+        "EHB 205",
+        "EHB 205E",
+        "EEF 205",
+        "EEF 205E"
+      ]
+    },
+    {
+      "code": "EHB 334E",
+      "name": "Random Signals and Noise",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "MAT 271",
+        "MAT 271E",
+        "EEF 271",
+        "EEF 271E"
+      ]
+    },
+    {
+      "code": "KON 436E",
+      "name": "Int.to Nonlinear Control Syst.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "KON 428E",
+      "name": "Intr. to Optimal Control",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "KON 313",
+        "KON 313E"
+      ]
+    },
+    {
+      "code": "KON 417E",
+      "name": "Servo Motors",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "ELK 214",
+        "ELK 214E",
+        "ELK 341",
+        "ELK 341E",
+        "ELK 331",
+        "ELK 331E"
+      ]
+    },
+    {
+      "code": "KON 324E",
+      "name": "Sensors&Transducers in Contr.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 323E",
+      "name": "Sys.Eng.&Saf.-Critic. Sys.Des.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    }
+  ],
+  "name": "6th Sems.Elect. Course (MT)"
+}]

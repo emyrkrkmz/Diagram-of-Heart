@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import CourseBox from "@/components/CourseBox";
-import Courses from '../../../data/ehb_lectures.course_spy.json';
-import Electives from '../../../data/ehb_lectures.elective_spy.json';
+import Courses from '../../../data/ehbe_lectures.course_spy.json';
+import Electives from '../../../data/ehbe_lectures.elective_spy.json';
 import Modal from "@/components/Modal";
 import { ArcherContainer } from 'react-archer';
 

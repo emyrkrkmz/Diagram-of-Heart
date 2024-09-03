@@ -2,12 +2,12 @@
 import { useState } from 'react';
 import Link from 'next/link';
 // Import your JSON data
-import eefData from '../../../data/eef.json';
-import ehbData from '../../../data/ehb.json';
-import endData from '../../../data/end.json';
-import konData from '../../../data/kon.json';
-import blgData from '../../../data/blg.json';
-import ecnData from '../../../data/ecn.json';
+import eefData from '../../../data/schedule_data/eef.json';
+import ehbData from '../../../data/schedule_data/ehb.json';
+import endData from '../../../data/schedule_data/end.json';
+import konData from '../../../data/schedule_data/kon.json';
+import blgData from '../../../data/schedule_data/blg.json';
+import ecnData from '../../../data/schedule_data/ecn.json';
 
 interface Course {
   dersKodu: string;

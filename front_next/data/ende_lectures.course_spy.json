@@ -1,0 +1,702 @@
+[{
+  "_id": {
+    "$oid": "66d4650ca0a37f1d152d9388"
+  },
+  "code": "ATA 121",
+  "name": "Atatürk İlk & İnkılap Trh I",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4650ca0a37f1d152d9389"
+  },
+  "code": "FIZ 101EL",
+  "name": "Physics I Laboratory",
+  "credit": "1",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4650ca0a37f1d152d938a"
+  },
+  "code": "END 113E",
+  "name": "Int.to Industrial Eng.& Ethics",
+  "credit": "2",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4650ca0a37f1d152d938b"
+  },
+  "code": "FIZ 102E",
+  "name": "Physics II",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4650da0a37f1d152d938c"
+  },
+  "code": "TUR 121",
+  "name": "Türk Dili I",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4650da0a37f1d152d938d"
+  },
+  "code": "FIZ 101E",
+  "name": "Physics I",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4650da0a37f1d152d938e"
+  },
+  "code": "ING 100",
+  "name": "EAP Through Global Goals",
+  "credit": "3",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4650da0a37f1d152d938f"
+  },
+  "code": "MAT 103E",
+  "name": "Mathematics I",
+  "credit": "4",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46512a0a37f1d152d9390"
+  },
+  "code": "END 213E",
+  "name": "Data Manag.in Industrial Syst.",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46512a0a37f1d152d9391"
+  },
+  "code": "ING 112A",
+  "name": "Basics of Academic Writing",
+  "credit": "2",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46512a0a37f1d152d9392"
+  },
+  "code": "END 210E",
+  "name": "Linear Algebra for Indust.Eng.",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": [
+    "MAT 104",
+    "MAT 104E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46512a0a37f1d152d9393"
+  },
+  "code": "BIL 100E",
+  "name": "Intr.to Prog.Language(PYTHON)",
+  "credit": "2",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 1,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46514a0a37f1d152d9394"
+  },
+  "code": "DAN 102",
+  "name": "Girişimcilik & Kariyer Danış.",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46514a0a37f1d152d9395"
+  },
+  "code": "MAT 104E",
+  "name": "Mathematics II",
+  "credit": "4",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": [
+    "MAT 103",
+    "MAT 103E",
+    "MAT 101",
+    "MAT 101E",
+    "MAT 112",
+    "MAT 112E",
+    "MAT 187",
+    "MAT 187E",
+    "MAT 185",
+    "MAT 185E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46514a0a37f1d152d9396"
+  },
+  "code": "KIM 101EL",
+  "name": "General Chemistry I Lab",
+  "credit": "1",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46514a0a37f1d152d9397"
+  },
+  "code": "END 112E",
+  "name": "Intr. to Manufacturing Systems",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46518a0a37f1d152d9398"
+  },
+  "code": "TUR 122",
+  "name": "Türk Dili II",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 8,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46519a0a37f1d152d9399"
+  },
+  "code": "ELECTIVE",
+  "name": "Elective Crs. (Functional)-MT",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 8,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46519a0a37f1d152d939a"
+  },
+  "code": "ELECTIVE",
+  "name": "Elective Crs. (Analytical)-MT",
+  "credit": "3/3.5",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 7,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46519a0a37f1d152d939b"
+  },
+  "code": "ATA 122",
+  "name": "Atatürk İlk & İnkılap Trh II",
+  "credit": "0",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 8,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46519a0a37f1d152d939c"
+  },
+  "code": "END 412E",
+  "name": "Human Resource Management",
+  "credit": "3",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 8,
+  "prerequisite": [
+    "END 431",
+    "END 431E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46519a0a37f1d152d939d"
+  },
+  "code": "ELECTIVE",
+  "name": "Elective Crs. (Functional)-MT",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 7,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4651aa0a37f1d152d939e"
+  },
+  "code": "END 4902E",
+  "name": "Industrial Engin. Design II",
+  "credit": "4",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 8,
+  "prerequisite": [
+    "END 4901",
+    "END 4901E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d4651aa0a37f1d152d939f"
+  },
+  "code": "ELECTIVE",
+  "name": "Elective Crs. (Analytical)-MT",
+  "credit": "3/3.5",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 8,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4651da0a37f1d152d93a0"
+  },
+  "code": "END 449",
+  "name": "End. Müh. Uyg. Seminer Dersi",
+  "credit": "0",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 7,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4651ea0a37f1d152d93a1"
+  },
+  "code": "END 411E",
+  "name": "Integrated Manufacturing Syst",
+  "credit": "2",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 7,
+  "prerequisite": [
+    "END 112",
+    "END 112E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d4651ea0a37f1d152d93a2"
+  },
+  "code": "END 431E",
+  "name": "Management and Organization",
+  "credit": "3",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 7,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4651ea0a37f1d152d93a3"
+  },
+  "code": "ELECTIVE",
+  "name": "Elective Course (ITB)",
+  "credit": "3",
+  "type": "ITB",
+  "comp_or_elect": "S",
+  "semester": 6,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4651fa0a37f1d152d93a4"
+  },
+  "code": "END 4901E",
+  "name": "Industrial Engin. Design I",
+  "credit": "4",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 7,
+  "prerequisite": [
+    "FIZ 101EL",
+    "FIZ 102EL",
+    "KIM 101EL",
+    "END 322E",
+    "END 305E",
+    "FIZ 101E",
+    "MAT 103E",
+    "FIZ 102E",
+    "KIM 101E",
+    "MAT 104E",
+    "MAT 210E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46520a0a37f1d152d93a5"
+  },
+  "code": "ELECTIVE",
+  "name": "Elective Crs. (Analytical)-MT",
+  "credit": "3/3.5",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 6,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46521a0a37f1d152d93a6"
+  },
+  "code": "END 308E",
+  "name": "Quality Engineering",
+  "credit": "2",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 6,
+  "prerequisite": [
+    "END 311",
+    "END 311E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46521a0a37f1d152d93a7"
+  },
+  "code": "ELECTIVE",
+  "name": "Elective Crs. (Functional)-MT",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 6,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46523a0a37f1d152d93a8"
+  },
+  "code": "END 322E",
+  "name": "System Simulation",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 6,
+  "prerequisite": [
+    "END 215E",
+    "END 311E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46523a0a37f1d152d93a9"
+  },
+  "code": "ELECTIVE",
+  "name": "Elective Crs. (Functional)-MT",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 5,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46524a0a37f1d152d93aa"
+  },
+  "code": "END 312E",
+  "name": "Engineering Economics",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 6,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46524a0a37f1d152d93ab"
+  },
+  "code": "ELECTIVE",
+  "name": "Elective Crs. (Analytical)-MT",
+  "credit": "3/3.5",
+  "type": "MT",
+  "comp_or_elect": "S",
+  "semester": 5,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46525a0a37f1d152d93ac"
+  },
+  "code": "END 305E",
+  "name": "Data Analytics for Business",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 5,
+  "prerequisite": [
+    "END 311",
+    "END 311E",
+    "ECN 211E",
+    "ECN 209E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46526a0a37f1d152d93ad"
+  },
+  "code": "END 332E",
+  "name": "Operations Research II",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 5,
+  "prerequisite": [
+    "END 331",
+    "END 331E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46526a0a37f1d152d93ae"
+  },
+  "code": "END 421E",
+  "name": "Production Planning&Control",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 5,
+  "prerequisite": [
+    "END 331",
+    "END 331E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46527a0a37f1d152d93af"
+  },
+  "code": "END 341E",
+  "name": "Work Analysis and Design",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 5,
+  "prerequisite": [
+    "END 232",
+    "END 232E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d46528a0a37f1d152d93b0"
+  },
+  "code": "HUK 201",
+  "name": "İş Hukuku",
+  "credit": "3",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46529a0a37f1d152d93b1"
+  },
+  "code": "END 201E",
+  "name": "Industrial Eng.Appl. in Python",
+  "credit": "2",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": [
+    "BIL 110E",
+    "BIL 100E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d4652aa0a37f1d152d93b2"
+  },
+  "code": "END 331E",
+  "name": "Operations Research I",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": [
+    "MAT 121",
+    "MAT 121E",
+    "MAT 261",
+    "MAT 261E",
+    "MAT 210",
+    "MAT 210E",
+    "END 210",
+    "END 210E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d4652aa0a37f1d152d93b3"
+  },
+  "code": "END 311E",
+  "name": "Statistics",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": [
+    "END 252",
+    "END 252E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d4652ba0a37f1d152d93b4"
+  },
+  "code": "END 232E",
+  "name": "Ergonomics",
+  "credit": "3",
+  "type": "MT",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4652ca0a37f1d152d93b5"
+  },
+  "code": "ING 201A",
+  "name": "Essentials of Res.Paper Writ.",
+  "credit": "2",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4652ca0a37f1d152d93b6"
+  },
+  "code": "MEK 205E",
+  "name": "Engineering Mechanics",
+  "credit": "3",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 4,
+  "prerequisite": [
+    "MAT 102",
+    "MAT 102E",
+    "MAT 104",
+    "MAT 104E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d4652ca0a37f1d152d93b7"
+  },
+  "code": "END 252E",
+  "name": "Theory of Probability",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": [
+    "MAT 101E",
+    "MAT 102E"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d4652ea0a37f1d152d93b8"
+  },
+  "code": "END 215E",
+  "name": "System Thinking and Analysis",
+  "credit": "2",
+  "type": "TM",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d4652ea0a37f1d152d93b9"
+  },
+  "code": "EKO 201E",
+  "name": "Economics",
+  "credit": "3",
+  "type": "ITB",
+  "comp_or_elect": "Z",
+  "semester": 3,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46530a0a37f1d152d93ba"
+  },
+  "code": "KIM 101E",
+  "name": "General Chemistry I",
+  "credit": "3",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+},
+{
+  "_id": {
+    "$oid": "66d46530a0a37f1d152d93bb"
+  },
+  "code": "FIZ 102EL",
+  "name": "Physics II Laboratory",
+  "credit": "1",
+  "type": "TB",
+  "comp_or_elect": "Z",
+  "semester": 2,
+  "prerequisite": []
+}]

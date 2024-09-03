@@ -1,0 +1,2270 @@
+[{
+  "_id": {
+    "$oid": "66d466da834fc95425a68924"
+  },
+  "semester": "6",
+  "course_list": [
+    {
+      "code": "ECN 202E",
+      "name": "Intermediate Macroeconomics",
+      "credit": "3.5",
+      "semester": "6",
+      "prerequisite": [
+        "ECN 102E",
+        "ISL 244",
+        "ISL 244E",
+        "EKO 201E"
+      ]
+    },
+    {
+      "code": "END 458E",
+      "name": "Nonlinear Optimization",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 331",
+        "END 331E",
+        "ISL 323",
+        "ISL 323E"
+      ]
+    },
+    {
+      "code": "END 439E",
+      "name": "Neural Network Mod.in Ind.Sys.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 332E",
+        "END 210E"
+      ]
+    },
+    {
+      "code": "END 446E",
+      "name": "Statistical Experimental Dsgn.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 252",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 424E",
+      "name": "Financial Management",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 222",
+        "END 222E",
+        "ISL 224",
+        "ISL 224E"
+      ]
+    },
+    {
+      "code": "END 342E",
+      "name": "Knowledge Based Systems",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 339E",
+      "name": "Project Management",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 336E",
+      "name": "Product Development",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ECN 302E",
+      "name": "Econometrics II",
+      "credit": "3.5",
+      "semester": "6",
+      "prerequisite": [
+        "ECN 301E",
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 318E",
+      "name": "System Dynamics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 211",
+        "END 211E",
+        "END 215",
+        "END 215E"
+      ]
+    },
+    {
+      "code": "END 317E",
+      "name": "Database Manag. & Big Data",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "BIL 102",
+        "BIL 102CE",
+        "BIL 102E",
+        "BIL 102FE",
+        "BIL 104E",
+        "BIL 105E",
+        "BIL 106E",
+        "MAT 115E",
+        "BIL 100E",
+        "BIL 110E",
+        "BIL 110"
+      ]
+    },
+    {
+      "code": "END 482E",
+      "name": "Supply Chain Management",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 421",
+        "END 421E"
+      ]
+    },
+    {
+      "code": "END 480E",
+      "name": "Reliability Engineering",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 478E",
+      "name": "Applied Optimization Models",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 476E",
+      "name": "Machine Learning for Ind. Sys.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "ECN 209E",
+        "ECN 207E"
+      ]
+    },
+    {
+      "code": "END 474E",
+      "name": "Supply Chain Analytics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 331E",
+        "END 421E"
+      ]
+    }
+  ],
+  "name": "Elective Crs. (Analytical)-MT"
+},
+{
+  "_id": {
+    "$oid": "66d466da834fc95425a68926"
+  },
+  "semester": "7",
+  "course_list": [
+    {
+      "code": "ECN 410E",
+      "name": "Energy Economics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "ECN 201E",
+        "END 312E",
+        "END 312"
+      ]
+    },
+    {
+      "code": "END 375E",
+      "name": "Human-Computer Interaction",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 232",
+        "END 232E"
+      ]
+    },
+    {
+      "code": "KON 435E",
+      "name": "Industrial Data Communications",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "KON 322",
+        "KON 322E",
+        "KON 325",
+        "KON 325E"
+      ]
+    },
+    {
+      "code": "END 453E",
+      "name": "Indus.4.0 & Digital Transform.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 475E",
+      "name": "Feasibility Studies",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 312",
+        "END 312E"
+      ]
+    },
+    {
+      "code": "END 473E",
+      "name": "Pricing and Revenue Management",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 331E",
+        "END 312E"
+      ]
+    },
+    {
+      "code": "END 451E",
+      "name": "Logistics Management",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 331E",
+        "END 252E"
+      ]
+    },
+    {
+      "code": "END 433E",
+      "name": "Marketing Management",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 445E",
+      "name": "Lean Production Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 429E",
+      "name": "Process Management",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 211",
+        "END 211E",
+        "END 215",
+        "END 215E"
+      ]
+    },
+    {
+      "code": "END 423E",
+      "name": "Investment Planning",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 312",
+        "END 312E"
+      ]
+    },
+    {
+      "code": "END 381E",
+      "name": "Tech.Design for IndusT. Eng.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 374E",
+      "name": "Competition Management",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 367E",
+      "name": "Automation in Production Syst.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 365E",
+      "name": "People Analytics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 345E",
+      "name": "Evolution of Manag. Thought",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 344E",
+      "name": "Behavioral Sciences",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 329E",
+      "name": "Quality Management Tools&Tech.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 319E",
+      "name": "Cost Management",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "ECN 420E",
+      "name": "Behavioural Economics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "ECN 201E"
+      ]
+    },
+    {
+      "code": "ECN 412E",
+      "name": "Environmental Economics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "ECN 201E"
+      ]
+    }
+  ],
+  "name": "Elective Crs. (Functional)-MT"
+},
+{
+  "_id": {
+    "$oid": "66d466e2834fc95425a68930"
+  },
+  "semester": "8",
+  "course_list": [
+    {
+      "code": "END 482E",
+      "name": "Supply Chain Management",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 421",
+        "END 421E"
+      ]
+    },
+    {
+      "code": "END 480E",
+      "name": "Reliability Engineering",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 478E",
+      "name": "Applied Optimization Models",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 476E",
+      "name": "Machine Learning for Ind. Sys.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "ECN 209E",
+        "ECN 207E"
+      ]
+    },
+    {
+      "code": "END 474E",
+      "name": "Supply Chain Analytics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 331E",
+        "END 421E"
+      ]
+    },
+    {
+      "code": "END 458E",
+      "name": "Nonlinear Optimization",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 331",
+        "END 331E",
+        "ISL 323",
+        "ISL 323E"
+      ]
+    },
+    {
+      "code": "END 446E",
+      "name": "Statistical Experimental Dsgn.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 252",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 424E",
+      "name": "Financial Management",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 222",
+        "END 222E",
+        "ISL 224",
+        "ISL 224E"
+      ]
+    },
+    {
+      "code": "END 439E",
+      "name": "Neural Network Mod.in Ind.Sys.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 332E",
+        "END 210E"
+      ]
+    },
+    {
+      "code": "END 342E",
+      "name": "Knowledge Based Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 339E",
+      "name": "Project Management",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 336E",
+      "name": "Product Development",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 317E",
+      "name": "Database Manag. & Big Data",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "BIL 102",
+        "BIL 102CE",
+        "BIL 102E",
+        "BIL 102FE",
+        "BIL 104E",
+        "BIL 105E",
+        "BIL 106E",
+        "MAT 115E",
+        "BIL 100E",
+        "BIL 110E",
+        "BIL 110"
+      ]
+    },
+    {
+      "code": "END 318E",
+      "name": "System Dynamics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 211",
+        "END 211E",
+        "END 215",
+        "END 215E"
+      ]
+    },
+    {
+      "code": "ECN 302E",
+      "name": "Econometrics II",
+      "credit": "3.5",
+      "semester": "8",
+      "prerequisite": [
+        "ECN 301E",
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "ECN 202E",
+      "name": "Intermediate Macroeconomics",
+      "credit": "3.5",
+      "semester": "8",
+      "prerequisite": [
+        "ECN 102E",
+        "ISL 244",
+        "ISL 244E",
+        "EKO 201E"
+      ]
+    }
+  ],
+  "name": "Elective Crs. (Analytical)-MT"
+},
+{
+  "_id": {
+    "$oid": "66d466e6834fc95425a68933"
+  },
+  "semester": "6",
+  "course_list": [
+    {
+      "code": "SNT 227E",
+      "name": "Sound and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 215E",
+      "name": "Balkan Musics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 226E",
+      "name": "Philosophy of Art",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 211E",
+      "name": "Istanbul:Hist.,Art and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 212E",
+      "name": "Art,Culture and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 123E",
+      "name": "Film Production",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 121E",
+      "name": "World Music Cultures",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 113E",
+      "name": "Art and Interpretation",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 114E",
+      "name": "Contemporary Art",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 117E",
+      "name": "Jazz Appreciation",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 116E",
+      "name": "The Art of Communication",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 106E",
+      "name": "Traditional Turkish Art&Crafts",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 105E",
+      "name": "Film Art",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 107E",
+      "name": "Ancient Civilizat.in Anatolia",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 104E",
+      "name": "Mythology and Art",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "RUS 201",
+      "name": "Rusça III",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "SNT 103E",
+      "name": "Drawing",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "RUS 101",
+      "name": "Rusça I",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "RUS 102",
+      "name": "Rusça II",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 202",
+      "name": "Japonca IV",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 201",
+      "name": "Japonca III",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 102",
+      "name": "Japonca II",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "JPN 101",
+      "name": "Japonca I",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 233E",
+      "name": "Anthropology",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 234E",
+      "name": "The Rise of Civilizations",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 230E",
+      "name": "Disaster Awareness",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 231E",
+      "name": "Volunteering Studies",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 228E",
+      "name": "Gender Studies",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 227E",
+      "name": "Political Theory",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 224E",
+      "name": "Environment and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 222E",
+      "name": "City and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 221E",
+      "name": "Anatolian Archaeology",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 220E",
+      "name": "Psychology",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 218E",
+      "name": "History of Science&Technology",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 219E",
+      "name": "Ethics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 215E",
+      "name": "Topics in Hist.and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 217E",
+      "name": "Engineering Ethics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 216E",
+      "name": "Economy and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 214E",
+      "name": "The Modern Middle East",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 213E",
+      "name": "Topics in Literature&Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 209E",
+      "name": "Turkey in World Affairs",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 208E",
+      "name": "Formations of Modern Turkey",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 207E",
+      "name": "Ottoman History",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 205E",
+      "name": "Philosophy",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 206E",
+      "name": "Issues in World Politics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 204E",
+      "name": "Political Science",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 203E",
+      "name": "Sociology",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 202E",
+      "name": "World History",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 171E",
+      "name": "Science, Techn&Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 201E",
+      "name": "Intr. to Human.& Soc. Sciences",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 179E",
+      "name": "Lit.of Int.Sep.:Viz.,Seyfettin",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 143E",
+      "name": "Durell&Said: Orient Pra&Theory",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 151E",
+      "name": "Human Resources and Management",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 094E",
+      "name": "International.Rel.and Globali.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 095E",
+      "name": "Technology, Policy and Law",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 087E",
+      "name": "Media and Society",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 037E",
+      "name": "Knowledge, Language & Logic",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITB 020E",
+      "name": "Formations of Modernity",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 301",
+      "name": "İtalyanca V",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 201",
+      "name": "İtalyanca III",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 102",
+      "name": "İtalyanca II",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 101",
+      "name": "İtalyanca I",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ITA 202",
+      "name": "İtalyanca IV",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 302",
+      "name": "İspanyolca VI",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 301",
+      "name": "İspanyolca V",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 202",
+      "name": "İspanyolca IV",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 201",
+      "name": "İspanyolca III",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 102",
+      "name": "İspanyolca II",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ISP 101",
+      "name": "İspanyolca I",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ISL 478E",
+      "name": "Entrepreneurship",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103P",
+      "name": "Poetry",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103SC",
+      "name": "Science Communication",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103O",
+      "name": "Psychology",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103N",
+      "name": "Film Studies",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103L",
+      "name": "Mythology",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103G",
+      "name": "Business Communications",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103I",
+      "name": "Short Stories",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103H",
+      "name": "Public Presentations",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103CO",
+      "name": "Profess.Communic.for Engineers",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103ES",
+      "name": "Intercultural Citizenship",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103C",
+      "name": "Great Moments in Science",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103B",
+      "name": "Business English",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103AD",
+      "name": "Advanced English for Engineers",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103AC",
+      "name": "Urban Ecology",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ING 103A",
+      "name": "Creative Writing",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 217",
+      "name": "AR-GE Hukuku",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 216",
+      "name": "Telekomünikasyon Hukuku",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 218",
+      "name": "Ticaret Hukuku",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 215",
+      "name": "Sözleşmeler Hukuku",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 213",
+      "name": "İş Sağlığı ve Güvenliği Hukuku",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 214",
+      "name": "Teknolojik Yeniliklerin Korun.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 212",
+      "name": "Sendika.&Toplu İş Sözl.Hukuku",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "HUK 211",
+      "name": "Sosyal Güvenlik Hukuku",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 302",
+      "name": "Fransızca VI",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 301",
+      "name": "Fransızca V",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 201",
+      "name": "Fransızca III",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 102",
+      "name": "Fransızca II",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 101",
+      "name": "Fransızca I",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "FRA 202",
+      "name": "Fransızca IV",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "CIN 102",
+      "name": "Çince II",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "CIN 201",
+      "name": "Çince III",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 401",
+      "name": "Almanca VII",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "CIN 101",
+      "name": "Çince I",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 301",
+      "name": "Almanca V",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 202",
+      "name": "Almanca IV",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 302",
+      "name": "Almanca VI",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 201",
+      "name": "Almanca III",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 102",
+      "name": "Almanca II",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ALM 101",
+      "name": "Almanca I",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    }
+  ],
+  "name": "Elective Course (ITB)"
+},
+{
+  "_id": {
+    "$oid": "66d466e7834fc95425a68939"
+  },
+  "semester": "8",
+  "course_list": [
+    {
+      "code": "KON 324E",
+      "name": "Sensors&Transducers in Contr.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 322E",
+      "name": "Industrial Automated Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E"
+      ]
+    },
+    {
+      "code": "ISL 460E",
+      "name": "E-Marketing",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "ISL 353E",
+        "ISL 353",
+        "END 433",
+        "END 433E"
+      ]
+    },
+    {
+      "code": "ISL 224E",
+      "name": "Cost Accounting",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 488E",
+      "name": "ERP Processes and Installation",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ISL 452E",
+      "name": "Financial Inst.&Portfolio Mng.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "ISL 333E",
+        "ISL 333",
+        "END 424",
+        "END 424E",
+        "ECN 309E"
+      ]
+    },
+    {
+      "code": "END 486E",
+      "name": "The New Era of Management",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 452E",
+      "name": "Purchasing Management",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 454E",
+      "name": "Energy Markets & Optimization",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 331",
+        "END 331E",
+        "ISL 323",
+        "ISL 323E"
+      ]
+    },
+    {
+      "code": "END 472E",
+      "name": "Advanced Spreadsheet Modeling",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 435E",
+      "name": "Work Safety",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 434E",
+      "name": "Intro.to Strategic Management",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 323",
+        "END 431",
+        "END 431E"
+      ]
+    },
+    {
+      "code": "END 426E",
+      "name": "Enterprise Resources Planning",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 421",
+        "END 421E",
+        "ISL 384",
+        "ISL 384E"
+      ]
+    },
+    {
+      "code": "END 432E",
+      "name": "Facility Layout",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 414E",
+      "name": "Maintenance Management",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 252",
+        "END 252E"
+      ]
+    },
+    {
+      "code": "END 364E",
+      "name": "Work Psychology",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 382E",
+      "name": "Production Methods",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "END 112E"
+      ]
+    },
+    {
+      "code": "END 374E",
+      "name": "Competition Management",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 314E",
+      "name": "Service Systems",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "END 316E",
+      "name": "Group Tech.&Flex.Manufact.Sys.",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": []
+    },
+    {
+      "code": "ECN 421E",
+      "name": "Experimental Economics",
+      "credit": "3",
+      "semester": "8",
+      "prerequisite": [
+        "ECN 201E"
+      ]
+    }
+  ],
+  "name": "Elective Crs. (Functional)-MT"
+},
+{
+  "_id": {
+    "$oid": "66d46744834fc95425a689b5"
+  },
+  "semester": "5",
+  "course_list": [
+    {
+      "code": "KON 435E",
+      "name": "Industrial Data Communications",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "KON 322",
+        "KON 322E",
+        "KON 325",
+        "KON 325E"
+      ]
+    },
+    {
+      "code": "END 475E",
+      "name": "Feasibility Studies",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 312",
+        "END 312E"
+      ]
+    },
+    {
+      "code": "END 445E",
+      "name": "Lean Production Systems",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 453E",
+      "name": "Indus.4.0 & Digital Transform.",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 473E",
+      "name": "Pricing and Revenue Management",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 331E",
+        "END 312E"
+      ]
+    },
+    {
+      "code": "END 451E",
+      "name": "Logistics Management",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 331E",
+        "END 252E"
+      ]
+    },
+    {
+      "code": "END 433E",
+      "name": "Marketing Management",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 429E",
+      "name": "Process Management",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 211",
+        "END 211E",
+        "END 215",
+        "END 215E"
+      ]
+    },
+    {
+      "code": "END 423E",
+      "name": "Investment Planning",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 312",
+        "END 312E"
+      ]
+    },
+    {
+      "code": "END 381E",
+      "name": "Tech.Design for IndusT. Eng.",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 375E",
+      "name": "Human-Computer Interaction",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 232",
+        "END 232E"
+      ]
+    },
+    {
+      "code": "END 374E",
+      "name": "Competition Management",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 367E",
+      "name": "Automation in Production Syst.",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 365E",
+      "name": "People Analytics",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 345E",
+      "name": "Evolution of Manag. Thought",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 344E",
+      "name": "Behavioral Sciences",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 329E",
+      "name": "Quality Management Tools&Tech.",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 319E",
+      "name": "Cost Management",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "ECN 420E",
+      "name": "Behavioural Economics",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "ECN 201E"
+      ]
+    },
+    {
+      "code": "ECN 412E",
+      "name": "Environmental Economics",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "ECN 201E"
+      ]
+    },
+    {
+      "code": "ECN 410E",
+      "name": "Energy Economics",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "ECN 201E",
+        "END 312E",
+        "END 312"
+      ]
+    }
+  ],
+  "name": "Elective Crs. (Functional)-MT"
+},
+{
+  "_id": {
+    "$oid": "66d46753834fc95425a689ca"
+  },
+  "semester": "5",
+  "course_list": [
+    {
+      "code": "MAT 471E",
+      "name": "Financial Mathematics",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "MAT 232",
+        "MAT 232E",
+        "BIO 210E",
+        "BLG 210E",
+        "CEV 210",
+        "CEV 210E",
+        "DEN 210E",
+        "EEE 210E",
+        "EEF 210",
+        "EEF 210E",
+        "FIZ 210",
+        "GEM 210E",
+        "GEO 220",
+        "GEO 220E",
+        "INS 210",
+        "INS 210E",
+        "KIM 271",
+        "MAK 210E",
+        "MAT 201",
+        "MAT 201E",
+        "MAT 210",
+        "MAT 210E"
+      ]
+    },
+    {
+      "code": "MAT 343E",
+      "name": "Time Series Analysis",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "MAT 244",
+        "MAT 244E"
+      ]
+    },
+    {
+      "code": "ISL 355E",
+      "name": "Econometrics",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "ISL 214",
+        "ISL 214E",
+        "ve EKO 201",
+        "ve EKO 201",
+        "ve EKO 201E",
+        "ve EKO 201E"
+      ]
+    },
+    {
+      "code": "END 493E",
+      "name": "Applied Statistics",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 471E",
+      "name": "Marketing & CRM Analytics",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 457E",
+      "name": "Heuristic Optimization",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 331",
+        "END 331E"
+      ]
+    },
+    {
+      "code": "END 448E",
+      "name": "Intr. to Stochastic Modell.",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 252",
+        "END 252E",
+        "ECN 205E",
+        "ISL 213",
+        "ISL 213E",
+        "ISL 214",
+        "ISL 214E"
+      ]
+    },
+    {
+      "code": "END 447E",
+      "name": "Network Models",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 331",
+        "END 331E"
+      ]
+    },
+    {
+      "code": "END 443E",
+      "name": "Business Planning & Innovation",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    },
+    {
+      "code": "END 369E",
+      "name": "Game Theory",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 252E",
+        "END 331E"
+      ]
+    },
+    {
+      "code": "END 327E",
+      "name": "Decision Theory",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "ECN 209E",
+        "ECN 209E"
+      ]
+    },
+    {
+      "code": "END 357E",
+      "name": "Management Information Systems",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "END 213E",
+        "END 215E"
+      ]
+    },
+    {
+      "code": "EHB 420E",
+      "name": "Artificial Neural Networks",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E",
+        "END 210",
+        "END 210E"
+      ]
+    },
+    {
+      "code": "ECN 201E",
+      "name": "Intermediate Microeconomics",
+      "credit": "3.5",
+      "semester": "5",
+      "prerequisite": [
+        "ECN 101E",
+        "ISL 233",
+        "ISL 233E",
+        "ECN 105E",
+        "EKO 201E"
+      ]
+    },
+    {
+      "code": "BLG 231E",
+      "name": "Digital Circuits",
+      "credit": "3",
+      "semester": "5",
+      "prerequisite": []
+    }
+  ],
+  "name": "Elective Crs. (Analytical)-MT"
+},
+{
+  "_id": {
+    "$oid": "66d4675b834fc95425a689d6"
+  },
+  "semester": "7",
+  "course_list": [
+    {
+      "code": "MAT 471E",
+      "name": "Financial Mathematics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "MAT 232",
+        "MAT 232E",
+        "BIO 210E",
+        "BLG 210E",
+        "CEV 210",
+        "CEV 210E",
+        "DEN 210E",
+        "EEE 210E",
+        "EEF 210",
+        "EEF 210E",
+        "FIZ 210",
+        "GEM 210E",
+        "GEO 220",
+        "GEO 220E",
+        "INS 210",
+        "INS 210E",
+        "KIM 271",
+        "MAK 210E",
+        "MAT 201",
+        "MAT 201E",
+        "MAT 210",
+        "MAT 210E"
+      ]
+    },
+    {
+      "code": "MAT 343E",
+      "name": "Time Series Analysis",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "MAT 244",
+        "MAT 244E"
+      ]
+    },
+    {
+      "code": "ISL 355E",
+      "name": "Econometrics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "ISL 214",
+        "ISL 214E",
+        "ve EKO 201",
+        "ve EKO 201",
+        "ve EKO 201E",
+        "ve EKO 201E"
+      ]
+    },
+    {
+      "code": "END 493E",
+      "name": "Applied Statistics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 471E",
+      "name": "Marketing & CRM Analytics",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 311",
+        "END 311E"
+      ]
+    },
+    {
+      "code": "END 448E",
+      "name": "Intr. to Stochastic Modell.",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 252",
+        "END 252E",
+        "ECN 205E",
+        "ISL 213",
+        "ISL 213E",
+        "ISL 214",
+        "ISL 214E"
+      ]
+    },
+    {
+      "code": "END 457E",
+      "name": "Heuristic Optimization",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 331",
+        "END 331E"
+      ]
+    },
+    {
+      "code": "END 447E",
+      "name": "Network Models",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 331",
+        "END 331E"
+      ]
+    },
+    {
+      "code": "END 443E",
+      "name": "Business Planning & Innovation",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    },
+    {
+      "code": "END 369E",
+      "name": "Game Theory",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 252E",
+        "END 331E"
+      ]
+    },
+    {
+      "code": "END 357E",
+      "name": "Management Information Systems",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "END 213E",
+        "END 215E"
+      ]
+    },
+    {
+      "code": "END 327E",
+      "name": "Decision Theory",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "ECN 209E",
+        "ECN 209E"
+      ]
+    },
+    {
+      "code": "ECN 201E",
+      "name": "Intermediate Microeconomics",
+      "credit": "3.5",
+      "semester": "7",
+      "prerequisite": [
+        "ECN 101E",
+        "ISL 233",
+        "ISL 233E",
+        "ECN 105E",
+        "EKO 201E"
+      ]
+    },
+    {
+      "code": "EHB 420E",
+      "name": "Artificial Neural Networks",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": [
+        "MAT 281",
+        "MAT 281E",
+        "EEF 281",
+        "EEF 281E",
+        "END 210",
+        "END 210E"
+      ]
+    },
+    {
+      "code": "BLG 231E",
+      "name": "Digital Circuits",
+      "credit": "3",
+      "semester": "7",
+      "prerequisite": []
+    }
+  ],
+  "name": "Elective Crs. (Analytical)-MT"
+},
+{
+  "_id": {
+    "$oid": "66d4675d834fc95425a689d9"
+  },
+  "semester": "6",
+  "course_list": [
+    {
+      "code": "KON 324E",
+      "name": "Sensors&Transducers in Contr.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "KON 322E",
+      "name": "Industrial Automated Systems",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "BLG 231",
+        "BLG 231E"
+      ]
+    },
+    {
+      "code": "ISL 460E",
+      "name": "E-Marketing",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "ISL 353E",
+        "ISL 353",
+        "END 433",
+        "END 433E"
+      ]
+    },
+    {
+      "code": "ISL 452E",
+      "name": "Financial Inst.&Portfolio Mng.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "ISL 333E",
+        "ISL 333",
+        "END 424",
+        "END 424E",
+        "ECN 309E"
+      ]
+    },
+    {
+      "code": "ISL 224E",
+      "name": "Cost Accounting",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 488E",
+      "name": "ERP Processes and Installation",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 472E",
+      "name": "Advanced Spreadsheet Modeling",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 486E",
+      "name": "The New Era of Management",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 452E",
+      "name": "Purchasing Management",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 454E",
+      "name": "Energy Markets & Optimization",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 331",
+        "END 331E",
+        "ISL 323",
+        "ISL 323E"
+      ]
+    },
+    {
+      "code": "END 435E",
+      "name": "Work Safety",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 434E",
+      "name": "Intro.to Strategic Management",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 323",
+        "END 431",
+        "END 431E"
+      ]
+    },
+    {
+      "code": "END 432E",
+      "name": "Facility Layout",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 426E",
+      "name": "Enterprise Resources Planning",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 421",
+        "END 421E",
+        "ISL 384",
+        "ISL 384E"
+      ]
+    },
+    {
+      "code": "END 382E",
+      "name": "Production Methods",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 112E"
+      ]
+    },
+    {
+      "code": "END 414E",
+      "name": "Maintenance Management",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "END 252",
+        "END 252E"
+      ]
+    },
+    {
+      "code": "END 374E",
+      "name": "Competition Management",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 364E",
+      "name": "Work Psychology",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 316E",
+      "name": "Group Tech.&Flex.Manufact.Sys.",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "END 314E",
+      "name": "Service Systems",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": []
+    },
+    {
+      "code": "ECN 421E",
+      "name": "Experimental Economics",
+      "credit": "3",
+      "semester": "6",
+      "prerequisite": [
+        "ECN 201E"
+      ]
+    }
+  ],
+  "name": "Elective Crs. (Functional)-MT"
+}]
