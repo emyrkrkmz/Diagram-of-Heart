@@ -82,9 +82,26 @@ export default function CreateSchedule() {
   };
 
   const parseTimeRange = (timeRange: string) => {
+<<<<<<< Updated upstream
     const [baslangicSaati, bitisSaati] = timeRange.split("/");
 
     return { baslangicSaati, bitisSaati };
+=======
+    const course_day = (timeRange.match(/\//g) || []).length;
+
+    if (course_day === 2) {
+      const [first_start, first_end, second_start, second_end] = timeRange
+        .replace(/\//g, " ")
+        .split(" ");
+      return [
+        { baslangicSaati: first_start, bitisSaati: first_end },
+        { baslangicSaati: second_start, bitisSaati: second_end },
+      ];
+    } else {
+      const [baslangicSaati, bitisSaati] = timeRange.split("/");
+      return [{ baslangicSaati, bitisSaati }];
+    }
+>>>>>>> Stashed changes
   };
 
   const calculateRowSpan = (start: string, end: string) => {
@@ -205,13 +222,18 @@ export default function CreateSchedule() {
           </button>
         </div>
 
+<<<<<<< Updated upstream
         <div className="flex flex-6" style={{"textAlign":"center"}}>
+=======
+        <div className="flex gap-4">
+>>>>>>> Stashed changes
           <div className="font-bold flex-grow">Saat</div>
           <div className="font-bold flex-grow">Pazartesi</div>
           <div className="font-bold flex-grow">Salı</div>
           <div className="font-bold flex-grow">Çarşamba</div>
           <div className="font-bold flex-grow">Perşembe</div>
           <div className="font-bold flex-grow">Cuma</div>
+<<<<<<< Updated upstream
         </div>
         <div className="grid grid-cols-6 gap-4">
           {Array.from({ length: 24 }).map((_, index) => {
@@ -283,7 +305,99 @@ export default function CreateSchedule() {
             );
           })}
         </div>
+=======
+        </div>
+        <div className="flex">
+          <div className="grid grid-flow-row auto-rows-[1fr] w-1/6">
+            {Array.from({ length: 24 }).map((_, index) => {
+              const hour = Math.floor(index / 2) + 8;
+              const minutes = index % 2 === 0 ? "00" : "30";
+              const displayTime = `${hour}:${minutes}`;
+
+              return (
+                <React.Fragment key={index}>
+                  {minutes === "00" && (
+                    <div className="border-dashed border-b-2">{displayTime}</div>
+                  )}
+                  {minutes === "30" && <div className="border-b-2"></div>}
+                </React.Fragment>
+              );
+            })}
+          </div>
+
+
+
+          {Array.from({ length: 5 }).map((_, day) => (
+            <div
+              key={day}
+              className="grid grid-flow-row auto-rows-[1fr] w-1/6 relative"
+              style={{}} // Adjust height for 30 min intervals
+            >
+              {Array.from({ length: 24 }).map((_, index) => {
+                return (
+                  <>
+                    {(
+                      <div className="border-dashed border-b-2"
+                        style={{ height: "2rem" }}>
+                        {schedule
+                          .flatMap((course) => {
+                            const timeRanges = parseTimeRange(course.baslangicSaati);
+                            return timeRanges.map((timeRange, index) => {
+                              // Determine the correct day and time for the course
+                              const courseDay = index === 0 ? course.gunAdiTR.split(' ')[0] : course.gunAdiTR.split(' ')[1];
+
+                              const courseStartHour = parseInt(timeRange.baslangicSaati.split(":")[0]);
+                              const courseStartMinutes = parseInt(timeRange.baslangicSaati.split(":")[1]);
+                              const courseStartIndex =
+                                (courseStartHour - 8) * 2 +
+                                (courseStartMinutes >= 30 ? 1 : 0);
+
+                              return {
+                                ...course,
+                                ...timeRange,
+                                courseStartIndex,
+                                courseDay
+                              };
+                            });
+                          })
+                          .filter(
+                            (course) =>
+                              course.courseDay ===
+                              ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"][day] &&
+                              true
+                          )
+                          .map((course) => {
+                            const rowSpan = calculateRowSpan(
+                              course.baslangicSaati,
+                              course.bitisSaati
+                            );
+                            return (
+                              <div
+                                key={course.crn}
+                                className={`inset-0 ${course.color} rounded-lg text-white p-2 text-xs flex-grow `}
+                                style={{
+                                  height: `${rowSpan * 2}rem`,
+                                }}
+                              >
+                                {course.dersKodu} <br />
+                                {course.dersAdi} <br />
+                                {course.adSoyad} <br />
+                                {course.baslangicSaati} - {course.bitisSaati || "?"}
+                              </div>
+                            );
+                          })}
+                      </div>
+                    )}
+                  </>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+>>>>>>> Stashed changes
       </div>
     </div>
   );
 }
+
+
