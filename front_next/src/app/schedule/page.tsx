@@ -205,14 +205,15 @@ export default function CreateSchedule() {
           </button>
         </div>
 
+        <div className="flex flex-6" style={{"textAlign":"center"}}>
+          <div className="font-bold flex-grow">Saat</div>
+          <div className="font-bold flex-grow">Pazartesi</div>
+          <div className="font-bold flex-grow">Salı</div>
+          <div className="font-bold flex-grow">Çarşamba</div>
+          <div className="font-bold flex-grow">Perşembe</div>
+          <div className="font-bold flex-grow">Cuma</div>
+        </div>
         <div className="grid grid-cols-6 gap-4">
-          <div className="font-bold">Saat</div>
-          <div className="font-bold">Pazartesi</div>
-          <div className="font-bold">Salı</div>
-          <div className="font-bold">Çarşamba</div>
-          <div className="font-bold">Perşembe</div>
-          <div className="font-bold">Cuma</div>
-
           {Array.from({ length: 24 }).map((_, index) => {
             const hour = Math.floor(index / 2) + 8;
             const minutes = index % 2 === 0 ? "00" : "30";
@@ -227,7 +228,7 @@ export default function CreateSchedule() {
                 {Array.from({ length: 5 }).map((_, day) => (
                   <div
                     key={day}
-                    className="relative border-gray-300 rounded-lg flex flex-npwrap"
+                    className="border-gray-300 col-span-1  h-100"
                     style={{ height: "1rem" }} // Adjust height for 30 min intervals
                   >
                     {schedule
