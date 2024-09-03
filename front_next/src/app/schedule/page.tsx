@@ -227,7 +227,7 @@ export default function CreateSchedule() {
                 {Array.from({ length: 5 }).map((_, day) => (
                   <div
                     key={day}
-                    className="relative border-gray-300 rounded-lg"
+                    className="relative border-gray-300 rounded-lg flex flex-npwrap"
                     style={{ height: "1rem" }} // Adjust height for 30 min intervals
                   >
                     {schedule
@@ -264,7 +264,7 @@ export default function CreateSchedule() {
                         return (
                           <div
                             key={course.crn}
-                            className={`absolute inset-0 ${course.color} rounded-lg text-white p-2 text-xs`}
+                            className={`inset-0 ${course.color} rounded-lg text-white p-2 text-xs flex-grow`}
                             style={{
                               height: `${rowSpan * 2}rem`,
                             }}

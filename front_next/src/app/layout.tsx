@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/global.css";
 
 
-export const metadata: Metadata = {
-  title: "ITU Chain",
-  description: "Created for ITU student and my <3",
-};
+
 
 export default function RootLayout({
   children,
@@ -14,6 +11,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <title>İTÜ CHAIN - Home</title>
+        <meta name="description" content="İTÜ'lüler için gelişmiş önşart diagramı, ders programlarını  kolaylıkla oluşturlamaları için ders programlayıcı
+        ve daha fazlası..." />
+        <meta name="keywords" content="itü, itü,önşart diagramı,önşart , şenlikçi, ders programı" />
+
+        <link rel="canonical" href="ituchain.vercel.app" />
+      </head>
       <body>
       <div className="relative h-full w-full">
         <div
@@ -32,8 +37,6 @@ export default function RootLayout({
 
         </div>
               
-      
-
       </body>
     </html>
   );
