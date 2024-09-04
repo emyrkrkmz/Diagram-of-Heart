@@ -373,6 +373,7 @@ export default function CreateSchedule() {
         onClick={handleAddCourseSelection}
         className="w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
+        
         Add Another Course
       </button>
 
@@ -380,6 +381,17 @@ export default function CreateSchedule() {
         <div className="flex justify-between mb-4">
           <button className="py-2 px-5 bg-blue-600 text-white rounded-lg">
             Alternatif Program Öner
+          </button>
+          <WhatsAppButton></WhatsAppButton>
+          <button className="py-2 px-5 bg-blue-600 text-white rounded-lg" disabled>
+            <a href={`javascript: let crns=[${courseSelections.map((item)=>{
+              return(item.crn)
+            })}]; let inputs = document.querySelectorAll("input[type=number]");
+            for (let i = 0; i < crns.length; i++) 
+            {inputs[i].value = crns[i];inputs[i].dispatchEvent(new Event('input'));}
+             let form = document.querySelector('form');form.dispatchEvent(new Event('submit'));
+              new Promise((resolve) => setTimeout(resolve, 100)).then(() => { let button = document.querySelector('.card-footer button.btn-success');
+               button.dispatchEvent(new Event('click'));})`}>CRN DOLDUR</a>
           </button>
           <button className="py-2 px-5 bg-blue-600 text-white rounded-lg">
             Boş CRN Öner
@@ -420,7 +432,7 @@ export default function CreateSchedule() {
           {Array.from({ length: 5 }).map((_, day) => (
             <div
               key={day}
-              className="grid grid-flow-row auto-rows-[1fr] w-1/6 relative"
+              className="grid grid-flow-row auto-rows-[1fr] w-1/6 relative "
               style={{ gridTemplateRows: 'repeat(24, minmax(2rem, 2rem))' }} // 24 saatlik bir gün için 30 dakikalık aralıklar
             >
               {schedule
