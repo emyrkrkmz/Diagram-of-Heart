@@ -286,7 +286,7 @@ export default function CreateSchedule() {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-white rounded-lg shadow-md mt-3 mb-2">
+    <div className="container mx-auto p-4 bg-white rounded-lg shadow-md">
       <h1 className="text-2xl font-bold mb-4">Ders Programım</h1>
 
       {courseSelections.map((selection, index) => (
@@ -375,114 +375,102 @@ export default function CreateSchedule() {
       >
         Add Another Course
       </button>
-      
-      <button
-        onClick={downloadScheduleAsJPEG}
-        className="w-full mt-4 p-2 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500"
-      >
-        Download Schedule as JPEG
-      </button>
 
       <div className="mt-4">
         <div className="flex justify-between mb-4">
-          <button className="py-2 px-5 bg-blue-600 text-white rounded-lg" disabled>
+          <button className="py-2 px-5 bg-blue-600 text-white rounded-lg">
             Alternatif Program Öner
           </button>
-          <WhatsAppButton></WhatsAppButton>
-          <button className="py-2 px-5 bg-blue-600 text-white rounded-lg" disabled>
-            <a href={`javascript: let crns=[${courseSelections.map((item)=>{
-              return(item.crn)
-            })}]; let inputs = document.querySelectorAll("input[type=number]");
-            for (let i = 0; i < crns.length; i++) 
-            {inputs[i].value = crns[i];inputs[i].dispatchEvent(new Event('input'));}
-             let form = document.querySelector('form');form.dispatchEvent(new Event('submit'));
-              new Promise((resolve) => setTimeout(resolve, 100)).then(() => { let button = document.querySelector('.card-footer button.btn-success');
-               button.dispatchEvent(new Event('click'));})`}>CRN DOLDUR</a>
-          </button>
-          <button className="py-2 px-5 bg-blue-600 text-white rounded-lg" disabled>
+          <button className="py-2 px-5 bg-blue-600 text-white rounded-lg">
             Boş CRN Öner
           </button>
         </div>
 
-        <div className="grid grid-cols-6 gap-4"
-          ref={scheduleRef}>
-          <div className="font-bold border-b-2">Saat</div>
-          <div className="font-bold  border-b-2">Pazartesi</div>
-          <div className="font-bold  border-b-2">Salı</div>
-          <div className="font-bold  border-b-2">Çarşamba</div>
-          <div className="font-bold  border-b-2">Perşembe</div>
-          <div className="font-bold  border-b-2">Cuma</div>
+        <div className="flex items-center justify-center text-center"
+        >
+          <div className="font-bold flex-grow w-1/6">Saat</div>
+          <div className="font-bold flex-grow w-1/6">Pazartesi</div>
+          <div className="font-bold flex-grow w-1/6">Salı</div>
+          <div className="font-bold flex-grow w-1/6">Çarşamba</div>
+          <div className="font-bold flex-grow w-1/6">Perşembe</div>
+          <div className="font-bold flex-grow w-1/6">Cuma</div>
+        </div>
+        <div className="flex">
+          <div className="grid grid-flow-row auto-rows-[1fr] w-1/6"
+            style={{ gridTemplateRows: 'repeat(24, minmax(2rem, 2rem))' }}
+          >
+            {Array.from({ length: 24 }).map((_, index) => {
+              const hour = Math.floor(index / 2) + 8;
+              const minutes = index % 2 === 0 ? "00" : "30";
+              const displayTime = `${hour}:${minutes}`;
 
-          {Array.from({ length: 24 }).map((_, index) => {
-            const hour = Math.floor(index / 2) + 8;
-            const minutes = index % 2 === 0 ? "00" : "30";
-            const displayTime = `${hour}:${minutes}`;
+              return (
+                <React.Fragment key={index}>
+                  {minutes === "00" && (
+                    <div className="border-dashed border-b-2">{displayTime}</div>
+                  )}
+                  {minutes === "30" && <div className="border-b-2"></div>}
+                </React.Fragment>
+              );
+            })}
+          </div>
 
-            return (
-              <React.Fragment key={index}>
-                {minutes === "00" && (
-                  <div className="border-dashed border-b-2">{displayTime}</div>
-                )}
-                {minutes === "30" && <div className="border-b-2"></div>}
-                {Array.from({ length: 5 }).map((_, day) => (
-                  <div
-                    key={day}
-                    className="relative border-gray-300 rounded-lg flex flex-npwrap"
-                    style={{ height: "1rem" }} // Adjust height for 30 min intervals
-                  >
-                    {schedule
-                      .flatMap((course) => {
-                        const timeRanges = parseTimeRange(course.baslangicSaati);
-                        return timeRanges.map((timeRange, index) => {
-                          // Determine the correct day and time for the course
-                          const courseDay = index === 0 ? course.gunAdiTR.split(' ')[0] : course.gunAdiTR.split(' ')[1];
 
-                          const courseStartHour = parseInt(timeRange.baslangicSaati.split(":")[0]);
-                          const courseStartMinutes = parseInt(timeRange.baslangicSaati.split(":")[1]);
-                          const courseStartIndex =
-                            (courseStartHour - 8) * 2 +
-                            (courseStartMinutes >= 30 ? 1 : 0);
 
-                          return {
-                            ...course,
-                            ...timeRange,
-                            courseStartIndex,
-                            courseDay
-                          };
-                        });
-                      })
-                      .filter(
-                        (course) =>
-                          course.courseDay ===
-                          ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"][day] &&
-                          course.courseStartIndex === index
-                      )
-                      .map((course) => {
-                        const rowSpan = calculateRowSpan(
-                          course.baslangicSaati,
-                          course.bitisSaati
-                        );
+          {Array.from({ length: 5 }).map((_, day) => (
+            <div
+              key={day}
+              className="grid grid-flow-row auto-rows-[1fr] w-1/6 relative"
+              style={{ gridTemplateRows: 'repeat(24, minmax(2rem, 2rem))' }} // 24 saatlik bir gün için 30 dakikalık aralıklar
+            >
+              {schedule
+                .flatMap((course) => {
+                  const timeRanges = parseTimeRange(course.baslangicSaati);
+                  return timeRanges.map((timeRange, index) => {
+                    const courseDay = index === 0 ? course.gunAdiTR.split(' ')[0] : course.gunAdiTR.split(' ')[1];
+                    const courseStartHour = parseInt(timeRange.baslangicSaati.split(":")[0]);
+                    const courseStartMinutes = parseInt(timeRange.baslangicSaati.split(":")[1]);
+                    const courseStartIndex = (courseStartHour - 8) * 2 + (courseStartMinutes >= 30 ? 1 : 0);
 
-                        return (
-                          <div
-                            key={course.crn}
-                            className={`inset-0 ${course.color} rounded-lg text-white p-2 text-xs flex-grow `}
-                            style={{
-                              height: `${rowSpan * 2}rem`,
-                            }}
-                          >
-                            {course.dersKodu} <br />
-                            {course.dersAdi} - CRN:{course.crn}<br />
-                            {course.adSoyad} <br />
-                            {course.baslangicSaati} - {course.bitisSaati || "?"}
-                          </div>
-                        );
-                      })}
-                  </div>
-                ))}
-              </React.Fragment>
-            );
-          })}
+                    return {
+                      ...course,
+                      ...timeRange,
+                      courseStartIndex,
+                      courseDay,
+                    };
+                  });
+                })
+                .filter((course) => {
+                  return course.courseDay === ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"][day];
+                })
+                .map((course) => {
+                  const rowSpan = calculateRowSpan(course.baslangicSaati, course.bitisSaati);
+
+                  return (
+                    <div
+                      key={course.crn}
+                      className="relative"
+                      style={{
+                        gridRow: `${course.courseStartIndex + 1} / span ${rowSpan}`,
+                      }}
+                    >
+                      <div
+                        className={`${course.color} rounded-lg text-white p-2 text-xs absolute inset-0`}
+                        style={{
+                          height: `${rowSpan * 2}rem`,
+                        }}
+                      >
+                        {course.dersKodu} <br />
+                        {course.dersAdi} <br />
+                        {course.adSoyad} <br />
+                        {course.baslangicSaati} - {course.bitisSaati || "?"}
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+          ))}
+
         </div>
       </div>
     </div>
