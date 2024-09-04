@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/global.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
-
+import { Analytics } from "@vercel/analytics/react"
 
 
 export default function RootLayout({
@@ -29,6 +29,7 @@ export default function RootLayout({
 		    }}
 		    ></div>
           <div className="relative z-10">{children}</div>
+          <Analytics />
           <SpeedInsights />
 
           <footer className="absolute w-full text-center z-10 bg-opacity-20 bg-black py-4">
