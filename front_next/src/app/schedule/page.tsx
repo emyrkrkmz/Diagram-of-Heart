@@ -54,6 +54,7 @@ import vba from "../../../data/schedule_data/vba.json";
 import yzv from "../../../data/schedule_data/yzv.json";
 import fra from "../../../data/schedule_data/fra.json";
 import mak from "../../../data/schedule_data/mak.json";
+import met from "../../../data/schedule_data/met.json";
 
 
 
@@ -97,6 +98,7 @@ const departmentData: Record<string, any[]> = {
   MAK: mak,
   MAT: mat,
   MEK: mek,
+  MET: met,
   MIM: mim,
   MTO: mto,
   MUZ: muz,
