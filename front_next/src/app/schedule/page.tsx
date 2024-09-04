@@ -122,6 +122,22 @@ const colors = [
   "bg-purple-500",
   "bg-orange-500",
 ];
+ //bize ulaşma kısmı
+const WhatsAppButton = () => {
+  const handleClick = () => {
+      const phoneNumber = '5522481395';
+      const url = `https://wa.me/${phoneNumber}`;
+      window.open(url, '_blank');
+  };
+
+  return (
+      <button 
+      className="py-2 px-5 bg-blue-600 text-white rounded-lg"
+      onClick={handleClick}>
+          hataları bize bildirin!
+      </button>
+  );
+};
 
 export default function CreateSchedule() {
   const [schedule, setSchedule] = useState<any[]>([]);
@@ -130,8 +146,25 @@ export default function CreateSchedule() {
   ]);
 
   const scheduleRef = useRef<HTMLDivElement>(null);
+  let courses;
+  useEffect(() => {
+    // Tarayıcı tarafında çalıştığından emin ol
+    if (typeof window !== "undefined") {
+      const storedCoursesString = localStorage.getItem('courses');
+      let courses = storedCoursesString ? JSON.parse(storedCoursesString) : [];
+
+      if (courses.length === 0) {
+        courses = [
+          { department: "", course: "", crn: "" }
+        ]
+      }
+        setCourseSelections(courses);
+    }
+    
+  }, []);
 
   useEffect(() => {
+    
     updateSchedule();
   }, [courseSelections]);
 
@@ -140,6 +173,11 @@ export default function CreateSchedule() {
       ...courseSelections,
       { department: "", course: "", crn: "" },
     ]);
+    courses = [
+      ...courseSelections,
+      { department: "", course: "", crn: "" },
+    ];
+    window.localStorage.setItem('courses', JSON.stringify(courses));
   };
 
   const handleDepartmentChange = (index: number, value: string) => {
@@ -148,6 +186,8 @@ export default function CreateSchedule() {
     updatedSelections[index].course = "";
     updatedSelections[index].crn = "";
     setCourseSelections(updatedSelections);
+    courses = courseSelections;
+    window.localStorage.setItem('courses', JSON.stringify(courses));
   };
 
   const handleCourseChange = (index: number, value: string) => {
@@ -155,12 +195,16 @@ export default function CreateSchedule() {
     updatedSelections[index].course = value;
     updatedSelections[index].crn = "";
     setCourseSelections(updatedSelections);
+    courses = courseSelections;
+    window.localStorage.setItem('courses', JSON.stringify(courses));
   };
 
   const handleCRNChange = (index: number, value: string) => {
     const updatedSelections = [...courseSelections];
     updatedSelections[index].crn = value;
     setCourseSelections(updatedSelections);
+    courses = courseSelections;
+    window.localStorage.setItem('courses', JSON.stringify(courses));
   };
 
   const updateSchedule = () => {
@@ -185,7 +229,7 @@ export default function CreateSchedule() {
 
   const parseTimeRange = (timeRange: string) => {
     const course_day = (timeRange.match(/\//g) || []).length;
-  
+
     if (course_day === 2) {
       const [first_start, first_end, second_start, second_end] = timeRange
         .replace(/\//g, " ")
@@ -215,16 +259,18 @@ export default function CreateSchedule() {
     const courseToRemove = courseSelections[index];
     setCourseSelections(updatedSelections);
     setSchedule(schedule.filter((course) => course.crn !== courseToRemove.crn));
+    courses = updatedSelections;
+    window.localStorage.setItem('courses', JSON.stringify(courses));
   };
 
   const downloadScheduleAsJPEG = () => {
     if (scheduleRef.current) {
-      toJpeg(scheduleRef.current, { 
+      toJpeg(scheduleRef.current, {
         quality: 0.95,
         backgroundColor: "white",
         width: scheduleRef.current.offsetWidth,
         height: scheduleRef.current.offsetHeight,
-    })
+      })
         .then((dataUrl) => {
           const link = document.createElement("a");
           link.href = dataUrl;
@@ -236,7 +282,6 @@ export default function CreateSchedule() {
         });
     }
   };
-
 
   return (
     <div className="container mx-auto p-4 bg-white rounded-lg shadow-md mt-3 mb-2">
@@ -328,7 +373,7 @@ export default function CreateSchedule() {
       >
         Add Another Course
       </button>
-
+      
       <button
         onClick={downloadScheduleAsJPEG}
         className="w-full mt-4 p-2 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -341,13 +386,14 @@ export default function CreateSchedule() {
           <button className="py-2 px-5 bg-blue-600 text-white rounded-lg" disabled>
             Alternatif Program Öner
           </button>
+          <WhatsAppButton></WhatsAppButton>
           <button className="py-2 px-5 bg-blue-600 text-white rounded-lg" disabled>
             Boş CRN Öner
           </button>
         </div>
 
         <div className="grid grid-cols-6 gap-4"
-        ref={scheduleRef}>
+          ref={scheduleRef}>
           <div className="font-bold border-b-2">Saat</div>
           <div className="font-bold  border-b-2">Pazartesi</div>
           <div className="font-bold  border-b-2">Salı</div>
@@ -359,7 +405,7 @@ export default function CreateSchedule() {
             const hour = Math.floor(index / 2) + 8;
             const minutes = index % 2 === 0 ? "00" : "30";
             const displayTime = `${hour}:${minutes}`;
-          
+
             return (
               <React.Fragment key={index}>
                 {minutes === "00" && (
@@ -372,61 +418,61 @@ export default function CreateSchedule() {
                     className="relative border-gray-300 rounded-lg flex flex-npwrap"
                     style={{ height: "1rem" }} // Adjust height for 30 min intervals
                   >
-                  {schedule
-                  .flatMap((course) => {
-                    const timeRanges = parseTimeRange(course.baslangicSaati);
-                    return timeRanges.map((timeRange, index) => {
-                      // Determine the correct day and time for the course
-                      const courseDay = index === 0 ? course.gunAdiTR.split(' ')[0] : course.gunAdiTR.split(' ')[1];
-                    
-                      const courseStartHour = parseInt(timeRange.baslangicSaati.split(":")[0]);
-                      const courseStartMinutes = parseInt(timeRange.baslangicSaati.split(":")[1]);
-                      const courseStartIndex =
-                        (courseStartHour - 8) * 2 +
-                        (courseStartMinutes >= 30 ? 1 : 0);
-                    
-                      return {
-                        ...course,
-                        ...timeRange,
-                        courseStartIndex,
-                        courseDay
-                      };
-                    });
-                  })
-                  .filter(
-                    (course) =>
-                      course.courseDay ===
-                        ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"][day] &&
-                      course.courseStartIndex === index
-                  )
-                  .map((course) => {
-                    const rowSpan = calculateRowSpan(
-                      course.baslangicSaati,
-                      course.bitisSaati
-                    );
-                  
-                    return (
-                      <div
-                        key={course.crn}
-                        className={`inset-0 ${course.color} rounded-lg text-white p-2 text-xs flex-grow `}
-                        style={{
-                          height: `${rowSpan * 2}rem`,
-                        }}
-                      >
-                        {course.dersKodu} <br />
-                        {course.dersAdi} - CRN:{course.crn}<br />
-                        {course.adSoyad} <br />
-                        {course.baslangicSaati} - {course.bitisSaati || "?"}
-                      </div>
-                    );
-                  })}
+                    {schedule
+                      .flatMap((course) => {
+                        const timeRanges = parseTimeRange(course.baslangicSaati);
+                        return timeRanges.map((timeRange, index) => {
+                          // Determine the correct day and time for the course
+                          const courseDay = index === 0 ? course.gunAdiTR.split(' ')[0] : course.gunAdiTR.split(' ')[1];
+
+                          const courseStartHour = parseInt(timeRange.baslangicSaati.split(":")[0]);
+                          const courseStartMinutes = parseInt(timeRange.baslangicSaati.split(":")[1]);
+                          const courseStartIndex =
+                            (courseStartHour - 8) * 2 +
+                            (courseStartMinutes >= 30 ? 1 : 0);
+
+                          return {
+                            ...course,
+                            ...timeRange,
+                            courseStartIndex,
+                            courseDay
+                          };
+                        });
+                      })
+                      .filter(
+                        (course) =>
+                          course.courseDay ===
+                          ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"][day] &&
+                          course.courseStartIndex === index
+                      )
+                      .map((course) => {
+                        const rowSpan = calculateRowSpan(
+                          course.baslangicSaati,
+                          course.bitisSaati
+                        );
+
+                        return (
+                          <div
+                            key={course.crn}
+                            className={`inset-0 ${course.color} rounded-lg text-white p-2 text-xs flex-grow `}
+                            style={{
+                              height: `${rowSpan * 2}rem`,
+                            }}
+                          >
+                            {course.dersKodu} <br />
+                            {course.dersAdi} - CRN:{course.crn}<br />
+                            {course.adSoyad} <br />
+                            {course.baslangicSaati} - {course.bitisSaati || "?"}
+                          </div>
+                        );
+                      })}
                   </div>
-                  ))}
-                  </React.Fragment>
-                  );
-                })}
-            </div>
+                ))}
+              </React.Fragment>
+            );
+          })}
         </div>
+      </div>
     </div>
   );
 }
