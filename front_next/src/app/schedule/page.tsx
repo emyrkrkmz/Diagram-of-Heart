@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { toJpeg } from "html-to-image";
 import ehb from "../../../data/schedule_data/ehb.json";
 import eef from "../../../data/schedule_data/eef.json";
 import end from "../../../data/schedule_data/end.json";
@@ -128,6 +129,8 @@ export default function CreateSchedule() {
     { department: "", course: "", crn: "" },
   ]);
 
+  const scheduleRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     updateSchedule();
   }, [courseSelections]);
@@ -142,7 +145,7 @@ export default function CreateSchedule() {
   const handleDepartmentChange = (index: number, value: string) => {
     const updatedSelections = [...courseSelections];
     updatedSelections[index].department = value;
-    updatedSelections[index].course = ""; // Reset course and CRN when department changes
+    updatedSelections[index].course = "";
     updatedSelections[index].crn = "";
     setCourseSelections(updatedSelections);
   };
@@ -150,7 +153,7 @@ export default function CreateSchedule() {
   const handleCourseChange = (index: number, value: string) => {
     const updatedSelections = [...courseSelections];
     updatedSelections[index].course = value;
-    updatedSelections[index].crn = ""; // Reset CRN when course changes
+    updatedSelections[index].crn = "";
     setCourseSelections(updatedSelections);
   };
 
@@ -213,6 +216,27 @@ export default function CreateSchedule() {
     setCourseSelections(updatedSelections);
     setSchedule(schedule.filter((course) => course.crn !== courseToRemove.crn));
   };
+
+  const downloadScheduleAsJPEG = () => {
+    if (scheduleRef.current) {
+      toJpeg(scheduleRef.current, { 
+        quality: 0.95,
+        backgroundColor: "white",
+        width: scheduleRef.current.offsetWidth,
+        height: scheduleRef.current.offsetHeight,
+    })
+        .then((dataUrl) => {
+          const link = document.createElement("a");
+          link.href = dataUrl;
+          link.download = "ders_programi.jpeg";
+          link.click();
+        })
+        .catch((error) => {
+          console.error("Error generating JPEG:", error);
+        });
+    }
+  };
+
 
   return (
     <div className="container mx-auto p-4 bg-white rounded-lg shadow-md mt-3 mb-2">
@@ -305,6 +329,13 @@ export default function CreateSchedule() {
         Add Another Course
       </button>
 
+      <button
+        onClick={downloadScheduleAsJPEG}
+        className="w-full mt-4 p-2 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500"
+      >
+        Download Schedule as JPEG
+      </button>
+
       <div className="mt-4">
         <div className="flex justify-between mb-4">
           <button className="py-2 px-5 bg-blue-600 text-white rounded-lg" disabled>
@@ -315,13 +346,14 @@ export default function CreateSchedule() {
           </button>
         </div>
 
-        <div className="grid grid-cols-6 gap-4">
-          <div className="font-bold">Saat</div>
-          <div className="font-bold">Pazartesi</div>
-          <div className="font-bold">Salı</div>
-          <div className="font-bold">Çarşamba</div>
-          <div className="font-bold">Perşembe</div>
-          <div className="font-bold">Cuma</div>
+        <div className="grid grid-cols-6 gap-4"
+        ref={scheduleRef}>
+          <div className="font-bold border-b-2">Saat</div>
+          <div className="font-bold  border-b-2">Pazartesi</div>
+          <div className="font-bold  border-b-2">Salı</div>
+          <div className="font-bold  border-b-2">Çarşamba</div>
+          <div className="font-bold  border-b-2">Perşembe</div>
+          <div className="font-bold  border-b-2">Cuma</div>
 
           {Array.from({ length: 24 }).map((_, index) => {
             const hour = Math.floor(index / 2) + 8;
@@ -382,7 +414,7 @@ export default function CreateSchedule() {
                         }}
                       >
                         {course.dersKodu} <br />
-                        {course.dersAdi} <br />
+                        {course.dersAdi} - CRN:{course.crn}<br />
                         {course.adSoyad} <br />
                         {course.baslangicSaati} - {course.bitisSaati || "?"}
                       </div>
