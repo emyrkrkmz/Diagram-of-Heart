@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/global.css";
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 
@@ -29,6 +29,8 @@ export default function RootLayout({
 		    }}
 		    ></div>
           <div className="relative z-10">{children}</div>
+          <SpeedInsights />
+
           <footer className="absolute w-full text-center z-10 bg-opacity-20 bg-black py-4">
             <p className="text-gray-300 text-sm italic">
               - Designed for Eijo with passion -
