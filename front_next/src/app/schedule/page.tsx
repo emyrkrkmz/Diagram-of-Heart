@@ -82,11 +82,6 @@ export default function CreateSchedule() {
   };
 
   const parseTimeRange = (timeRange: string) => {
-<<<<<<< Updated upstream
-    const [baslangicSaati, bitisSaati] = timeRange.split("/");
-
-    return { baslangicSaati, bitisSaati };
-=======
     const course_day = (timeRange.match(/\//g) || []).length;
 
     if (course_day === 2) {
@@ -101,7 +96,6 @@ export default function CreateSchedule() {
       const [baslangicSaati, bitisSaati] = timeRange.split("/");
       return [{ baslangicSaati, bitisSaati }];
     }
->>>>>>> Stashed changes
   };
 
   const calculateRowSpan = (start: string, end: string) => {
@@ -120,7 +114,6 @@ export default function CreateSchedule() {
     setCourseSelections(updatedSelections);
     setSchedule(schedule.filter((course) => course.crn !== courseToRemove.crn));
   };
-
   return (
     <div className="container mx-auto p-4 bg-white rounded-lg shadow-md">
       <h1 className="text-2xl font-bold mb-4">Ders Programım</h1>
@@ -222,93 +215,19 @@ export default function CreateSchedule() {
           </button>
         </div>
 
-<<<<<<< Updated upstream
-        <div className="flex flex-6" style={{"textAlign":"center"}}>
-=======
-        <div className="flex gap-4">
->>>>>>> Stashed changes
-          <div className="font-bold flex-grow">Saat</div>
-          <div className="font-bold flex-grow">Pazartesi</div>
-          <div className="font-bold flex-grow">Salı</div>
-          <div className="font-bold flex-grow">Çarşamba</div>
-          <div className="font-bold flex-grow">Perşembe</div>
-          <div className="font-bold flex-grow">Cuma</div>
-<<<<<<< Updated upstream
-        </div>
-        <div className="grid grid-cols-6 gap-4">
-          {Array.from({ length: 24 }).map((_, index) => {
-            const hour = Math.floor(index / 2) + 8;
-            const minutes = index % 2 === 0 ? "00" : "30";
-            const displayTime = `${hour}:${minutes}`;
-
-            return (
-              <React.Fragment key={index}>
-                {minutes === "00" && (
-                  <div className="border-dashed border-b-2">{displayTime}</div>
-                )}
-                {minutes === "30" && <div className="border-b-2"></div>}
-                {Array.from({ length: 5 }).map((_, day) => (
-                  <div
-                    key={day}
-                    className="border-gray-300 col-span-1  h-100"
-                    style={{ height: "1rem" }} // Adjust height for 30 min intervals
-                  >
-                    {schedule
-                      .filter((course) => {
-                        const { baslangicSaati, bitisSaati } = parseTimeRange(
-                          course.baslangicSaati
-                        );
-                        const courseStartHour = parseInt(
-                          baslangicSaati.split(":")[0]
-                        );
-                        const courseStartMinutes = parseInt(
-                          baslangicSaati.split(":")[1]
-                        );
-                        const courseStartIndex =
-                          (courseStartHour - 8) * 2 +
-                          (courseStartMinutes >= 30 ? 1 : 0);
-
-                        return (
-                          course.gunAdiTR ===
-                            ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"][
-                              day
-                            ] && courseStartIndex === index
-                        );
-                      })
-                      .map((course) => {
-                        const { baslangicSaati, bitisSaati } = parseTimeRange(
-                          course.baslangicSaati
-                        );
-                        const rowSpan = calculateRowSpan(
-                          baslangicSaati,
-                          bitisSaati
-                        );
-
-                        return (
-                          <div
-                            key={course.crn}
-                            className={`inset-0 ${course.color} rounded-lg text-white p-2 text-xs flex-grow`}
-                            style={{
-                              height: `${rowSpan * 2}rem`,
-                            }}
-                          >
-                            {course.dersKodu} <br />
-                            {course.dersAdi} <br />
-                            {course.adSoyad} <br />
-                            {baslangicSaati} - {bitisSaati || "?"}
-                          </div>
-                        );
-                      })}
-                  </div>
-                ))}
-              </React.Fragment>
-            );
-          })}
-        </div>
-=======
+        <div className="flex items-center justify-center text-center"
+        >
+          <div className="font-bold flex-grow w-1/6">Saat</div>
+          <div className="font-bold flex-grow w-1/6">Pazartesi</div>
+          <div className="font-bold flex-grow w-1/6">Salı</div>
+          <div className="font-bold flex-grow w-1/6">Çarşamba</div>
+          <div className="font-bold flex-grow w-1/6">Perşembe</div>
+          <div className="font-bold flex-grow w-1/6">Cuma</div>
         </div>
         <div className="flex">
-          <div className="grid grid-flow-row auto-rows-[1fr] w-1/6">
+          <div className="grid grid-flow-row auto-rows-[1fr] w-1/6"
+            style={{ gridTemplateRows: 'repeat(24, minmax(2rem, 2rem))' }}
+          >
             {Array.from({ length: 24 }).map((_, index) => {
               const hour = Math.floor(index / 2) + 8;
               const minutes = index % 2 === 0 ? "00" : "30";
@@ -328,73 +247,60 @@ export default function CreateSchedule() {
 
 
           {Array.from({ length: 5 }).map((_, day) => (
+  <div
+    key={day}
+    className="grid grid-flow-row auto-rows-[1fr] w-1/6 relative"
+    style={{ gridTemplateRows: 'repeat(24, minmax(2rem, 2rem))' }} // 24 saatlik bir gün için 30 dakikalık aralıklar
+  >
+    {schedule
+      .flatMap((course) => {
+        const timeRanges = parseTimeRange(course.baslangicSaati);
+        return timeRanges.map((timeRange, index) => {
+          const courseDay = index === 0 ? course.gunAdiTR.split(' ')[0] : course.gunAdiTR.split(' ')[1];
+          const courseStartHour = parseInt(timeRange.baslangicSaati.split(":")[0]);
+          const courseStartMinutes = parseInt(timeRange.baslangicSaati.split(":")[1]);
+          const courseStartIndex = (courseStartHour - 8) * 2 + (courseStartMinutes >= 30 ? 1 : 0);
+
+          return {
+            ...course,
+            ...timeRange,
+            courseStartIndex,
+            courseDay,
+          };
+        });
+      })
+      .filter((course) => {
+        return course.courseDay === ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"][day];
+      })
+      .map((course) => {
+        const rowSpan = calculateRowSpan(course.baslangicSaati, course.bitisSaati);
+
+        return (
+          <div
+            key={course.crn}
+            className="relative"
+            style={{
+              gridRow: `${course.courseStartIndex + 1} / span ${rowSpan}`,
+            }}
+          >
             <div
-              key={day}
-              className="grid grid-flow-row auto-rows-[1fr] w-1/6 relative"
-              style={{}} // Adjust height for 30 min intervals
+              className={`${course.color} rounded-lg text-white p-2 text-xs absolute inset-0`}
+              style={{
+                height: `${rowSpan * 2}rem`,
+              }}
             >
-              {Array.from({ length: 24 }).map((_, index) => {
-                return (
-                  <>
-                    {(
-                      <div className="border-dashed border-b-2"
-                        style={{ height: "2rem" }}>
-                        {schedule
-                          .flatMap((course) => {
-                            const timeRanges = parseTimeRange(course.baslangicSaati);
-                            return timeRanges.map((timeRange, index) => {
-                              // Determine the correct day and time for the course
-                              const courseDay = index === 0 ? course.gunAdiTR.split(' ')[0] : course.gunAdiTR.split(' ')[1];
-
-                              const courseStartHour = parseInt(timeRange.baslangicSaati.split(":")[0]);
-                              const courseStartMinutes = parseInt(timeRange.baslangicSaati.split(":")[1]);
-                              const courseStartIndex =
-                                (courseStartHour - 8) * 2 +
-                                (courseStartMinutes >= 30 ? 1 : 0);
-
-                              return {
-                                ...course,
-                                ...timeRange,
-                                courseStartIndex,
-                                courseDay
-                              };
-                            });
-                          })
-                          .filter(
-                            (course) =>
-                              course.courseDay ===
-                              ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"][day] &&
-                              true
-                          )
-                          .map((course) => {
-                            const rowSpan = calculateRowSpan(
-                              course.baslangicSaati,
-                              course.bitisSaati
-                            );
-                            return (
-                              <div
-                                key={course.crn}
-                                className={`inset-0 ${course.color} rounded-lg text-white p-2 text-xs flex-grow `}
-                                style={{
-                                  height: `${rowSpan * 2}rem`,
-                                }}
-                              >
-                                {course.dersKodu} <br />
-                                {course.dersAdi} <br />
-                                {course.adSoyad} <br />
-                                {course.baslangicSaati} - {course.bitisSaati || "?"}
-                              </div>
-                            );
-                          })}
-                      </div>
-                    )}
-                  </>
-                );
-              })}
+              {course.dersKodu} <br />
+              {course.dersAdi} <br />
+              {course.adSoyad} <br />
+              {course.baslangicSaati} - {course.bitisSaati || "?"}
             </div>
-          ))}
+          </div>
+        );
+      })}
+  </div>
+))}
+
         </div>
->>>>>>> Stashed changes
       </div>
     </div>
   );
