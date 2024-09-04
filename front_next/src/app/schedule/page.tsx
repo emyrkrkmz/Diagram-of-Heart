@@ -134,7 +134,7 @@ const WhatsAppButton = () => {
       <button 
       className="py-2 px-5 bg-blue-600 text-white rounded-lg"
       onClick={handleClick}>
-          hataları bize bildirin!
+          Hataları Bize Bildirin!
       </button>
   );
 };
@@ -387,6 +387,16 @@ export default function CreateSchedule() {
             Alternatif Program Öner
           </button>
           <WhatsAppButton></WhatsAppButton>
+          <button className="py-2 px-5 bg-blue-600 text-white rounded-lg" disabled>
+            <a href={`javascript: let crns=[${courseSelections.map((item)=>{
+              return(item.crn)
+            })}]; let inputs = document.querySelectorAll("input[type=number]");
+            for (let i = 0; i < crns.length; i++) 
+            {inputs[i].value = crns[i];inputs[i].dispatchEvent(new Event('input'));}
+             let form = document.querySelector('form');form.dispatchEvent(new Event('submit'));
+              new Promise((resolve) => setTimeout(resolve, 100)).then(() => { let button = document.querySelector('.card-footer button.btn-success');
+               button.dispatchEvent(new Event('click'));})`}>CRN DOLDUR</a>
+          </button>
           <button className="py-2 px-5 bg-blue-600 text-white rounded-lg" disabled>
             Boş CRN Öner
           </button>
