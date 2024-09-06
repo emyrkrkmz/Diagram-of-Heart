@@ -405,7 +405,7 @@ export default function CreateSchedule() {
         </div>
 
         <div className="flex items-center justify-center text-center"
-        >
+        ref={scheduleRef}>
           <div className="font-bold flex-grow w-1/6">Saat</div>
           <div className="font-bold flex-grow w-1/6">Pazartesi</div>
           <div className="font-bold flex-grow w-1/6">Salı</div>
