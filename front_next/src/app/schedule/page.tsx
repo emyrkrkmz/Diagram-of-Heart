@@ -286,7 +286,7 @@ export default function CreateSchedule() {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-white rounded-lg shadow-md">
+    <div className="container mx-auto p-4 bg-white rounded-lg shadow-md mt-3 mb-2">
       <h1 className="text-2xl font-bold mb-4">Ders Programım</h1>
 
       {courseSelections.map((selection, index) => (
@@ -404,14 +404,14 @@ export default function CreateSchedule() {
           </button>
         </div>
 
-        <div className="flex items-center justify-center text-center"
-        ref={scheduleRef}>
-          <div className="font-bold flex-grow w-1/6">Saat</div>
-          <div className="font-bold flex-grow w-1/6">Pazartesi</div>
-          <div className="font-bold flex-grow w-1/6">Salı</div>
-          <div className="font-bold flex-grow w-1/6">Çarşamba</div>
-          <div className="font-bold flex-grow w-1/6">Perşembe</div>
-          <div className="font-bold flex-grow w-1/6">Cuma</div>
+        <div ref={scheduleRef}>
+        <div className="flex items-center justify-center text-center">
+          <div className="font-bold flex-grow w-1/6 border-b-2">Saat</div>
+          <div className="font-bold flex-grow w-1/6 border-b-2 ml-2">Pazartesi</div>
+          <div className="font-bold flex-grow w-1/6 border-b-2 ml-2">Salı</div>
+          <div className="font-bold flex-grow w-1/6 border-b-2 ml-2">Çarşamba</div>
+          <div className="font-bold flex-grow w-1/6 border-b-2 ml-2">Perşembe</div>
+          <div className="font-bold flex-grow w-1/6 border-b-2 ml-2">Cuma</div>
         </div>
         <div className="flex">
           <div className="grid grid-flow-row auto-rows-[1fr] w-1/6"
@@ -432,13 +432,14 @@ export default function CreateSchedule() {
               );
             })}
           </div>
+          
 
 
 
           {Array.from({ length: 5 }).map((_, day) => (
             <div
               key={day}
-              className="grid grid-flow-row auto-rows-[1fr] w-1/6 relative "
+              className="grid grid-flow-row auto-rows-[1fr] w-1/6 relative ml-2"
               style={{ gridTemplateRows: 'repeat(24, minmax(2rem, 2rem))' }} // 24 saatlik bir gün için 30 dakikalık aralıklar
             >
               {schedule
@@ -488,7 +489,9 @@ export default function CreateSchedule() {
                 })}
             </div>
           ))}
+          
 
+        </div>
         </div>
       </div>
     </div>
