@@ -376,6 +376,12 @@ export default function CreateSchedule() {
         
         Add Another Course
       </button>
+      <button
+        onClick={downloadScheduleAsJPEG}
+        className="w-full mt-4 p-2 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500"
+      >
+        Download Schedule as JPEG
+      </button>
 
       <div className="mt-4">
         <div className="flex justify-between mb-4">
