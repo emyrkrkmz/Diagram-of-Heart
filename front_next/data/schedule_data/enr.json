@@ -1,0 +1,28 @@
+[
+  {
+    "dersTanimiId": 22081,
+    "akademikDonemKodu": "202510",
+    "crn": "15001",
+    "dersKodu": "ENR 301",
+    "dersBransKoduId": 207,
+    "dilKodu": "en-us",
+    "programSeviyeTipi": "lisans",
+    "dersAdi": "Heat Transfer",
+    "ogretimYontemi": "Fiziksel (Yüz yüze)",
+    "adSoyad": "Murat Durmaz",
+    "mekanAdi": "-",
+    "gunAdiTR": "-",
+    "gunAdiEN": "-",
+    "baslangicSaati": "-/-",
+    "bitisSaati": "",
+    "webdeGoster": true,
+    "binaKodu": "-",
+    "kontenjan": 40,
+    "ogrenciSayisi": 0,
+    "programSeviyeTipiId": 2,
+    "rezervasyon": "-",
+    "sinifProgram": "-",
+    "onSart": "Var",
+    "sinifOnsart": "-"
+  }
+]

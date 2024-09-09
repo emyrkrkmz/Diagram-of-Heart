@@ -1,119 +1,191 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { toJpeg } from "html-to-image";
-import ehb from "../../../data/schedule_data/ehb.json";
-import eef from "../../../data/schedule_data/eef.json";
-import end from "../../../data/schedule_data/end.json";
-import kon from "../../../data/schedule_data/kon.json";
-import ecn from "../../../data/schedule_data/ecn.json";
-import mat from "../../../data/schedule_data/mat.json";
-import blg from "../../../data/schedule_data/blg.json";
-import alm from "../../../data/schedule_data/alm.json";
-import arb from "../../../data/schedule_data/arb.json";
-import ata from "../../../data/schedule_data/ata.json";
-import ben from "../../../data/schedule_data/ben.json";
-import bil from "../../../data/schedule_data/bil.json";
-import bio from "../../../data/schedule_data/bio.json";
-import cev from "../../../data/schedule_data/cev.json";
-import chz from "../../../data/schedule_data/chz.json";
-import den from "../../../data/schedule_data/den.json";
-import dnk from "../../../data/schedule_data/dnk.json";
-import eee from "../../../data/schedule_data/eee.json";
-import eko from "../../../data/schedule_data/eko.json";
-import ele from "../../../data/schedule_data/ele.json";
-import elk from "../../../data/schedule_data/elk.json";
-import ent from "../../../data/schedule_data/ent.json";
-import fiz from "../../../data/schedule_data/fiz.json";
-import gem from "../../../data/schedule_data/gem.json";
-import geo from "../../../data/schedule_data/geo.json";
-import huk from "../../../data/schedule_data/huk.json";
-import ing from "../../../data/schedule_data/ing.json";
-import isl from "../../../data/schedule_data/isl.json";
-import ins from "../../../data/schedule_data/ins.json";
-import ita from "../../../data/schedule_data/ita.json";
-import itb from "../../../data/schedule_data/itb.json";
-import jpn from "../../../data/schedule_data/jpn.json";
-import jeo from "../../../data/schedule_data/jeo.json";
-import kim from "../../../data/schedule_data/kim.json";
-import kmm from "../../../data/schedule_data/kmm.json";
-import mad from "../../../data/schedule_data/mad.json";
-import mek from "../../../data/schedule_data/mek.json";
-import mim from "../../../data/schedule_data/mim.json";
-import mto from "../../../data/schedule_data/mto.json";
-import muz from "../../../data/schedule_data/muz.json";
-import rus from "../../../data/schedule_data/rus.json";
-import sbp from "../../../data/schedule_data/sbp.json";
-import snt from "../../../data/schedule_data/snt.json";
-import spa from "../../../data/schedule_data/spa.json";
-import sta from "../../../data/schedule_data/sta.json";
-import tes from "../../../data/schedule_data/tes.json";
-import tur from "../../../data/schedule_data/tur.json";
-import uck from "../../../data/schedule_data/uck.json";
-import uzb from "../../../data/schedule_data/uzb.json";
-import vba from "../../../data/schedule_data/vba.json";
-import yzv from "../../../data/schedule_data/yzv.json";
-import fra from "../../../data/schedule_data/fra.json";
-import mak from "../../../data/schedule_data/mak.json";
-import met from "../../../data/schedule_data/met.json";
+import axios from "axios";
 
-
-
-const departmentData: Record<string, any[]> = {
-  EEF: eef,
-  EHB: ehb,
-  ELE: ele,
-  ELK: elk,
-  END: end,
-  ECN: ecn,
-  BLG: blg,
-  ALM: alm,
-  ARB: arb,
-  ATA: ata,
-  BEN: ben,
-  BIL: bil,
-  BIO: bio,
-  CEV: cev,
-  CHZ: chz,
-  DEN: den,
-  DNK: dnk,
-  EEE: eee,
-  ENT: ent,
-  EKO: eko,
-  FIZ: fiz,
-  FRA: fra,
-  GEM: gem,
-  GEO: geo,
-  HUK: huk,
-  ING: ing,
-  INS: ins,
-  ISL: isl,
-  ITA: ita,
-  ITB: itb,
-  JEO: jeo,
-  JPN: jpn,
-  KIM: kim,
-  KMM: kmm,
-  KON: kon,
-  MAD: mad,
-  MAK: mak,
-  MAT: mat,
-  MEK: mek,
-  MET: met,
-  MIM: mim,
-  MTO: mto,
-  MUZ: muz,
-  RUS: rus,
-  SBP: sbp,
-  SNT: snt,
-  SPA: spa,
-  STA: sta,
-  TES: tes,
-  TUR: tur,
-  UCK: uck,
-  UZB: uzb,
-  VBA: vba,
-  YZV: yzv,
+const departmentCodes: Record<string, number> = {
+	"AKM": 42,
+	"ALM": 227,
+	"ARB": 305,
+	"ARC": 302,
+	"ATA": 43,
+	"BBF": 310,
+	"BEB": 200,
+	"BED": 149,
+	"BEN": 165,
+	"BIL": 38,
+	"BIO": 30,
+	"BLG": 3,
+	"BLS": 180,
+	"BUS": 155,
+	"CAB": 127,
+	"CEN": 304,
+	"CEV": 7,
+	"CHA": 169,
+	"CHE": 137,
+	"CHZ": 81,
+	"CIE": 142,
+	"CIN": 245,
+	"CMP": 146,
+	"COM": 208,
+	"CVH": 168,
+	"DAN": 243,
+	"DEN": 10,
+	"DFH": 163,
+	"DGH": 181,
+	"DNK": 44,
+	"DUI": 32,
+	"EAS": 141,
+	"ECN": 232,
+	"ECO": 154,
+	"EEE": 289,
+	"EEF": 294,
+	"EFN": 297,
+	"EHA": 182,
+	"EHB": 196,
+	"EHN": 241,
+	"EKO": 39,
+	"ELE": 59,
+	"ELH": 2,
+	"ELK": 1,
+	"ELT": 178,
+	"END": 15,
+	"ENE": 183,
+	"ENG": 179,
+	"ENR": 207,
+	"ENT": 225,
+	"ESL": 140,
+	"EM": 163,
+	"ETK": 110,
+	"EUT": 22,
+	"FIZ": 28,
+	"FRA": 226,
+	"FZK": 175,
+	"GED": 138,
+	"GEM": 11,
+	"GEO": 74,
+	"GID": 4,
+	"GLY": 162,
+	"GMI": 46,
+	"GMK": 176,
+	"GMZ": 109,
+	"GSB": 53,
+	"GSN": 173,
+	"GUV": 31,
+	"GVT": 177,
+	"GVZ": 111,
+	"HSS": 256,
+	"HUK": 41,
+	"IAD": 301,
+	"ICM": 63,
+	"ILT": 253,
+	"IML": 112,
+	"IND": 300,
+	"ING": 33,
+	"INS": 8,
+	"ISE": 153,
+	"ISH": 231,
+	"ISL": 14,
+	"ISP": 228,
+	"ITA": 255,
+	"ITB": 50,
+	"JDF": 9,
+	"JEF": 19,
+	"JEO": 18,
+	"JPN": 202,
+	"KIM": 27,
+	"KMM": 6,
+	"KMP": 125,
+	"KON": 58,
+	"LAT": 156,
+	"MAD": 16,
+	"MAK": 12,
+	"MAL": 48,
+	"MAR": 148,
+	"MAT": 26,
+	"MCH": 160,
+	"MDN": 293,
+	"MEK": 48,
+	"MEN": 258,
+	"MET": 5,
+	"MIM": 20,
+	"MKN": 184,
+	"MMD": 290,
+	"MOD": 150,
+	"MRE": 157,
+	"MRT": 158,
+	"MST": 257,
+	"MTH": 143,
+	"MTK": 174,
+	"MTM": 260,
+	"MTO": 23,
+	"MTR": 199,
+	"MUH": 29,
+	"MUK": 40,
+	"MUT": 126,
+	"MUZ": 128,
+	"MYZ": 309,
+	"NAE": 259,
+	"NTH": 263,
+	"ODS": 161,
+	"PAZ": 151,
+	"PEM": 64,
+	"PET": 17,
+	"PHE": 262,
+	"PHY": 147,
+	"PREP": 203,
+	"RES": 36,
+	"ROS": 307,
+	"RUS": 237,
+	"SBP": 21,
+	"SEC": 308,
+	"SED": 288,
+	"SEN": 171,
+	"SES": 124,
+	"SGI": 291,
+	"SNT": 193,
+	"SPA": 172,
+	"STA": 37,
+	"STI": 159,
+	"TDW": 261,
+	"TEB": 121,
+	"TEK": 13,
+	"TEL": 57,
+	"TER": 49,
+	"TES": 269,
+	"THO": 129,
+	"TRN": 65,
+	"TRS": 215,
+	"TRZ": 170,
+	"TUR": 34,
+	"UCK": 25,
+	"ULP": 195,
+	"UZB": 24,
+	"VBA": 306,
+	"X100": 198,
+	"YTO": 213,
+	"YZV": 221
 };
+
+// Function to fetch schedule data for a department
+async function fetchSchedule(department: string) {
+  try {
+    const response = await axios.post('/api/proxy', {
+      ProgramSeviyeTipiAnahtari: "LS",
+      __RequestVerificationToken: "CfDJ8Dd6cj-fJbpOiyzKlObx1AhvXPKAK_9ThGzBAhakWX-M0x2P5OaDIjSeGndpRDYgFtoeAqmvKce9KReR7hUfhqdg4NXvQmfeAgEggC3f0SFFA65qIwkqmcmXla-EM1qhGVPvvXCQohX2zfQT9ttDpvs",
+      dersBransKoduId: departmentCodes[department],
+    });
+
+    if (response.status === 200) {
+      return response.data;
+    } else {
+      console.error(`Failed to fetch data for ${department}: Status ${response.status}`);
+      return null;
+    }
+  } catch (error: unknown) {
+    return null;
+  }
+}
 
 
 const colors = [
@@ -143,80 +215,82 @@ const WhatsAppButton = () => {
 
 export default function CreateSchedule() {
   const [schedule, setSchedule] = useState<any[]>([]);
+  const [departmentData, setDepartmentData] = useState<Record<string, any[]>>({}); // State to hold fetched department data
   const [courseSelections, setCourseSelections] = useState([
     { department: "", course: "", crn: "" },
   ]);
-
   const scheduleRef = useRef<HTMLDivElement>(null);
-  let courses;
-  useEffect(() => {
-    // Tarayıcı tarafında çalıştığından emin ol
-    if (typeof window !== "undefined") {
-      const storedCoursesString = localStorage.getItem('courses');
-      let courses = storedCoursesString ? JSON.parse(storedCoursesString) : [];
 
-      if (courses.length === 0) {
-        courses = [
-          { department: "", course: "", crn: "" }
-        ]
-      }
-        setCourseSelections(courses);
+
+  useEffect(() => {
+    // Fetch all department data on page load
+    const fetchAllDepartments = async () => {
+      const promises = Object.keys(departmentCodes).map(async (department) => {
+        const scheduleData = await fetchSchedule(department);
+        if (scheduleData) {
+          setDepartmentData((prevData) => ({
+            ...prevData,
+            [department]: scheduleData,
+          }));
+        }
+      });
+
+      await Promise.all(promises); // Wait for all department data to be fetched
+      console.log("All departments' data fetched.");
+    };
+
+    fetchAllDepartments();
+
+    // Retrieve stored courses from localStorage
+    const storedCoursesString = localStorage.getItem("courses");
+    let courses = storedCoursesString ? JSON.parse(storedCoursesString) : [];
+
+    if (courses.length === 0) {
+      courses = [{ department: "", course: "", crn: "" }];
     }
-    
+
+    setCourseSelections(courses);
   }, []);
 
-  useEffect(() => {
-    
-    updateSchedule();
-  }, [courseSelections]);
+useEffect(() => {
+  // Ensure data is retrieved from localStorage only if it exists
+  if (typeof window !== 'undefined') {
+    const storedCoursesString = localStorage.getItem('courses');
+    if (storedCoursesString) {
+      try {
+        const parsedCourses = JSON.parse(storedCoursesString);
+        if (Array.isArray(parsedCourses) && parsedCourses.length > 0) {
+          setCourseSelections(parsedCourses);
+        }
+      } catch (error) {
+        console.error("Error parsing courses from localStorage", error);
+        setCourseSelections([{ department: "", course: "", crn: "" }]);
+      }
+    } else {
+      setCourseSelections([{ department: "", course: "", crn: "" }]);
+    }
+  }
+}, []);
+
+
+useEffect(() => {
+  updateSchedule();
+}, [courseSelections, departmentData]);
+
+
 
   const handleAddCourseSelection = () => {
-    setCourseSelections([
-      ...courseSelections,
-      { department: "", course: "", crn: "" },
-    ]);
-    courses = [
-      ...courseSelections,
-      { department: "", course: "", crn: "" },
-    ];
-    window.localStorage.setItem('courses', JSON.stringify(courses));
-  };
-
-  const handleDepartmentChange = (index: number, value: string) => {
-    const updatedSelections = [...courseSelections];
-    updatedSelections[index].department = value;
-    updatedSelections[index].course = "";
-    updatedSelections[index].crn = "";
+    const updatedSelections = [...courseSelections, { department: "", course: "", crn: "" }];
     setCourseSelections(updatedSelections);
-    courses = courseSelections;
-    window.localStorage.setItem('courses', JSON.stringify(courses));
-  };
-
-  const handleCourseChange = (index: number, value: string) => {
-    const updatedSelections = [...courseSelections];
-    updatedSelections[index].course = value;
-    updatedSelections[index].crn = "";
-    setCourseSelections(updatedSelections);
-    courses = courseSelections;
-    window.localStorage.setItem('courses', JSON.stringify(courses));
-  };
-
-  const handleCRNChange = (index: number, value: string) => {
-    const updatedSelections = [...courseSelections];
-    updatedSelections[index].crn = value;
-    setCourseSelections(updatedSelections);
-    courses = courseSelections;
-    window.localStorage.setItem('courses', JSON.stringify(courses));
+    window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
   };
 
   const updateSchedule = () => {
     const newSchedule = courseSelections
       .map((selection, index) => {
         const { department, crn } = selection;
-        if (department && crn) {
-          const courseDetails = departmentData[department].find(
-            (c) => c.crn === crn
-          );
+        if (department && crn && departmentData[department]) {
+          const courseDetails = departmentData[department].find((c) => c.crn === crn);
           if (courseDetails) {
             const color = colors[index % colors.length];
             return { ...courseDetails, color };
@@ -227,6 +301,31 @@ export default function CreateSchedule() {
       .filter(Boolean);
 
     setSchedule(newSchedule);
+  };
+
+  const handleDepartmentChange = async (index: number, value: string) => {
+    const updatedSelections = [...courseSelections];
+    updatedSelections[index].department = value;
+    updatedSelections[index].course = "";
+    updatedSelections[index].crn = "";
+    setCourseSelections(updatedSelections);
+
+    window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
+  };
+
+  const handleCourseChange = (index: number, value: string) => {
+    const updatedSelections = [...courseSelections];
+    updatedSelections[index].course = value;
+    updatedSelections[index].crn = "";
+    setCourseSelections(updatedSelections);
+    window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
+  };
+
+  const handleCRNChange = (index: number, value: string) => {
+    const updatedSelections = [...courseSelections];
+    updatedSelections[index].crn = value;
+    setCourseSelections(updatedSelections);
+    window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
   };
 
   const parseTimeRange = (timeRange: string) => {
@@ -259,11 +358,17 @@ export default function CreateSchedule() {
   const handleRemoveCourse = (index: number) => {
     const updatedSelections = courseSelections.filter((_, i) => i !== index);
     const courseToRemove = courseSelections[index];
+    
+    // Update the course selections
     setCourseSelections(updatedSelections);
+    
+    // Update the schedule by filtering out the removed course
     setSchedule(schedule.filter((course) => course.crn !== courseToRemove.crn));
-    courses = updatedSelections;
-    window.localStorage.setItem('courses', JSON.stringify(courses));
+    
+    // Save the updated selections to localStorage
+    window.localStorage.setItem('courses', JSON.stringify(updatedSelections));
   };
+  
 
   const downloadScheduleAsJPEG = () => {
     if (scheduleRef.current) {
@@ -301,7 +406,7 @@ export default function CreateSchedule() {
               onChange={(e) => handleDepartmentChange(index, e.target.value)}
             >
               <option value="">Bölüm Seçin</option>
-              {Object.keys(departmentData).map((dept) => (
+              {Object.keys(departmentCodes).map((dept) => (
                 <option key={dept} value={dept}>
                   {dept}
                 </option>
@@ -319,11 +424,10 @@ export default function CreateSchedule() {
             >
               <option value="">Ders Seçin</option>
               {selection.department &&
+                departmentData[selection.department] && // Check if departmentData exists
                 Array.from(
                   new Set(
-                    departmentData[selection.department].map(
-                      (course) => course.dersKodu
-                    )
+                    departmentData[selection.department].map((course) => course.dersKodu) // Create a Set to ensure uniqueness
                   )
                 ).map((dersKodu) => {
                   const course = departmentData[selection.department].find(
@@ -348,13 +452,13 @@ export default function CreateSchedule() {
             >
               <option value="">CRN Seçin</option>
               {selection.department &&
-                selection.course &&
+                selection.course && 
+                departmentData[selection.department] && // Add a check to ensure departmentData exists
                 departmentData[selection.department]
                   .filter((course) => course.dersKodu === selection.course)
                   .map((course) => (
                     <option key={course.crn} value={course.crn}>
-                      {course.crn}: {course.adSoyad} ({course.gunAdiTR}{" "}
-                      {course.baslangicSaati})
+                      {course.crn}: {course.adSoyad} ({course.gunAdiTR} {course.baslangicSaati})
                     </option>
                   ))}
             </select>
