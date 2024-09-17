@@ -4,29 +4,26 @@ import axios from 'axios';
 const endpoint = "https://obs.itu.edu.tr/public/DersProgram/DersProgramSearch";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'POST') {
+  if (req.method === 'GET') {
     try {
-      console.log("Request Body:", req.body);
+      // Extract the query parameters
+      const { ProgramSeviyeTipiAnahtari, dersBransKoduId, __RequestVerificationToken } = req.query;
 
-      // Make the request to the external API
-      const response = await axios.post(
-        endpoint, 
-        req.body, // Pass the request body directly
-        {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-            // Add other headers if needed by the external API
-            'User-Agent': 'Mozilla/5.0',
-            'Referer': 'https://obs.itu.edu.tr/',
-          },
-        }
-      );
-
-      console.log("External API Response:", response.data);
+      // Make the GET request to the external API with the query parameters
+      const response = await axios.get(endpoint, {
+        params: {
+          ProgramSeviyeTipiAnahtari,
+          dersBransKoduId,
+          __RequestVerificationToken,
+        },
+        headers: {
+          'User-Agent': 'Mozilla/5.0',
+          'Referer': 'https://obs.itu.edu.tr/',
+        },
+      });
 
       // Forward the response to the client
       res.status(200).json(response.data);
-
     } catch (error) {
       // Log the error for debugging
       console.error("Error fetching data from external API:", error);

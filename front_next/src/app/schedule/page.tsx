@@ -170,22 +170,33 @@ const departmentCodes: Record<string, number> = {
 // Function to fetch schedule data for a department
 async function fetchSchedule(department: string) {
   try {
-    const response = await axios.post('/api/proxy', {
-      ProgramSeviyeTipiAnahtari: "LS",
-      __RequestVerificationToken: "CfDJ8Dd6cj-fJbpOiyzKlObx1AhvXPKAK_9ThGzBAhakWX-M0x2P5OaDIjSeGndpRDYgFtoeAqmvKce9KReR7hUfhqdg4NXvQmfeAgEggC3f0SFFA65qIwkqmcmXla-EM1qhGVPvvXCQohX2zfQT9ttDpvs",
-      dersBransKoduId: departmentCodes[department],
+    const response = await axios.get('/api/proxy', {
+      params: {
+        ProgramSeviyeTipiAnahtari: "LS",
+        __RequestVerificationToken: "YourTokenHere",
+        dersBransKoduId: departmentCodes[department],
+      },
     });
 
     if (response.status === 200) {
-      return response.data;
+      console.log(`Response data for department ${department}:`, response.data);
+
+      const dersProgramList = response.data.dersProgramList || [];
+      console.log(`Type of dersProgramList for ${department}:`, typeof dersProgramList);
+      console.log(`Is dersProgramList an array?`, Array.isArray(dersProgramList));
+      console.log(`dersProgramList for ${department}:`, dersProgramList);
+
+      return Array.isArray(dersProgramList) ? dersProgramList : [];
     } else {
       console.error(`Failed to fetch data for ${department}: Status ${response.status}`);
-      return null;
+      return [];
     }
   } catch (error: unknown) {
-    return null;
+    console.error(`Error fetching data for ${department}:`, error);
+    return [];
   }
 }
+
 
 
 const colors = [
@@ -215,32 +226,14 @@ const WhatsAppButton = () => {
 
 export default function CreateSchedule() {
   const [schedule, setSchedule] = useState<any[]>([]);
-  const [departmentData, setDepartmentData] = useState<Record<string, any[]>>({}); // State to hold fetched department data
+  const [departmentData, setDepartmentData] = useState<Record<string, any[]>>({});
   const [courseSelections, setCourseSelections] = useState([
     { department: "", course: "", crn: "" },
   ]);
   const scheduleRef = useRef<HTMLDivElement>(null);
-
+  const requestedDepartmentsRef = useRef<Set<string>>(new Set());
 
   useEffect(() => {
-    // Fetch all department data on page load
-    const fetchAllDepartments = async () => {
-      const promises = Object.keys(departmentCodes).map(async (department) => {
-        const scheduleData = await fetchSchedule(department);
-        if (scheduleData) {
-          setDepartmentData((prevData) => ({
-            ...prevData,
-            [department]: scheduleData,
-          }));
-        }
-      });
-
-      await Promise.all(promises); // Wait for all department data to be fetched
-      console.log("All departments' data fetched.");
-    };
-
-    fetchAllDepartments();
-
     // Retrieve stored courses from localStorage
     const storedCoursesString = localStorage.getItem("courses");
     let courses = storedCoursesString ? JSON.parse(storedCoursesString) : [];
@@ -252,32 +245,43 @@ export default function CreateSchedule() {
     setCourseSelections(courses);
   }, []);
 
-useEffect(() => {
-  // Ensure data is retrieved from localStorage only if it exists
-  if (typeof window !== 'undefined') {
-    const storedCoursesString = localStorage.getItem('courses');
-    if (storedCoursesString) {
-      try {
-        const parsedCourses = JSON.parse(storedCoursesString);
-        if (Array.isArray(parsedCourses) && parsedCourses.length > 0) {
-          setCourseSelections(parsedCourses);
-        }
-      } catch (error) {
-        console.error("Error parsing courses from localStorage", error);
-        setCourseSelections([{ department: "", course: "", crn: "" }]);
+  useEffect(() => {
+    const fetchDepartments = async () => {
+      const departmentsToFetch = courseSelections
+        .map((selection) => selection.department)
+        .filter((dept) => dept && !departmentData[dept]);
+  
+      if (departmentsToFetch.length === 0) {
+        return;
       }
-    } else {
-      setCourseSelections([{ department: "", course: "", crn: "" }]);
-    }
-  }
-}, []);
+  
+      const fetchPromises = departmentsToFetch.map(async (department) => {
+        const scheduleData = await fetchSchedule(department);
+        console.log(`Fetched scheduleData for ${department}:`, scheduleData);
+        return { department, scheduleData };
+      });
+  
+      const results = await Promise.all(fetchPromises);
+  
+      setDepartmentData((prevData) => {
+        const newData = { ...prevData };
+        results.forEach(({ department, scheduleData }) => {
+          console.log(`Setting departmentData[${department}] with data of length ${scheduleData.length}`);
+          newData[department] = scheduleData;
+        });
+        console.log('Updated departmentData:', newData);
+        return newData;
+      });
+    };
+  
+    fetchDepartments();
+  }, [courseSelections]);
+  
+  
 
-
-useEffect(() => {
-  updateSchedule();
-}, [courseSelections, departmentData]);
-
-
+  useEffect(() => {
+    updateSchedule();
+  }, [courseSelections, departmentData]);
 
   const handleAddCourseSelection = () => {
     const updatedSelections = [...courseSelections, { department: "", course: "", crn: "" }];
@@ -303,11 +307,9 @@ useEffect(() => {
     setSchedule(newSchedule);
   };
 
-  const handleDepartmentChange = async (index: number, value: string) => {
+  const handleDepartmentChange = (index: number, value: string) => {
     const updatedSelections = [...courseSelections];
-    updatedSelections[index].department = value;
-    updatedSelections[index].course = "";
-    updatedSelections[index].crn = "";
+    updatedSelections[index] = { department: value, course: "", crn: "" };
     setCourseSelections(updatedSelections);
 
     window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
@@ -327,6 +329,7 @@ useEffect(() => {
     setCourseSelections(updatedSelections);
     window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
   };
+
 
   const parseTimeRange = (timeRange: string) => {
     const course_day = (timeRange.match(/\//g) || []).length;
@@ -415,32 +418,34 @@ useEffect(() => {
           </div>
 
           <div className="flex-1">
-            <label className="block text-gray-700 font-bold mb-1">Course:</label>
-            <select
-              className="p-2 border rounded-lg w-full"
-              value={selection.course}
-              onChange={(e) => handleCourseChange(index, e.target.value)}
-              disabled={!selection.department}
-            >
-              <option value="">Ders Seçin</option>
-              {selection.department &&
-                departmentData[selection.department] && // Check if departmentData exists
-                Array.from(
-                  new Set(
-                    departmentData[selection.department].map((course) => course.dersKodu) // Create a Set to ensure uniqueness
-                  )
-                ).map((dersKodu) => {
-                  const course = departmentData[selection.department].find(
-                    (c) => c.dersKodu === dersKodu
-                  );
-                  return (
-                    <option key={course?.crn} value={course?.dersKodu}>
-                      {course?.dersKodu} : {course?.dersAdi}
-                    </option>
-                  );
-                })}
-            </select>
-          </div>
+          <label className="block text-gray-700 font-bold mb-1">Course:</label>
+          <select
+            className="p-2 border rounded-lg w-full"
+            value={selection.course}
+            onChange={(e) => handleCourseChange(index, e.target.value)}
+            disabled={!selection.department || !departmentData[selection.department]?.length}
+          >
+            <option value="">Ders Seçin</option>
+            {selection.department &&
+              Array.isArray(departmentData[selection.department]) &&
+              Array.from(
+                new Set(
+                  departmentData[selection.department].map((course) => course.dersKodu)
+                )
+              ).map((dersKodu) => {
+                const course = departmentData[selection.department].find(
+                  (c) => c.dersKodu === dersKodu
+                );
+                return (
+                  <option key={dersKodu} value={dersKodu}>
+                    {dersKodu} : {course?.dersAdi}
+                  </option>
+                );
+              })}
+          </select>
+        </div>
+
+
 
           <div className="flex-1">
             <label className="block text-gray-700 font-bold mb-1">CRN:</label>
@@ -448,12 +453,12 @@ useEffect(() => {
               className="p-2 border rounded-lg w-full"
               value={selection.crn}
               onChange={(e) => handleCRNChange(index, e.target.value)}
-              disabled={!selection.course}
+              disabled={!selection.course || !departmentData[selection.department]}
             >
               <option value="">CRN Seçin</option>
               {selection.department &&
-                selection.course && 
-                departmentData[selection.department] && // Add a check to ensure departmentData exists
+                selection.course &&
+                Array.isArray(departmentData[selection.department]) &&
                 departmentData[selection.department]
                   .filter((course) => course.dersKodu === selection.course)
                   .map((course) => (
