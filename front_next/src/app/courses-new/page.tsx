@@ -5,6 +5,7 @@ import axios from 'axios';
 
 // Define the Course interface to match the API data structure
 interface Course {
+  crn: string;
   dersKodu: string;
   dersAdi: string;
   ogretimYontemi: string;
@@ -465,6 +466,7 @@ export default function CourseTable() {
           <table className="bg-white border border-gray-200">
             <thead className="bg-blue-800 text-white">
               <tr>
+                <th className="py-2 px-4 border">CRN</th>
                 <th className="py-2 px-4 border">Ders Kodu</th>
                 <th className="py-2 px-4 border">Ders Adı</th>
                 <th className="py-2 px-4 border">Öğretim Yöntemi</th>
@@ -482,6 +484,7 @@ export default function CourseTable() {
             <tbody>
               {courses.map((course, index) => (
                 <tr key={index} className="hover:bg-gray-100">
+                  <td className="py-2 px-4 border">{course.crn}</td>
                   <td className="py-2 px-4 border">{course.dersKodu}</td>
                   <td className="py-2 px-4 border">{course.dersAdi}</td>
                   <td className="py-2 px-4 border">{course.ogretimYontemi}</td>
