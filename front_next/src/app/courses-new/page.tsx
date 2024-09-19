@@ -288,7 +288,7 @@ const departmentCodes: Record<string, number> = {
   "MAT": 26,
   "MCH": 160,
   "MDN": 293,
-  "MEK": 48,
+  "MEK": 47,
   "MEN": 258,
   "MET": 5,
   "MIM": 20,
