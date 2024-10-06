@@ -591,7 +591,7 @@ export default function CreateSchedule() {
                         {course.dersKodu} <br />
                         {course.dersAdi} <br />
                         {course.adSoyad} <br />
-                        {course.baslangicSaati} - {course.bitisSaati || "?"} | {course.binaKodu} <br /> <br />
+                        {course.baslangicSaati} - {course.bitisSaati || "?"} | {course.binaKodu} - {course.mekanAdi} <br /> <br />
                         Kontenjan: {course.ogrenciSayisi} / {course.kontenjan} <br />
                         
                       
