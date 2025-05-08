@@ -6,18 +6,18 @@ import axios from 'axios';
 // Define the Course interface to match the API data structure
 interface Course {
   crn: string;
-  dersKodu: string;
-  dersAdi: string;
-  ogretimYontemi: string;
-  adSoyad: string;
-  binaKodu: string;
-  gunAdiTR: string;
-  baslangicSaati: string;
-  kontenjan: number;
-  ogrenciSayisi: number;
-  sinifProgram: string;
-  onSart: string;
-  sinifOnsart: string;
+  code: string;
+  name: string;
+  method: string;
+  instructor: string;
+  building: string;
+  day: string;
+  time: string;
+  capacity: string;
+  enrolled: string;
+  room: string;
+  // onSart: string;
+  // sinifOnsart: string;
 }
 
 // Department options for the dropdown
@@ -356,7 +356,6 @@ async function fetchCourses(department: string) {
     const response = await axios.get('/api/proxy', {
       params: {
         ProgramSeviyeTipiAnahtari: "LS",
-        __RequestVerificationToken: "YourTokenHere", // Replace with the actual token
         dersBransKoduId: departmentCodes[department],
       },
     });
@@ -364,13 +363,10 @@ async function fetchCourses(department: string) {
     if (response.status === 200) {
       console.log(`Response data for department ${department}:`, response.data);
 
-      let dersProgramList = response.data.dersProgramList || [];
-
-      // If dersProgramList is not an array, convert it to an array
-      if (!Array.isArray(dersProgramList)) {
-        dersProgramList = Object.values(dersProgramList);
-        console.log(`Converted dersProgramList to array for ${department}:`, dersProgramList);
-      }
+      // DIRECTLY use the response if it's already an array
+      let dersProgramList = Array.isArray(response.data)
+        ? response.data
+        : response.data.dersProgramList || [];
 
       return dersProgramList;
     } else {
@@ -382,6 +378,7 @@ async function fetchCourses(department: string) {
     return [];
   }
 }
+
 
 export default function CourseTable() {
   const [selectedDepartment, setSelectedDepartment] = useState<string>('EHB'); // Default department
@@ -416,6 +413,7 @@ export default function CourseTable() {
   }, [selectedDepartment]);
 
   return (
+    
     <div className="container mx-auto py-8">
       <h1 className="text-4xl font-bold mb-4 text-black text-center">Course List</h1>
 
@@ -459,6 +457,10 @@ export default function CourseTable() {
           <p>{error}</p>
         </div>
       )}
+{/* 
+      <pre className="text-xs text-left bg-gray-100 p-2">
+        {JSON.stringify(courses, null, 2)}
+      </pre> */}
 
       {/* Courses table */}
       {!loading && !error && courses.length > 0 && (
@@ -472,31 +474,33 @@ export default function CourseTable() {
                 <th className="py-2 px-4 border">Öğretim Yöntemi</th>
                 <th className="py-2 px-4 border">Öğretim Üyesi</th>
                 <th className="py-2 px-4 border">Bina</th>
+                <th className="py-2 px-4 border">Oda</th>
                 <th className="py-2 px-4 border">Gün</th>
                 <th className="py-2 px-4 border">Saat</th>
                 <th className="py-2 px-4 border">Kontenjan</th>
                 <th className="py-2 px-4 border">Yazılan</th>
-                <th className="py-2 px-4 border">Dersi Alabilen Programlar</th>
-                <th className="py-2 px-4 border">Ders Önşartları</th>
-                <th className="py-2 px-4 border">Sınıf Önşartı</th>
+
+                {/*<th className="py-2 px-4 border">Dersi Alabilen Programlar</th>
+                 <th className="py-2 px-4 border">Ders Önşartları</th>
+                <th className="py-2 px-4 border">Sınıf Önşartı</th> */}
               </tr>
             </thead>
             <tbody>
               {courses.map((course, index) => (
                 <tr key={index} className="hover:bg-gray-100">
                   <td className="py-2 px-4 border">{course.crn}</td>
-                  <td className="py-2 px-4 border">{course.dersKodu}</td>
-                  <td className="py-2 px-4 border">{course.dersAdi}</td>
-                  <td className="py-2 px-4 border">{course.ogretimYontemi}</td>
-                  <td className="py-2 px-4 border">{course.adSoyad}</td>
-                  <td className="py-2 px-4 border">{course.binaKodu}</td>
-                  <td className="py-2 px-4 border">{course.gunAdiTR}</td>
-                  <td className="py-2 px-4 border">{course.baslangicSaati}</td>
-                  <td className="py-2 px-4 border">{course.kontenjan}</td>
-                  <td className="py-2 px-4 border">{course.ogrenciSayisi}</td>
-                  <td className="py-2 px-4 border">{course.sinifProgram}</td>
-                  <td className="py-2 px-4 border">{course.onSart}</td>
-                  <td className="py-2 px-4 border">{course.sinifOnsart}</td>
+                  <td className="py-2 px-4 border">{course.code}</td>
+                  <td className="py-2 px-4 border">{course.name}</td>
+                  <td className="py-2 px-4 border">{course.method}</td>
+                  <td className="py-2 px-4 border">{course.instructor}</td>
+                  <td className="py-2 px-4 border">{course.building}</td>
+                  <td className="py-2 px-4 border">{course.room}</td>
+                  <td className="py-2 px-4 border">{course.day}</td>
+                  <td className="py-2 px-4 border">{course.time}</td>
+                  <td className="py-2 px-4 border">{course.capacity}</td>
+                  <td className="py-2 px-4 border">{course.enrolled}</td>
+                  {/* <td className="py-2 px-4 border">{course.onSart}</td>
+                  <td className="py-2 px-4 border">{course.sinifOnsart}</td> */}
                 </tr>
               ))}
             </tbody>

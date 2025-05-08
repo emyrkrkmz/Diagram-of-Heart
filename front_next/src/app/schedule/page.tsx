@@ -173,28 +173,46 @@ async function fetchSchedule(department: string) {
     const response = await axios.get('/api/proxy', {
       params: {
         ProgramSeviyeTipiAnahtari: "LS",
-        __RequestVerificationToken: "YourTokenHere",
         dersBransKoduId: departmentCodes[department],
       },
     });
 
+
     if (response.status === 200) {
       console.log(`Response data for department ${department}:`, response.data);
 
-      const dersProgramList = response.data.dersProgramList || [];
-      console.log(`Type of dersProgramList for ${department}:`, typeof dersProgramList);
-      console.log(`Is dersProgramList an array?`, Array.isArray(dersProgramList));
-      console.log(`dersProgramList for ${department}:`, dersProgramList);
+      let dersProgramList = [];
 
-      return Array.isArray(dersProgramList) ? dersProgramList : [];
-    } else {
-      console.error(`Failed to fetch data for ${department}: Status ${response.status}`);
+      if (Array.isArray(response.data)) {
+        dersProgramList = response.data;
+      } else if (response.data && typeof response.data === 'object' && response.data.dersProgramList) {
+        dersProgramList = Array.isArray(response.data.dersProgramList)
+          ? response.data.dersProgramList
+          : Object.values(response.data.dersProgramList);
+      }
+      
+      return dersProgramList.map((course: any) => ({
+        crn: course.crn,
+        dersKodu: course.code,
+        dersAdi: course.name,
+        ogretimYontemi: course.method,
+        adSoyad: course.instructor,
+        binaKodu: course.building,
+        gunAdiTR: course.day,
+        baslangicSaati: course.time,
+        mekanAdi: course.room,
+        kontenjan: parseInt(course.capacity),
+        ogrenciSayisi: parseInt(course.enrolled),
+      }));
+      
+      } else {
+        console.error(`Failed to fetch data for ${department}: Status ${response.status}`);
+        return [];
+      }
+    } catch (error) {
+      console.error(`Error fetching data for ${department}:`, error);
       return [];
     }
-  } catch (error: unknown) {
-    console.error(`Error fetching data for ${department}:`, error);
-    return [];
-  }
 }
 
 
