@@ -164,55 +164,151 @@ const departmentCodes: Record<string, number> = {
 	"VBA": 306,
 	"X100": 198,
 	"YTO": 213,
-	"YZV": 221
+	"YZV": 221,
+
+
+// Added from LU
+	"AAR": 217,
+	"ABM": 315,
+	"ADM": 209,
+	"AFY": 152,
+	"ANT": 220,
+	"BBL": 133,
+	"BGK": 239,
+	"BGM": 266,
+	"BLU": 267,
+	"BPL": 99,
+	"BTT": 214,
+	"BUY": 268,
+	"BVA": 292,
+	"BVT": 285,
+	"BYM": 67,
+	"CBM": 75,
+	"CKY": 97,
+	"CSP": 216,
+	"CTT": 242,
+	"DAP": 55,
+	"DEP": 70,
+	"DTM": 68,
+	"DUM": 105,
+	"DYS": 284,
+	"DZC": 249,
+	"EBT": 131,
+	"ENB": 76,
+	"GAM": 246,
+	"GDP": 247,
+	"GGP": 103,
+	"GIT": 229,
+	"HBM": 134,
+	"HGP": 264,
+	"HSK": 73,
+	"IDL": 295,
+	"IKE": 277,
+	"IKT": 117,
+	"IKY": 311,
+	"IMT": 167,
+	"IPY": 233,
+	"ISS": 123,
+	"ITT": 250,
+	"ITY": 189,
+	"IYB": 190,
+	"JDM": 211,
+	"JFM": 82,
+	"KBM": 100,
+	"KDP": 118,
+	"KET": 106,
+	"KOM": 66,
+	"KTB": 252,
+	"LEE": 296,
+	"MAM": 78,
+	"MBA": 191,
+	"MBG": 115,
+	"MBL": 135,
+	"MBM": 113,
+	"MDK": 276,
+	"MDP": 122,
+	"MHN": 192,
+	"MHY": 77,
+	"MIA": 270,
+	"MIT": 91,
+	"MJT": 116,
+	"MKC": 271,
+	"MKM": 107,
+	"MKS": 272,
+	"MMI": 274,
+	"MOT": 275,
+	"MTA": 273,
+	"MTS": 90,
+	"MTY": 280,
+	"MTZ": 94,
+	"MYE": 278,
+	"MYL": 187,
+	"MZJ": 205,
+	"NSE": 197,
+	"NUK": 299,
+	"OEP": 210,
+	"PST": 108,
+	"PYY": 95,
+	"RBT": 201,
+	"ROT": 230,
+	"RSM": 204,
+	"RST": 92,
+	"RTZ": 93,
+	"SPL": 98,
+	"SRM": 80,
+	"SSY": 240,
+	"STD": 206,
+	"STP": 101,
+	"STR": 119,
+	"STY": 236,
+	"SUS": 303,
+	"SYC": 166,
+	"TIME": 254,
+	"TKY": 234,
+	"TMP": 120,
+	"UAH": 136,
+	"ULS": 72,
+	"UMT": 79,
+	"UUM": 104,
+	"UUT": 114,
+	"UYJ": 102,
+	"YAB": 96,
+	"YAP": 69,
+	"YIP": 186,
+	"YSB": 132,
+	"YTT": 287,
+	"ZMG": 71
 };
 
 // Function to fetch schedule data for a department
-async function fetchSchedule(department: string) {
+async function fetchSchedule(department: string, level: "LS" | "LU" = "LS") {
   try {
-    const response = await axios.get('/api/proxy', {
+    const response = await axios.get("/api/proxy", {
       params: {
-        ProgramSeviyeTipiAnahtari: "LS",
+        ProgramSeviyeTipiAnahtari: level,         // ⬅️ LS or LU
         dersBransKoduId: departmentCodes[department],
       },
     });
 
-
-    if (response.status === 200) {
-      console.log(`Response data for department ${department}:`, response.data);
-
-      let dersProgramList = [];
-
-      if (Array.isArray(response.data)) {
-        dersProgramList = response.data;
-      } else if (response.data && typeof response.data === 'object' && response.data.dersProgramList) {
-        dersProgramList = Array.isArray(response.data.dersProgramList)
-          ? response.data.dersProgramList
-          : Object.values(response.data.dersProgramList);
-      }
-      
-      return dersProgramList.map((course: any) => ({
-        crn: course.crn,
-        dersKodu: course.code,
-        dersAdi: course.name,
-        ogretimYontemi: course.method,
-        adSoyad: course.instructor,
-        binaKodu: course.building,
-        gunAdiTR: course.day,
-        baslangicSaati: course.time,
-        mekanAdi: course.room,
-        kontenjan: parseInt(course.capacity),
-        ogrenciSayisi: parseInt(course.enrolled),
-      }));
-      
-      } else {
-        console.error(`Failed to fetch data for ${department}: Status ${response.status}`);
-        return [];
-      }
-    } catch (error) {
-      console.error(`Error fetching data for ${department}:`, error);
-      return [];
-    }
+    const data = response.data;
+    // your existing JSON mapping:
+    return (Array.isArray(data) ? data : []).map((course: any) => ({
+      crn: String(course.crn),
+      dersKodu: course.code,
+      dersAdi: course.name,
+      ogretimYontemi: course.method,
+      adSoyad: course.instructor,
+      binaKodu: course.building,
+      gunAdiTR: course.day,
+      baslangicSaati: course.time,
+      mekanAdi: course.room,
+      kontenjan: parseInt(course.capacity ?? "0", 10),
+      ogrenciSayisi: parseInt(course.enrolled ?? "0", 10),
+    }));
+  } catch (e) {
+    console.error(e);
+    return [];
+  }
 }
 
 
@@ -244,56 +340,65 @@ const WhatsAppButton = () => {
 
 export default function CreateSchedule() {
   const [schedule, setSchedule] = useState<any[]>([]);
-  const [departmentData, setDepartmentData] = useState<Record<string, any[]>>({});
-  const [courseSelections, setCourseSelections] = useState([
-    { department: "", course: "", crn: "" },
-  ]);
+// state
+  const [departmentData, setDepartmentData] =
+    useState<Record<string, any[]>>({});
+  type Level = "LS" | "LU";
+  type Selection = { level: Level; department: string; course: string; crn: string };
+
+
+const [courseSelections, setCourseSelections] = useState<Selection[]>([
+  { level: "LS", department: "", course: "", crn: "" },
+]);
+
+
   const scheduleRef = useRef<HTMLDivElement>(null);
   const requestedDepartmentsRef = useRef<Set<string>>(new Set());
 
-  useEffect(() => {
-    // Retrieve stored courses from localStorage
-    const storedCoursesString = localStorage.getItem("courses");
-    let courses = storedCoursesString ? JSON.parse(storedCoursesString) : [];
+useEffect(() => {
+  const stored = localStorage.getItem("courses");
+  const parsed = (stored ? JSON.parse(stored) : []) as Partial<Selection>[];
 
-    if (courses.length === 0) {
-      courses = [{ department: "", course: "", crn: "" }];
-    }
+  const normalized: Selection[] =
+    (parsed.length ? parsed : [{ level: "LS", department: "", course: "", crn: "" }]).map(c => ({
+      level: (c.level as Level) ?? "LS",
+      department: c.department ?? "",
+      course: c.course ?? "",
+      crn: c.crn ?? "",
+    }));
 
-    setCourseSelections(courses);
-  }, []);
+  setCourseSelections(normalized);
+}, []);
 
-  useEffect(() => {
-    const fetchDepartments = async () => {
-      const departmentsToFetch = courseSelections
-        .map((selection) => selection.department)
-        .filter((dept) => dept && !departmentData[dept]);
-  
-      if (departmentsToFetch.length === 0) {
-        return;
-      }
-  
-      const fetchPromises = departmentsToFetch.map(async (department) => {
-        const scheduleData = await fetchSchedule(department);
-        console.log(`Fetched scheduleData for ${department}:`, scheduleData);
-        return { department, scheduleData };
-      });
-  
-      const results = await Promise.all(fetchPromises);
-  
-      setDepartmentData((prevData) => {
-        const newData = { ...prevData };
-        results.forEach(({ department, scheduleData }) => {
-          console.log(`Setting departmentData[${department}] with data of length ${scheduleData.length}`);
-          newData[department] = scheduleData;
-        });
-        console.log('Updated departmentData:', newData);
-        return newData;
-      });
-    };
-  
-    fetchDepartments();
-  }, [courseSelections]);
+
+
+useEffect(() => {
+  const fetchDepartments = async () => {
+    const needed = courseSelections
+      .map(({ department, level }) => ({ department, level }))
+      .filter(({ department }) => department)
+      .filter(({ department, level }) => !departmentData[`${department}_${level}`]);
+
+    if (!needed.length) return;
+
+    const results = await Promise.all(
+      needed.map(async ({ department, level }) => {
+        const scheduleData = await fetchSchedule(department, level);
+        return { cacheKey: `${department}_${level}`, scheduleData };
+      })
+    );
+
+    setDepartmentData((prev) => {
+      const next = { ...prev };
+      results.forEach(({ cacheKey, scheduleData }) => (next[cacheKey] = scheduleData));
+      return next;
+    });
+  };
+
+  fetchDepartments();
+}, [courseSelections]);
+
+
   
   
 
@@ -301,18 +406,57 @@ export default function CreateSchedule() {
     updateSchedule();
   }, [courseSelections, departmentData]);
 
-  const handleAddCourseSelection = () => {
-    const updatedSelections = [...courseSelections, { department: "", course: "", crn: "" }];
-    setCourseSelections(updatedSelections);
-    window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
-  };
+const handleAddCourseSelection = () => {
+  setCourseSelections(prev => {
+    const updated: Selection[] = [
+      ...prev,
+      { level: "LS", department: "", course: "", crn: "" },
+    ];
+    localStorage.setItem("courses", JSON.stringify(updated));
+    return updated;
+  });
+};
+
+const handleLevelChange = (i: number, level: Level) => {
+  setCourseSelections(prev => {
+    const updated: Selection[] = [...prev];
+    updated[i] = { ...updated[i], level, course: "", crn: "" };
+    localStorage.setItem("courses", JSON.stringify(updated));
+    return updated;
+  });
+};
+
+const handleDepartmentChange = (i: number, value: string) => {
+  const updated = [...courseSelections];
+  updated[i] = { ...updated[i], department: value, course: "", crn: "" };
+  setCourseSelections(updated);
+  localStorage.setItem("courses", JSON.stringify(updated));
+};
+
+const handleCourseChange = (i: number, value: string) => {
+  const updated = [...courseSelections];
+  updated[i] = { ...updated[i], course: value, crn: "" };
+  setCourseSelections(updated);
+  localStorage.setItem("courses", JSON.stringify(updated));
+};
+
+const handleCRNChange = (i: number, value: string) => {
+  const updated = [...courseSelections];
+  updated[i] = { ...updated[i], crn: value };
+  setCourseSelections(updated);
+  localStorage.setItem("courses", JSON.stringify(updated));
+};
+
+
+
 
   const updateSchedule = () => {
     const newSchedule = courseSelections
       .map((selection, index) => {
-        const { department, crn } = selection;
-        if (department && crn && departmentData[department]) {
-          const courseDetails = departmentData[department].find((c) => c.crn === crn);
+        const { department, crn, level } = selection;
+        const dataKey = `${department}_${level}`;
+        if (department && crn && departmentData[dataKey]) {
+          const courseDetails = departmentData[dataKey].find((c) => c.crn === crn);
           if (courseDetails) {
             const color = colors[index % colors.length];
             return { ...courseDetails, color };
@@ -320,33 +464,11 @@ export default function CreateSchedule() {
         }
         return null;
       })
-      .filter(Boolean);
+      .filter(Boolean) as any[];
 
     setSchedule(newSchedule);
   };
 
-  const handleDepartmentChange = (index: number, value: string) => {
-    const updatedSelections = [...courseSelections];
-    updatedSelections[index] = { department: value, course: "", crn: "" };
-    setCourseSelections(updatedSelections);
-
-    window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
-  };
-
-  const handleCourseChange = (index: number, value: string) => {
-    const updatedSelections = [...courseSelections];
-    updatedSelections[index].course = value;
-    updatedSelections[index].crn = "";
-    setCourseSelections(updatedSelections);
-    window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
-  };
-
-  const handleCRNChange = (index: number, value: string) => {
-    const updatedSelections = [...courseSelections];
-    updatedSelections[index].crn = value;
-    setCourseSelections(updatedSelections);
-    window.localStorage.setItem("courses", JSON.stringify(updatedSelections));
-  };
 
 
   const parseTimeRange = (timeRange: string) => {
@@ -411,12 +533,29 @@ export default function CreateSchedule() {
     }
   };
 
+
+  
+
   return (
     <div className="container mx-auto p-4 bg-white rounded-lg shadow-md mt-3 mb-2">
       <h1 className="text-2xl font-bold mb-4">Ders Programım</h1>
 
-      {courseSelections.map((selection, index) => (
+      {courseSelections.map((selection, index) => {
+        const dataKey = `${selection.department}_${selection.level}`;
+        return (
         <div key={index} className="flex items-center mb-4 space-x-4">
+          <div className="flex-1">
+          <label className="block text-gray-700 font-bold mb-1">Level:</label>
+          <select
+            className="p-2 border rounded-lg w-full"
+            value={selection.level}
+            onChange={(e) => handleLevelChange(index, e.target.value as "LS" | "LU")}
+          >
+            <option value="LS">LS (Lisans)</option>
+            <option value="LU">LU (Yüksek Lisans)</option>
+          </select>
+        </div>
+
           <div className="flex-1">
             <label className="block text-gray-700 font-bold mb-1">
               Department:
@@ -435,23 +574,21 @@ export default function CreateSchedule() {
             </select>
           </div>
 
-          <div className="flex-1">
-          <label className="block text-gray-700 font-bold mb-1">Course:</label>
-          <select
-            className="p-2 border rounded-lg w-full"
-            value={selection.course}
-            onChange={(e) => handleCourseChange(index, e.target.value)}
-            disabled={!selection.department || !departmentData[selection.department]?.length}
-          >
-            <option value="">Ders Seçin</option>
-            {selection.department &&
-              Array.isArray(departmentData[selection.department]) &&
-              Array.from(
-                new Set(
-                  departmentData[selection.department].map((course) => course.dersKodu)
-                )
-              ).map((dersKodu) => {
-                const course = departmentData[selection.department].find(
+<div className="flex-1">
+        <label className="block text-gray-700 font-bold mb-1">Course:</label>
+        <select
+          className="p-2 border rounded-lg w-full"
+          value={selection.course}
+          onChange={(e) => handleCourseChange(index, e.target.value)}
+          // ✅ use dataKey here
+          disabled={!selection.department || !departmentData[dataKey]?.length}
+        >
+          <option value="">Ders Seçin</option>
+          {selection.department &&
+            Array.isArray(departmentData[dataKey]) &&
+            Array.from(new Set(departmentData[dataKey].map((c) => c.dersKodu)))
+              .map((dersKodu) => {
+                const course = departmentData[dataKey].find(
                   (c) => c.dersKodu === dersKodu
                 );
                 return (
@@ -460,41 +597,43 @@ export default function CreateSchedule() {
                   </option>
                 );
               })}
-          </select>
-        </div>
+        </select>
+      </div>
 
 
 
-          <div className="flex-1">
-            <label className="block text-gray-700 font-bold mb-1">CRN:</label>
-            <select
-              className="p-2 border rounded-lg w-full"
-              value={selection.crn}
-              onChange={(e) => handleCRNChange(index, e.target.value)}
-              disabled={!selection.course || !departmentData[selection.department]}
-            >
-              <option value="">CRN Seçin</option>
-              {selection.department &&
-                selection.course &&
-                Array.isArray(departmentData[selection.department]) &&
-                departmentData[selection.department]
-                  .filter((course) => course.dersKodu === selection.course)
-                  .map((course) => (
-                    <option key={course.crn} value={course.crn}>
-                      {course.crn}: {course.adSoyad} ({course.gunAdiTR} {course.baslangicSaati})
-                    </option>
-                  ))}
-            </select>
-          </div>
+      <div className="flex-1">
+        <label className="block text-gray-700 font-bold mb-1">CRN:</label>
+        <select
+          className="p-2 border rounded-lg w-full"
+          value={selection.crn}
+          onChange={(e) => handleCRNChange(index, e.target.value)}
+          // ✅ use dataKey here
+          disabled={!selection.course || !departmentData[dataKey]?.length}
+        >
+          <option value="">CRN Seçin</option>
+          {selection.department &&
+            selection.course &&
+            Array.isArray(departmentData[dataKey]) &&
+            departmentData[dataKey]
+              .filter((c) => c.dersKodu === selection.course)
+              .map((c) => (
+                <option key={c.crn} value={c.crn}>
+                  {c.crn}: {c.adSoyad} ({c.gunAdiTR} {c.baslangicSaati})
+                </option>
+              ))}
+        </select>
+      </div>
 
-          <button
-            onClick={() => handleRemoveCourse(index)}
-            className="py-2 px-4 mt-7 bg-red-600 text-white rounded-lg hover:bg-red-700"
-          >
-            Remove
-          </button>
-        </div>
-      ))}
+      <button
+        onClick={() => handleRemoveCourse(index)}
+        className="py-2 px-4 mt-7 bg-red-600 text-white rounded-lg hover:bg-red-700"
+      >
+        Remove
+      </button>
+    </div>
+        );
+      })}
 
       <button
         onClick={handleAddCourseSelection}
@@ -627,3 +766,4 @@ export default function CreateSchedule() {
     </div>
   );
 }
+
